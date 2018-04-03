@@ -1,8 +1,19 @@
 
+# Table of Contents
+- [Use Cases](#use-cases)
+    1. [Student selects a project](#student-selects-project)
+        - [Overview](#student-selects-project-overview)
+        - [Typical Course of Events](#student-selects-project-course)
+        - [Alternative Courses of Events](#student-selects-project-course-alt)
+
+<a name="use-cases"></a>
 # Use Cases
 
-# Student selects a project
+<a name="student-selects-project"></a>
+## Student selects a project
 
+<a name="student-selects-project-overview"></a>
+### Overview<
 
  Attribute | Description
  --- | ---
@@ -15,7 +26,8 @@
  Pre-conditions | Student must be logged in
  Post-conditions | The project the student selects must be marked as in-progress and be removes from the list of available projects
 
-# Typical Course of Events
+<a name="student-selects-project-course"></a>
+### Typical Course of Events
 
  Actor Response | System Response
  --- | ---
@@ -25,7 +37,10 @@
   | 4) The system then notifies the staff associated with the project that this project has been taken
   | 5) The system marks the project as in-progress, and removes it from the list of available projects
 
-# Alternative Courses of Events
+<a name="student-selects-project-course-alt"></a>
+### Alternative Courses of Events
 
 - If the student is not logged in, they are prompted to do so before being allowed to select a project
 - If the student does not meet the eligibility requirements for a project they have selected, they are informed by a message and advised to select a different project
+
+## Student updates project progress
