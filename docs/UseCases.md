@@ -68,6 +68,15 @@ Post-conditions | The project progress must be saved to the system and be availa
 
 <a name="student-updates-project-course"></a>
 ### Typical Course of Events
+Actor Response | System Response
+:---: | :---:
+1) This use case begins when a student decides they want to update the progress of the project they are working on |
+2) A project has a checklist of items that are to be completed, which the student checks off as needed |
+ | 3) The system checks if the items checked off are completed
+ | 4) The system updates the progress based on how many items on the checklist are completed
+5) The student can add/remove items on the checklist at any time |
+ | 6) The system updates the progress accordingly whenever the checklist is modified
 
 <a name="student-updates-project-course-alt"></a>
 ### Alternative Courses of Events
+- If the supervisor decides a task that the student has tagged as complete is not done yet, they can update the progress to reflect that
