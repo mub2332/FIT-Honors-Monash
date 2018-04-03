@@ -13,7 +13,7 @@
 ## Student selects a project
 
 <a name="student-selects-project-overview"></a>
-### Overview<
+### Overview
 
  Attribute | Description
  --- | ---
