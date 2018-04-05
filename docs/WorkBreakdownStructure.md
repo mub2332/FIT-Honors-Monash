@@ -1,5 +1,5 @@
 
-# Work Items List
+# Work Breakdown Structure
 
 Description | Size Estimate | State | Task Breakdown | Assigned to
 --- | --- | --- | --- | ---
