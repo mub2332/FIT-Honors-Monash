@@ -1,5 +1,14 @@
 # Risk Management Plan
+This is the risk managment plan for Team Shotgun Surgery. All members are expected and required to go through and understand the plan
+regularly, for 2 reasons:
+1. The team needs to read through all the risks and understand what is required in order monitor the possibility and impact of any potential
+risks that may jeopardise the entire project. 
+2. This risk management plan acts as a mitigation reference for the team whenever an emergency occurs. If the emergency in question is
+listed down here as one of the risks in the risk register, refer to the **Mitigation Strategy** section of the risk to decide the
+next course of action.
 
+Any member is more than welcome to edit/add any risks that may come across their mind. <br/>
+If there are any questions or confusions that needs to be cleared up in this Risk Managment Plan, please do discuss the matter with the entire team on our Facebook group chat.
 
 # Table of Contents
 - [Impact Value Scale](#impactScale)
@@ -9,6 +18,7 @@
 	    1. [Workspace Hardware Failure](#hardwareFailure)
 	2. [External Risks](#externalRisks)
 	    1. [Loss of a Team Member](#teamMemberLoss)
+	    2. [eSolution Pulls Out of The Project](#eSolutions)
 
 <a name="impactScale"></a>
 # Impact Value Scale
@@ -29,7 +39,7 @@ Scale | Probability
 3 | <ul><li> Likely to occur </li><li> 45%-65& chance to occur </li></ul> 
 2 | <ul><li> Unlikely to occur </li><li> 25%-45% chance to occur </li></ul> 
 1 | <ul><li> Very unlikely to occcur </li><li> 5-25% chance to occur </li></ul> 
-0 | <ul><li> Almost definitely to not occur </li><li> 0%-5% chance to occur </li></ul> 
+0 | <ul><li> Almost impossible to occur </li><li> 0%-5% chance to occur </li></ul> 
 
 <a name="riskRegister"></a>
 # Risk Register
@@ -59,3 +69,13 @@ Overview | Team loses a team member. This can include the passing of the team me
 Impact | Impact Value: 5 <br/> The unfinished work that is assigned to that team member will not be completed.
 Likelihood | 2
 Mitigation Strategy | 1. Do not over assign tasks to any particular team member, avoid single points of failures. <br/> 2. Immediately have a meeting to decide how will the unfinished tasks will be allocated to the remaining team members. <br/> 3. Request from other teams to have a team member temporarily transfer over to replace that team member. 
+
+
+<a name="eSolutions"></a>
+### eSolution pulls out of the project
+
+Overview | As implied in the title, eSolutions may terminate the entire project. This can be caused by many reasons: 1. Incompetence of students, causing a loss in confidence from eSolutions <br/> 2. They feel that they no longer have any need of our software <br/> 3. They have found better options <br/> ...
+------------ | -------------
+Impact | Impact Value: 5 <br/> The project fails instantly
+Likelihood | 0
+Mitigation Strategy | 1. Make sure every requirement is set properly in aims to satisfy the stakeholder. <br/> 2. If it does happen, send a student representative from each of the 4 teams to convince eSolutions to let the project go on.
