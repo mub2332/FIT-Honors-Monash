@@ -70,3 +70,11 @@ Security is essential for the system, as it will deal with sensitive information
 - Inspect uploaded files to make sure they are not malicious
 - Use HTTPS to communicate securely
 - Perform automated security testing using security tools such as OpenVAS
+
+
+# System Constraints
+
+There aren't too many constraints on the development of the system. The languages and frameworks to be used were largely left up to the development team, with the caveat that if we wanted ESolutions to be able to manage the system, we'd have to use one of the following languages - Javascript, PHP, Java or C#.
+
+
+The final couple of constraints are that the system has to be hosted on the cloud (therefore we need to keep hosting cloud platform service costs in mind while developing the system) and that it needs to have a service-oriented architecture that has its modules interacting with each other through a service protocol.
