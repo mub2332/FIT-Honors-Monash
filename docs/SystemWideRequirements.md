@@ -53,3 +53,20 @@ At the moment, the system is meant to only manage honors projects for the Facult
 - The system packages will group related classes together to control dependencies
 - The system will utilize design patterns in appropriate situations to increase extensibility
 - The system will be split into modules that interact through a service protocol to encourage reuse and avoid having a single point of failure
+
+
+## Security
+
+Security is essential for the system, as it will deal with sensitive information such as the details of students and faculty, as well as project information that, if leaked, would be disastrous. Ensuring that the system is protected from malicious penetration is a top priority. The measures the system should take are listed below:
+
+- In-depth penetration testing should be done to root out vulnerabilities within the system
+- Data input should be sanitized to protect the system against exploits such as SQL injection
+- Single sign-on and sign-off should be used for access control
+- Passwords should be hashed instead of being encrypted to avoid the possibility of hackers cracking the used cipher
+- Require authentication on every webpage of the system if not logged in
+- Update development tools when there is a security patch to avoid vulnerabilities being exposed
+- Disallow execution of scripts that are not hosted on the domain to guard against XSS attacks
+- Perform validation on both browser and server sides to prevent undesirable results
+- Inspect uploaded files to make sure they are not malicious
+- Use HTTPS to communicate securely
+- Perform automated security testing using security tools such as OpenVAS
