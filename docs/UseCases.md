@@ -80,3 +80,32 @@ Actor Response | System Response
 <a name="student-updates-project-course-alt"></a>
 ### Alternative Courses of Events
 - If the supervisor decides a task that the student has tagged as complete is not done yet, they can update the progress to reflect that
+
+## Search for project
+
+### Overview
+
+Attribute | Description
+--- | ---
+Use Case | Search for a project based on some criteria
+Actors | User (initiator) (Can be anybody using the system)
+Purpose | To find a project that meets the criteria the user has defined
+Overview | This use case begins when the user decides they want to find a project that meets a certain set of criteria
+Type | Primary
+Cross-References | None
+Pre-conditions | None
+Post-conditions | The system must return  a project or a list of projects that meet the user-defined criteria
+
+### Typical Course of Events
+
+Actor Response | System Response
+:---: | :---:
+1) This use case begins when the user decides that they need to find a project that meets certain criteria |
+2) The user types some key words or phrases that relate to the project they are looking for into a text field |
+ | 3) The system looks through the stored projects, looking for the search text in each field, including the project description
+ | 4) The system returns a list of projects that meet the criteria defined by the search text
+
+### Alternative Course of Events
+
+- If the user enters text that cannot be found within any project, the system responds with a message indicating that no projects can be found that match the criteria, and the user is asked to try again
+- If the user enters text that isn't valid, i.e. a string of special characters such as '#@%', the system should display a message asking the user to provide valid text only  
