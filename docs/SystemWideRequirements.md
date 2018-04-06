@@ -1,5 +1,6 @@
 
 # Introduction
+
 The system to be built is a large enterprise application used to manage honors projects for Monash University. It will consist of modules that will interact with each other through a service protocol - in other words, a service-oriented architecture. This document is meant to outline all the system-wide requirements this application must fulfill in order to meet client expectations.
 
 # System-Wide Functional Requirements
@@ -35,3 +36,20 @@ The application has a large user base, and will likely have many concurrent user
 - The system must be serviceable so that if, by any chance, it becomes inaccessible, staff can be called in during Monash working hours to fix it. By Esolutions' standards, this system would be classified as a Class B/C service.
 - The system should avoid having a centralized database to negate the possibility of a single point of failure
 - The system should prevent any invalid operations from being performed, and aim to preserve data integrity as a top priority
+
+## Performance
+
+The system is not estimated to be particularly performance-intensive. It is going to be manipulating mainly text and numbers, and maybe a few images and videos. This does not add up to a significant overhead, so we can be relatively lax when it comes to optimization. However, we will make sure to keep the system responsive and fast enough to maintain the user experience. The key features the system should provide are listed below:
+
+
+- The system should respond quickly to user input and return results with negligible delay.
+- The system should be fluid when moving between different pages on the site.
+
+## Maintainability
+
+At the moment, the system is meant to only manage honors projects for the Faculty of Information Technology. However, as the system is worked upon, ease of extensibility will be a top priority, ensuring that the system can be modified to accommodate other faculties as well. Not only that, the design is to be made so as to ensure that any functionality that is deemed necessary and is discovered after the project has been completed can be added without changing the existing code. This will allow the system to adapt to user requirements and remain relevant even years after its debut. The key features the system should provide are listed below:
+
+- The system classes will be designed using object-oriented design principles such as SOLID to ensure that there is low coupling between classes and to encourage reuse
+- The system packages will group related classes together to control dependencies
+- The system will utilize design patterns in appropriate situations to increase extensibility
+- The system will be split into modules that interact through a service protocol to encourage reuse and avoid having a single point of failure
