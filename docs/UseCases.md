@@ -90,7 +90,7 @@ Attribute | Description
 Use Case | Search for a project based on some criteria
 Actors | User (initiator) (Can be anybody using the system)
 Purpose | To find a project that meets the criteria the user has defined
-Overview | This use case begins when the user decides they want to find a project that meets a certain set of criteria
+Overview | This use case begins when the user decides they want to find a project that meets a certain set of criteria. They enter text that describes what they are looking for, and the system returns a list of projects that fit that description
 Type | Primary
 Cross-References | None
 Pre-conditions | None
@@ -109,3 +109,30 @@ Actor Response | System Response
 
 - If the user enters text that cannot be found within any project, the system responds with a message indicating that no projects can be found that match the criteria, and the user is asked to try again
 - If the user enters text that isn't valid, i.e. a string of special characters such as '#@%', the system should display a message asking the user to provide valid text only  
+
+## Filter projects by categories
+
+### Overview
+
+Attribute | Description
+--- | ---
+Use Case | Filter projects by categories such as domain, supervisors, etc.
+Actors | User (initiator) (Can be anybody using the system)
+Purpose | To filter projects to show only those that fit into certain categories
+Overview | This use case begins when the user decides they want to filter projects so that only those that fit into certain categories are displayed. They can select projects that are in a certain domain or ones with a particular supervisor, and the system will respond by displaying the projects that fit into those categories
+Type | Secondary
+Cross-References | None
+Pre-conditions | None
+Post-conditions | The system must return a list of projects that fit the given categories
+
+### Typical Course of Events
+
+Actor Response | System Response
+:---: | :---:
+1) This use case begins when the user decides that they need to filter projects to show only those that fit into certain categories |
+2) The user can select categories such as the domain of the project, the supervisors, chief examiners or any other staff managing the project, etc. |
+ | 3) The system will filter the projects based on the selected categories, and return a list of projects that fit the selected categories
+
+### Alternative Course of Events
+
+- If there are no projects that fit the chosen categories, the system will display an appropriate message and ask the user to broaden the scope of the filter
