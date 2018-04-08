@@ -1,14 +1,10 @@
 
 # Table of Contents
 - [Use Cases](#use-cases)
-    1. [Student selects a project](#student-selects-project)
+    - [Student selects a project](#student-selects-project)
         - [Overview](#student-selects-project-overview)
         - [Typical Course of Events](#student-selects-project-course)
         - [Alternative Courses of Events](#student-selects-project-course-alt)
-    2. [Student updates project progress](#student-updates-project)
-        - [Overview](#student-updates-project-overview)
-        - [Typical Course of Events](#student-updates-project-course)
-        - [Alternative Courses of Events](#student-updates-project-course-alt)
 
 <a name="use-cases"></a>
 # Use Cases
@@ -48,38 +44,6 @@
 
 - If the student is not logged in, they are prompted to do so before being allowed to select a project
 - If the student does not meet the eligibility requirements for a project they have selected, they are informed by a message and advised to select a different project
-
-<a name="student-updates-project"></a>
-## Student updates project progress
-
-<a name="student-updates-project-overview"></a>
-### Overview
-
-Attribute | Description
---- | ---
-Use Case | A student updates the progress of the project they are working on
-Actors | Student (initiator)
-Purpose | To update information about the project
-Overview | The use case begins when a student decided they want the system to reflect their current progress on the project.
-Type | Secondary
-Cross-References | None
-Pre-conditions | Student must be allocated to a project
-Post-conditions | The project progress must be saved to the system and be available for view by the student and supervisors
-
-<a name="student-updates-project-course"></a>
-### Typical Course of Events
-Actor Response | System Response
-:---: | :---:
-1) This use case begins when a student decides they want to update the progress of the project they are working on |
-2) A project has a checklist of items that are to be completed, which the student checks off as needed |
- | 3) The system checks if the items checked off are completed
- | 4) The system updates the progress based on how many items on the checklist are completed
-5) The student can add/remove items on the checklist at any time |
- | 6) The system updates the progress accordingly whenever the checklist is modified
-
-<a name="student-updates-project-course-alt"></a>
-### Alternative Courses of Events
-- If the supervisor decides a task that the student has tagged as complete is not done yet, they can update the progress to reflect that
 
 ## Search for project
 
@@ -136,3 +100,33 @@ Actor Response | System Response
 ### Alternative Course of Events
 
 - If there are no projects that fit the chosen categories, the system will display an appropriate message and ask the user to broaden the scope of the filter
+
+
+## Co-ordinator allocates members to project
+
+### Overview
+
+Attribute | Description
+--- | ---
+Use Case | Co-ordinator allocates students and supervisors to projects
+Actors | Co-ordinator (initiator), Students, Supervisors
+Purpose | To allocate students and supervisors to projects based on their preferences and abilities
+Overview | This use case begins when the Honors Co-ordinator decides to allocate students and supervisors to a project. They take their preferences, time of preference submission and abilities and relation to the project domain into account when making their decisions.
+Type | Primary
+Cross-references | None
+Pre-conditions | Students and Supervisors must have submitted their preferences for projects
+Post-conditions | Both students and supervisors must be allocated to the correct projects
+
+### Typical Course of Events
+
+Actor Response | System Response
+:---: | :---:
+1) This use case begins when the co-ordinator decides they want to allocate students and supervisors to a project |
+2) They search for a project to allocate members to |
+ | 3) The system gives the co-ordinator a list of students and supervisors who have listed their preferences for that project
+4) The co-ordinator selects the most appropriate students and supervisors and allocates them to the project |
+ | 5) The system notifies the students and supervisors that they have been allocated to that project
+
+### Alternative Course of Events
+
+- If no preferences have been submitted for a project by students or supervisors, the system displays an appropriate message to the co-ordinator and informs him to try again at a later date
