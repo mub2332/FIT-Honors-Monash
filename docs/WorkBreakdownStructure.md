@@ -1,10 +1,9 @@
-
 # Work Breakdown Structure
 
 Description | Size Estimate | State | Task Breakdown | Assigned to
 --- | --- | --- | --- | ---
 Software Requirements Specification | Very Large | In-progress (5%) | Extended Use Cases, Activity Diagrams, Use Case Diagrams, System-wide Requirements | Mubtasim Mahmud
-Risk Management Plan | Medium | In-progress | Risk Identification, Risk estimation, Risk Mitigation Strategies | Janzen Lim
+Risk Management Plan | Medium | In-progress (60%) | Draft Risk Management Plan, Risk Identification, Risk estimation, Risk Mitigation Strategies | Janzen Lim
 Project Management Plan | Large | In-progress | Team Structure, Team Roles and Responsibilities, Release Plan (Milestone and Iteration Schedule), Objectives, Project Management Strategy, Project Practices, Deployment Strategy | Ian Kabil Felix
 Software Quality Assurance Plan | Very Large | In-progress | High-level QA overview, Review tools and techniques, Testing strategies, tools and techniques, Test completion criteria | Adrian Bin, Ali Ikram, Li Jei Yong
 Work Items List | Medium | In-progress | Determine use cases and their priorities and sizes, Break down use cases into smaller tasks, Assign tasks to team members | Mubtasim Mahmud
