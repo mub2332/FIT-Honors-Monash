@@ -3,12 +3,25 @@
 
 Description of Use Case | Priority | Size Estimate | State
 --- | --- | --- | ---
-Implement and test selection of projects for students | 1 | 5 | Pending
+Implement and test selection of projects by students | 1 | 5 | Pending
 <li>Prototype UI</li> | | |
-<li>Create persistent data storage medium</li> | | |
-Implement and test allocation of members to a project for the honors co-ordinator | 1 | 8 | Pending
-Implement and test search module for projects | 1 | 8 | Pending
+<li>Implement and test submission of preferences for projects</li> | | |
+<li>Implement and test notification of involved parties on submission of preferences</li> | | |
+<li>Create API documentation</li> | | |
+Implement and test allocation of members to a project by the honors co-ordinator | 1 | 8 | Pending
+<li>Prototype UI</li> | | |
+<li>Implement and test retrieval of preferences</li> | | |
+<li>Implement and test allocation of students, supervisors, etc. to projects</li> | | |
+<li>Create API documentation</li> | | |
+Implement and test search module for projects | 1 | 3 | Pending
+<li>Implement and test search by text in any field of the project, including the description</li> | | |
+<li>Create API documentation</li> | | |
 Implement and test filter module for projects | 3 | 5 | Pending
+<li>Implement and test filter by domain</li> | | |
+<li>Implement and test filter by supervisor</li> | | |
+<li>Implement and test filter by location</li> | | |
+<li>Implement and test filter by Honors or Masters eligible projects</li> | | |
+<li>Create API documentation</li> | | |
 
 # Priority Scale
 
