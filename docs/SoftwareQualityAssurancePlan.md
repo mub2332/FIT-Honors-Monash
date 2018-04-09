@@ -1,32 +1,26 @@
 =====================================================================
 
-##FIT3170 Milestone 1
-
-##Software Quality Assurance Plan
-
-####April 9, 2018
+## Software Quality Assurance Plan
 
 =====================================================================
 
-#####Team: Shortgun Surgery
+##### Team: Shortgun Surgery
 
-#####Version 1
+##### Version 1
 
+##### Team Members:
 
+###### Adrian Bin
 
-#####Team Member:
+###### Ian Kabil Felix
 
-######Adrian Bin 
+###### Penquin Dee
 
-######Ian	Kabil Felix
+###### Lim Janzen
 
-######Penquin Dee
+###### Mubtasim Mahmud
 
-######Lim Janzen
-
-######Mubtasim Mahmud
-
-######Zayan Ikram
+###### Zayan Ikram
 
 ----------------------------------------------------------
 
@@ -40,8 +34,7 @@
 
 -------------------------------------------
 
-#### Table of Content
-
+#### Table of Contents
 
 
 ​	1  		Introduction..............................................................................4
@@ -88,7 +81,7 @@
 
 ----------------------------------------------
 
-####2. Quality Assurance Strategy
+#### 2. Quality Assurance Strategy
 
 
 
@@ -135,12 +128,3 @@
 
 
 #### 10. Appendix
-
-
-
-
-
-
-
-
-
