@@ -1,6 +1,15 @@
 
 # Work Items List
 
+Description of Use Case | Priority | Size Estimate | State
+--- | --- | --- | ---
+Implement and test selection of projects for students | 1 | 5 | Pending
+<li>Prototype UI</li> | | |
+<li>Create persistent data storage medium</li> | | |
+Implement and test allocation of members to a project for the honors co-ordinator | 1 | 8 | Pending
+Implement and test search module for projects | 1 | 8 | Pending
+Implement and test filter module for projects | 3 | 5 | Pending
+
 # Priority Scale
 
 Priority Value | Description
