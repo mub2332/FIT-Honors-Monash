@@ -6,7 +6,10 @@
 Priority Value | Description
 --- | ---
 1 | This use case is either a fundamental part of the application, something the user absolutely needs or something that must be implemented before everything else (i.e. a dependency for other use cases). Priority description: Critical
-2 | This use case is
+2 | This use case is a very important piece of functionality for the user
+3 | This use case would substantially improve the experience of the user
+4 | This use case would be nice to have for the user, but not it is not especially necessary
+5 | This use case would make the application more rich and feature-filled, but it only makes sense to work on it after all items with higher priority have been implemented
 
 # Size Estimate Scale
 Size Estimate Points | Description
