@@ -50,16 +50,16 @@
 - [Glossary](#glossary)
 - [Appendix](#appendix)
 
-<a href="intro"></a>
+<a name="intro"></a>
 #### 1. Introduction
 
-<a href="intro-purpose"></a>
+<a name="intro-purpose"></a>
 ###### 1.1 Purpose
 
 ​	The purpose of Software Quality Assurance Plan is to define the technique, processes and methodology used for the entire software development process in order to ensure the software and other project artefacts meet its requirement and standard for project, development team, client and other stakeholders.
 
 
-<a href="intro-scope"></a>
+<a name="intro-scope"></a>
 ###### 1.2 Scope
 
 ​	The Scope of this document encompasses the entire software development process, includes artefacts, choice of software and language, teams and team member.
@@ -67,7 +67,7 @@
 ​	The main stakeholders of this document are the development teams. All team members are responsible to ensure all the artefacts and the development process meets the requirements of this document.
 
 
-<a href="intro-method"></a>
+<a name="intro-method"></a>
 ###### 1.3 Methodology
 
 ​	This document is created based on ‘International Organization for Standards’(ISO), Software Engineering Institute's(SEI) Capability Maturity Model (CMM) and the Institute for Electrical and Electronics Engineers (IEEE) standards to ensure a high-quality Software Quality Assurance Plan Document.
