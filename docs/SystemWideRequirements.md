@@ -78,3 +78,13 @@ There aren't too many constraints on the development of the system. The language
 
 
 The final couple of constraints are that the system has to be hosted on the cloud (therefore we need to keep hosting and cloud platform service costs in mind while developing the system) and that it needs to have a service-oriented architecture that has its modules interacting with each other through a service protocol.
+
+# System Documentation
+
+Each team will be working on its own individual module, and API documentation will need to be created for each module for communication and integration between the individual modules.
+
+Each team member will be expected to create documentation for the tasks that they will be working on. Creating documentation is expected to be a process that is integrated into the development workflow - it should not be delegated to the end of the project lifecycle.
+
+Class-level and method-level documentation are the minimum requirements. Any complex algorithms used must be explained clearly enough that developers not experienced with them can understand the concepts behind them and be able to find resources for more in-depth understanding with ease.
+
+The API documentation must be easily understandable by the other teams involved, and vice versa for their modules' API docs. It should be extensive enough that teams can figure out how to use the fundamental functionality of the modules with a moderately thorough scan of the documentation - teams should not feel the need to bombard the developers of a module with a barrage of questions about its interface.
