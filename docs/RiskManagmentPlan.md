@@ -16,7 +16,10 @@ If there are any questions or confusions that needs to be cleared up in this Ris
 - [Risk Register](#riskRegister)
     1. [Technical Risks](#technicalRisk)
 	    1. [Workspace Hardware Failure](#hardwareFailure)
-	2. [External Risks](#externalRisks)
+	2. [Operational Risks](#operationalRisks)
+	    1. [Incompatible Software Modules](#incompatibleSoftwareModules)
+	    2. [Morning After Sydrome](#morningAfterSyndrome)
+	3. [External Risks](#externalRisks)
 	    1. [Loss of a Team Member](#teamMemberLoss)
 	    2. [eSolution Pulls Out of The Project](#eSolutions)
 
@@ -57,6 +60,26 @@ Overview | Faulty workspace hardware, such as laptops and mobile phones of team 
 Impact | Impact Value: 3 <br/> Team member is unable complete their part as their personal workspace device is broken, with a possibility of losing work progress.
 Likelihood | 3 
 Mitigation Strategy | 1. Use computers in the University's 24 hour computer lab in rainforest walk. <br/> 2. Backup work on a secondary drive or in a cloud drive such as Dropbox/Google Drive.
+
+<a name="operationalRisks"></a>
+## Operational Risks
+
+<a name="incompatibleSoftwareModules"></a>
+### Incompatible Software Modules
+Overview | <blank>
+------------ | -------------
+Impact | Impact Value: 3 <br/> 
+Likelihood | 4
+Mitigation Strategy | 
+
+<a name="morningAfterSyndrome"></a>
+### Morning After Syndrome
+Overview | Another teammate has added/edited parts of code that causes one or more systems in the team's software to fail
+------------ | -------------
+Impact | Impact Value: 3 <br/> Parts of the software will remain faulty till fixed.
+Likelihood | 5
+Mitigation Strategy | 1. Reduce dependencies between packages. <br/> 2. Team members should understand which packages depend on each other and ensures that their edits do not stir the relationship between systems. <br/> 3. If happened, check Git commit history and find out the person responsible. Discuss with said person and revert software to earlier version/ Edit the code to fix the problem.
+
 
 <a name="externalRisks"></a>
 ## External Risks
