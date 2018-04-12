@@ -112,6 +112,19 @@ Formal and informal reviews will be conducted on all deliverables. The general s
 #### 6. Tools and Techniques
 
 ----------------------------------------------------
+The following tools and techniques will be used to ensure the quality of the functional requirements for the system:
+
+###### Traceability Matrix
+- Once the coding process starts after the requirements are documented and reviewed, a requirements traceability matrix will be used to ensure all requirements are addressed. 
+
+###### Peer review
+- All artifacts will be reviewed by other team members once submitted. Feedback can be given on each artifact and issues can be discussed during these meetings. This ensures everyone is on the same page on how the system should behave once implemented.
+
+###### Customer review
+- After peer review, the documentation is created and then sent to the customer to verify the customer's expectation and then sent back for final review.
+
+###### Regression testing
+- Regression testing will be done after all the bugs are fixed after an iteration, to ensure all bugs are fixed correctly and new bugs do not appear.
 
 
 
