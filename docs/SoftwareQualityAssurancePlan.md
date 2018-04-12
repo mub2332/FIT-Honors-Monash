@@ -10,17 +10,17 @@
 
 ##### Team Members:
 
-###### Adrian Bin
+- Adrian Bin
 
-###### Ian Kabil Felix
+- Ian Kabil Felix
 
-###### Penquin Dee
+- Penquin Dee
 
-###### Lim Janzen
+- Lim Janzen
 
-###### Mubtasim Mahmud
+- Mubtasim Mahmud
 
-###### Zayan Ikram
+- Zayan Ikram
 
 ----------------------------------------------------------
 
