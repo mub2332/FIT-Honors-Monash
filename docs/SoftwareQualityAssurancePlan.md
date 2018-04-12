@@ -96,18 +96,18 @@
 Formal and informal reviews will be conducted on all deliverables. The general strategy for the review is given below:
 
 ##### Formal Inspections
-######Fagan Inspections
-1. There will be set times during the iteration where Fagan Inspections will be conducted. Whichever team that works on their module will get together and conduct a Fagan Review on their work during these times. They will ensure that the necessary revisions are made before they proceed.
+###### Fagan Inspections
+- There will be set times during the iteration where Fagan Inspections will be conducted. Whichever team that works on their module will get together and conduct a Fagan Review on their work during these times. They will ensure that the necessary revisions are made before they proceed.
 
 ##### Informal Inspections
 ###### Instantaneous review, pair programming
-1. During the coding process, there will be instances where two people look at one machine to ensure everything coded in makes sense and is up to quality.
+- During the coding process, there will be instances where two people look at one machine to ensure everything coded in makes sense and is up to quality.
 
 ###### Peer Reviews
-1. Peer reviews will be conducted at convenient times to ensure the quality is up to standard and all action items are addressed.
+- Peer reviews will be conducted at convenient times to ensure the quality is up to standard and all action items are addressed.
 
 ###### Code Walk-throughs
-1. Code Walk-throughs will be conducted to ensure that the process is verifiable and all the items have been addressed.
+- Code Walk-throughs will be conducted to ensure that the process is verifiable and all the items have been addressed.
 
 #### 6. Tools and Techniques
 
