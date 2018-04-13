@@ -20,7 +20,7 @@ eventually be the actual software used by Monash to run a smoother experience fo
 <a name="proorg"></a>
 # Project Organisation
 Name | Cellphone | Email | Roles
---- | ---
+--- | --- | --- | ---
 Ian Kabil Felix | 0435766555 | ikfel1@student.monash.edu | Project Management Plan
 Lim Janzen | 0421557770 | jlim66@student.monash.edu | Risk Management Plan
 Mubtasim Mahmud | 0468645414 | mmah65@student.monash.edu | Software Requirements Specification, Environment Setup, Work Items List
