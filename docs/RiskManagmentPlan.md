@@ -20,6 +20,7 @@ If there are any questions or confusions that needs to be cleared up in this Ris
 	    1. [Incompatible Software Modules](#incompatibleSoftwareModules)
 	    2. [Morning After Sydrome](#morningAfterSyndrome)
 	3. [External Risks](#externalRisks)
+	    1. [The occurence of natural disasters](#naturalDisasters)
 	    1. [Loss of a Team Member](#teamMemberLoss)
 	    2. [eSolution Pulls Out of The Project](#eSolutions)
 
@@ -83,6 +84,15 @@ Mitigation Strategy | 1. Reduce dependencies between packages. <br/> 2. Team mem
 
 <a name="externalRisks"></a>
 ## External Risks
+
+<a name="naturalDisasters"></a>
+### The Occurence of Natural Disasters
+
+Overview | Natural disasters such as Earthquakes or floods may damage resources such as workspace hardware and prevent team members from moving on in the project.
+------------ | -------------
+Impact | Impact Value: 5 <br/> The project may be called of completely or delayed to a point where the client will lose interest in our software.
+Likelihood | 0
+Mitigation Strategy | 1. See [Workspace Hardware Failure](#hardwareFailure) <br/> 2. If it does happen, have an urgent meeting (face to face/digital) with the team to discuss the next course of action: To continue/ Pull out
 
 <a name="teamMemberLoss"></a>
 ### Loss of a Team Member
