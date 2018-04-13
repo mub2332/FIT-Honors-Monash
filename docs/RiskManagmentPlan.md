@@ -16,13 +16,15 @@ If there are any questions or confusions that needs to be cleared up in this Ris
 - [Risk Register](#riskRegister)
     1. [Technical Risks](#technicalRisk)
 	    1. [Workspace Hardware Failure](#hardwareFailure)
+	    2. [Scope Screep](#scopeCreep)
 	2. [Operational Risks](#operationalRisks)
 	    1. [Incompatible Software Modules](#incompatibleSoftwareModules)
 	    2. [Morning After Sydrome](#morningAfterSyndrome)
 	3. [External Risks](#externalRisks)
 	    1. [The occurence of natural disasters](#naturalDisasters)
-	    1. [Loss of a Team Member](#teamMemberLoss)
-	    2. [eSolution Pulls Out of The Project](#eSolutions)
+	    2. [Loss of a Team Member](#teamMemberLoss)
+	    3. [eSolution Pulls Out of The Project](#eSolutions)
+	    4. [Occurence of Team Disputes](#teamDisputes)
 
 <a name="impactScale"></a>
 # Impact Value Scale
@@ -121,3 +123,11 @@ Overview | As implied in the title, eSolutions may terminate the entire project.
 Impact | Impact Value: 5 <br/> The project fails instantly
 Likelihood | 0
 Mitigation Strategy | 1. Make sure every requirement is set properly in aims to satisfy the stakeholder. <br/> 2. If it does happen, send a student representative from each of the 4 teams to convince eSolutions to let the project go on.
+
+<a name="teamDisputes"></a>
+### Occurence of Team Disputes
+Overview | Team members may have arguments/disagreements between each other.
+------------ | -------------
+Impact | Impact Value: 3 <br/> Team morale will be affected, project may be delayed and there will be a drop in quality of the delivered product.
+Likelihood | 2
+Mitigation Strategy | 1. Each member has the responsbility to consider and respect the opinions/wellbeing of all the members in the group. 2. When a dispute between 2 or more teammates occurs: <br/>1. Have a face to face meeting to resolve the issue when both sides have calmed down and are able to think rationally.<br/>2. Other teammates should try their best to make peace between the two sides.<br/>
