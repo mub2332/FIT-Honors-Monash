@@ -21,7 +21,6 @@ eventually be the actual software used by Monash to run a smoother experience fo
 # Project Organisation
 Name | Cellphone | Email
 --- | ---
-
 Ian Kabil Felix | 0435766555 | ikfel1@student.monash.edu
 Lim Janzen | 0421557770 | jlim66@student.monash.edu
 Mubtasim Mahmud | 0468645414 | mmah65@student.monash.edu
