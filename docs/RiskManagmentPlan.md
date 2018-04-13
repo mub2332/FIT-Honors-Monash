@@ -62,6 +62,15 @@ Impact | Impact Value: 3 <br/> Team member is unable complete their part as thei
 Likelihood | 3 
 Mitigation Strategy | 1. Use computers in the University's 24 hour computer lab in rainforest walk. <br/> 2. Backup work on a secondary drive or in a cloud drive such as Dropbox/Google Drive.
 
+<a name="scopeCreep"></a>
+### Scope Creep
+
+Overview | Team maybe be over ambitious and plan out more than what is the team capable of doing before the next milestone/deadline.
+------------ | -------------
+Impact | Impact Value: 4 <br/> The client may have high expectations and the team may not deliver all requirements by the deadline. A great delay will be expected and team morale will be severely affected
+Likelihood | 4
+Mitigation Strategy | 1. Always plan carefully in detail and within means of the team's resources <br/> 2. Prioritise and push less important stories to the next milestone.
+
 <a name="operationalRisks"></a>
 ## Operational Risks
 
