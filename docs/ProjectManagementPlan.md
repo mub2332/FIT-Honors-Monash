@@ -27,3 +27,12 @@ Mubtasim Mahmud | 0468645414 | mmah65@student.monash.edu
 Zayan Ikram | 0481963066 | azikr1@student.monash.edu
 Adrian Bin | 0431529408 | njbin1@student.monash.edu
 Li Jei Yong | 0405756763 | lyon0001@student.monash.edu
+
+<a name="proprac"></a>
+# Project Practices and Measurements
+Our team has adapted most OpenUP components to suit our project. This process model is fluid and complements the fact that we have a small team.
+Key artifacts are stated below in the release plan.
+Progress is tracked using two primary measurements using a point system. It is estimated that 1 point represents 2h of work:
+<ul><li>Project backlog: The project backlog shows progress relative to overall work to be done within the project.
+<li><li>Iteration backlog: The iteration backlog shows progress relative to work intended for the current iteration.<li><ul>
+
