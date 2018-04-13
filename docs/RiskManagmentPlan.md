@@ -28,8 +28,8 @@ If there are any questions or confusions that needs to be cleared up in this Ris
 # Impact Value Scale
 Impact Value | Description
 --- | ---
-5 | <ul><li> The risk has an extreme impact on the project </li><li> Project may end up not being delivered at all, being delayed by 50% or higher. </li><li> Team may not be able to continue functioning </li><li> Members may fail the unit </li><li> Should be avoided at all costs </li></ul>
-4 | <ul><li> The risk has a significant impact on the project </li><li> Project may be severely delayed by 25-50% </li><li> Team morale may be severely affected </li><li> Should be monitored and avoided as much as possible </li></ul>
+5 | <ul><li> The risk has an extreme impact on the project </li><li> Project may end up not being delivered at all, being delayed by 50% or higher. </li><li> Team may not be able to continue functioning </li><li> Should be avoided at all costs </li></ul>
+4 | <ul><li> The risk has a significant impact on the project </li><li> Project may be severely delayed by 25-50% </li><li> Team morale may be severely affected </li><li> Complex and detailed avoidance strategies should be designed for avoidance </li></ul>
 3 | <ul><li> The risk has a moderate impact on the project </li><li> Project may be slightly delayed by 5-25% </li><li> Team will be affected, but can be solved easily </li><li> Make plans to avoid if possible </li></ul>
 2 | <ul><li> The risk has little impact on the project </li><li> Project can still be delivered on time with a lower than 5% delays. </li><li> Little to no effect on team </li><li> There is no need for complicated avoidance strategies </li></ul>
 1 | <ul><li> The risk has no impact on the project </li><li> Project timeline will not be affected at all with 0% delays. </li><li> Team will not be affected at all </li><li> No plans needed to avoid </li></ul>
