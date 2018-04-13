@@ -33,8 +33,8 @@ Li Jei Yong | 0405756763 | lyon0001@student.monash.edu | Software Quality Assura
 Our team has adapted most OpenUP components to suit our project. This process model is fluid and complements the fact that we have a small team.
 Key artifacts are stated below in the release plan.
 Progress is tracked using two primary measurements using a point system. It is estimated that 1 point represents 2h of work:
-<ul><li>Project backlog: The project backlog shows progress relative to overall work to be done within the project.<li><ul>
-Iteration backlog: The iteration backlog shows progress relative to work intended for the current iteration.<li><ul>
+<ul><li>Project backlog: The project backlog shows progress relative to overall work to be done within the project.</li><ul>
+<ul><li>Iteration backlog: The iteration backlog shows progress relative to work intended for the current iteration.</li><ul>
 
 <a name="promil"></a>
 # Project Milestones and Objectives
