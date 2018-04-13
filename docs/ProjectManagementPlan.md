@@ -7,7 +7,7 @@ areas of the OpenUP model seems irrational to add in at this stage because the p
 - [Introduction] (#intro)
 - [Project Organisation] (#proorg)
 - [Project Practices and Measurements] (#proprac)
-- [Projecct Milestones and Objectives] (#promil)
+- [Project Milestones and Objectives] (#promil)
 
 <a name="intro"></a>
 # Introduction
@@ -19,14 +19,14 @@ eventually be the actual software used by Monash to run a smoother experience fo
 
 <a name="proorg"></a>
 # Project Organisation
-Name | Cellphone | Email
+Name | Cellphone | Email | Roles
 --- | ---
-Ian Kabil Felix | 0435766555 | ikfel1@student.monash.edu
-Lim Janzen | 0421557770 | jlim66@student.monash.edu
-Mubtasim Mahmud | 0468645414 | mmah65@student.monash.edu
-Zayan Ikram | 0481963066 | azikr1@student.monash.edu
-Adrian Bin | 0431529408 | njbin1@student.monash.edu
-Li Jei Yong | 0405756763 | lyon0001@student.monash.edu
+Ian Kabil Felix | 0435766555 | ikfel1@student.monash.edu | Project Management Plan
+Lim Janzen | 0421557770 | jlim66@student.monash.edu | Risk Management Plan
+Mubtasim Mahmud | 0468645414 | mmah65@student.monash.edu | Software Requirements Specification, Environment Setup, Work Items List
+Zayan Ikram | 0481963066 | azikr1@student.monash.edu | Software Quality Assurance Plan
+Adrian Bin | 0431529408 | njbin1@student.monash.edu | Software Quality Assurance Plan
+Li Jei Yong | 0405756763 | lyon0001@student.monash.edu | Software Quality Assurance Plan
 
 <a name="proprac"></a>
 # Project Practices and Measurements
@@ -35,4 +35,8 @@ Key artifacts are stated below in the release plan.
 Progress is tracked using two primary measurements using a point system. It is estimated that 1 point represents 2h of work:
 <ul><li>Project backlog: The project backlog shows progress relative to overall work to be done within the project.<li><ul>
 Iteration backlog: The iteration backlog shows progress relative to work intended for the current iteration.
+
+<a name="promil"></a>
+# Project Milestones and Objectives
+
 
