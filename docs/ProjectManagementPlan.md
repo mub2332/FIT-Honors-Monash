@@ -38,5 +38,13 @@ Progress is tracked using two primary measurements using a point system. It is e
 
 <a name="promil"></a>
 # Project Milestones and Objectives
-
+Phase | Iteration | Primary Objective | Milestone | Duration Estimate(weeks)
+--- | --- | --- | --- | ---
+Inception | M0 |  | Semester 1, Week 6 | 6
+Elaboration | M1 |  | Semester 1, Week 9 | 3
+Elaboration | M2 |  | Semester 1, Week 12 | 3
+Construction | M3 |  | Semester 2, Week 3 | 3
+Construction | M4 |  | Semester 2, Week 6 | 3
+Construction | M5 |  | Semester 2, Week 9 | 3
+Transition | M6 |  | Semester 2, Week 12 | 3
 
