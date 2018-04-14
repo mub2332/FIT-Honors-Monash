@@ -137,7 +137,33 @@ The following tools and techniques will be used to ensure the quality of the fun
 #### 8. Organization
 
 --------------------------------------------------
+Since there is no Quality Assurance team as such, each team will be conducting their own quality assurance on their deliverables. Ideally 10% of the workload should be spend on quality assurance and the exact hours spend on it will depend on the size of each iteration
+There will be meetings held to ensure all members working on the project knows what techniques they will be using and how they'll be using it to conduct quality assurance. They will all also have access to the SQAP for reference. 
+The roles and responsibilities of the members will be decided on what they are working on and what their skillsets are to ensure they do QA on what fits them best. They will eventually know:
+- Their roles and responsibilities
+- Goals of each activity with which they are associated
+- Processes that are to be carried out
 
+Since team members will eventually have well defined roles in Quality Assurance there will ideally be a leader to ensure everything is done right
+
+To manage the quality of artifacts, reviews and tests will be conducted on artifacts that go through changes
+They will have document that includes:
+- The quality assurance process: how a technique should be carried out
+- The goal of the process
+- The results of the process
+- The information about the reviewer conducting the techniques
+- Notes about any relevant information about the artifcat
+
+Quality Assurance techniques need to be prioritised depending on importance and relevance.
+The teams need to agree on which artifacts need to have which levels of quality assurance on them
+Some artifacts will obviously need more thorough quality assurance than others so the techniques to be used will be decided and done by the teams and members responsible for their artifacts
+
+The quality assurance processes will be evaluated based on:
+- Defect Find Rate
+- Defect Fix Rate
+- Types of Errors identified: whether it's critical, major or minor
+
+The defect rate should decrease over time and the fix rate should be higher each build. All of the critical and minor defects need to be gotten rid of each final build.
 
 
 #### 9. Glossary
