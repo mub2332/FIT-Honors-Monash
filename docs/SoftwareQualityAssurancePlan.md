@@ -36,39 +36,39 @@
 
 #### Table of Contents
 
-- [1 Introduction](#intro)
-    - [1.1 Purpose](#intro-purpose)
-    - [1.2 Scope](#intro-scope)
-    - [1.3 Methodology](#intro-method)
-- [2 Quality Assurance Strategy](#qa-strategy)
-- [3 Documentation](#doc)
-- [4 Goals](#goals)
-- [5 Reviews and Audits](#review)
-    - [5.1 Formal Inspections](#review-formal)
-    - [5.2 Informal Inspections](#review-informal)
-- [6 Tools and Techniques](#tools)
-- [7 Testing Strategies](#test)
-    - [7.1 Scope and Overview](#test-1)
-    - [7.2 Testing Approach and Testing Tools](#test-2)
-    - [7.3 Test Environment](#test-3)
-    - [7.4 Release Control](#test-4)
-    - [7.5 Review and Approval](#test-5)
-- [8 Organization](#org)
-- [9 Glossary](#glossary)
-- [10 Appendix](#appendix)
+- [1 - Introduction](#intro)
+    - [1.1 - Purpose](#intro-purpose)
+    - [1.2 - Scope](#intro-scope)
+    - [1.3 - Methodology](#intro-method)
+- [2 - Quality Assurance Strategy](#qa-strategy)
+- [3 - Documentation](#doc)
+- [4 - Goals](#goals)
+- [5 - Reviews and Audits](#review)
+    - [5.1 - Formal Inspections](#review-formal)
+    - [5.2 - Informal Inspections](#review-informal)
+- [6 - Tools and Techniques](#tools)
+- [7 - Testing Strategies](#test)
+    - [7.1 - Scope and Overview](#test-1)
+    - [7.2 - Testing Approach and Testing Tools](#test-2)
+    - [7.3 - Test Environment](#test-3)
+    - [7.4 - Release Control](#test-4)
+    - [7.5 - Review and Approval](#test-5)
+- [8 - Organization](#org)
+- [9 - Glossary](#glossary)
+- [10 - Appendix](#appendix)
 
 ---------------------------------------------------------------------
 
 <a name="intro"></a>
-#### 1 Introduction
+#### 1 - Introduction
 
 <a name="intro-purpose"></a>
-###### 1.1 Purpose
+###### 1.1 - Purpose
 
 ​	The purpose of Software Quality Assurance Plan is to define the technique, processes and methodology used for the entire software development process in order to ensure the software and other project artefacts meet its requirement and standard for project, development team, client and other stakeholders.
 
 <a name="intro-scope"></a>
-###### 1.2 Scope
+###### 1.2 - Scope
 
 ​	The Scope of this document encompasses the entire software development process, includes artefacts, choice of software and language, teams and team member.
 
@@ -76,42 +76,42 @@
 
 
 <a name="intro-method"></a>
-###### 1.3 Methodology
+###### 1.3 - Methodology
 
 ​	This document is created based on ‘International Organization for Standards’(ISO), Software Engineering Institute's(SEI) Capability Maturity Model (CMM) and the Institute for Electrical and Electronics Engineers (IEEE) standards to ensure a high-quality Software Quality Assurance Plan Document.
 
 ---------------------------------------------------------------------
 
 <a name="qa-strategy"></a>
-#### 2 Quality Assurance Strategy
+#### 2 - Quality Assurance Strategy
 
 
 
 ---------------------------------------------------------------------
 
 <a name="doc"></a>
-#### 3 Documentation
+#### 3 - Documentation
 
 ---------------------------------------------------------------------
 
 <a name="goals"></a>
-#### 4 Goals
+#### 4 - Goals
 
 ---------------------------------------------------------------------
 
 <a name="review"></a>
-#### 5 Reviews And Audits
+#### 5 - Reviews And Audits
 
 Formal and informal reviews will be conducted on all deliverables. The general strategy for the review is given below:
 
 <a name="review-formal"></a>
-##### 5.1 Formal Inspections
+##### 5.1 - Formal Inspections
 ###### Fagan Inspections
 - There will be set times during the iteration where Fagan Inspections will be conducted. Whichever team that works on their module will get together and conduct a Fagan Review on their work during these times. They will ensure that the necessary revisions are made before they proceed.
 
 
 <a name="review-informal"></a>
-##### 5.2 Informal Inspections
+##### 5.2 - Informal Inspections
 ###### Instantaneous review, pair programming
 - During the coding process, there will be instances where two people look at one machine to ensure everything coded in makes sense and is up to quality.
 
@@ -124,7 +124,7 @@ Formal and informal reviews will be conducted on all deliverables. The general s
 ---------------------------------------------------------------------
 
 <a name="tools"></a>
-#### 6 Tools and Techniques
+#### 6 - Tools and Techniques
 
 The following tools and techniques will be used to ensure the quality of the functional requirements for the system:
 
@@ -143,10 +143,10 @@ The following tools and techniques will be used to ensure the quality of the fun
 ---------------------------------------------------------------------
 
 <a name="test"></a>
-#### 7 Testing Strategy
+#### 7 - Testing Strategy
 
 <a name="test-1"></a>
-##### 7.1 Scope and Overview
+##### 7.1 - Scope and Overview
 
 - Testing Approach is designed to detect any defects in the system and inconsistency between requirements.
 
@@ -159,7 +159,7 @@ The following tools and techniques will be used to ensure the quality of the fun
 - This testing strategy should apply for the whole development period.
 
 <a name="test-2"></a>
-##### 7.2 Testing Approach & Testing Tools
+##### 7.2 - Testing Approach & Testing Tools
 
 - Testing Approach is divided into functional and non-functional. Functional Test case is to test if the piece of code buggy. To test if code fulfill its requirement, we use Non-Functional Test case which include usability, portability, maintainability, reliability and stability (based on ISO9000 standard)
 
@@ -203,7 +203,7 @@ Approach for defects during Testing (iterative)
 - Step 4: If there are still defect found, repeat Step 1.
 
 <a name="test-3"></a>
-##### 7.3 Test Environment
+##### 7.3 - Test Environment
 
 The test team will select suitable setup of software and hardware which will be used in conducting the test.
 
@@ -220,7 +220,7 @@ The test data must back up by the test team everytime the testing occurs. This i
 
 
 <a name="test-4"></a>
-##### 7.4 Release Control
+##### 7.4 - Release Control
 
 - To deploy the software, a list of release control activities must be conducted.
 - Every version of the software that is planned to be released must have a version on it.
@@ -228,7 +228,7 @@ The test data must back up by the test team everytime the testing occurs. This i
 - Before deploying the new version of the software, the software must ensure that all the test cases (including user acceptance testing) for all modification in the release passed without any issues.
 
 <a name="test-5"></a>
-##### 7.5 Review and Approvals
+##### 7.5 - Review and Approvals
 
 - All of the documents defined in the testing strategy have to be reviewed by all members from each teams and system admins before each iteration begins or when there is any improvement can be made.
 - As the client mentioned at the beginning, the software must have a standard quality and every test cases must meet the ideal requirement given by the client, therefore in this project, the client is also able to review and make any comments on the testing strategy.
@@ -237,7 +237,7 @@ The test data must back up by the test team everytime the testing occurs. This i
 ---------------------------------------------------------------------
 
 <a name="org"></a>
-#### 8 Organization
+#### 8 - Organization
 
 Since there is no Quality Assurance team as such, each team will be conducting their own quality assurance on their deliverables. Ideally 10% of the workload should be spend on quality assurance and the exact hours spend on it will depend on the size of each iteration
 There will be meetings held to ensure all members working on the project knows what techniques they will be using and how they'll be using it to conduct quality assurance. They will all also have access to the SQAP for reference. 
@@ -270,10 +270,10 @@ The defect rate should decrease over time and the fix rate should be higher each
 ---------------------------------------------------------------------
 
 <a name="glossary"></a>
-#### 9 Glossary
+#### 9 - Glossary
 
 ---------------------------------------------------------------------
 
 
 <a name="appendix"></a>
-#### 10 Appendix
+#### 10 - Appendix
