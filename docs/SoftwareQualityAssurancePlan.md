@@ -144,9 +144,49 @@ The following tools and techniques will be used to ensure the quality of the fun
 
 - This testing strategy should apply for the whole development period.
 
-##### Testing Approach & Testing Tools
+Testing Approach & Testing Tools
 
 - Testing Approach is divided into functional and non-functional. Functional Test case is to test if the piece of code buggy. To test if code fulfill its requirement, we use Non-Functional Test case which include usability, portability, maintainability, reliability and stability (based on ISO9000 standard)
+
+
+
+Process of Testing
+
+- Create Test Case
+- Test with test case in a designed testing environment (Could be on a device or CI server)
+- Record defect found and action
+
+Roles and responsibility for team
+
+- Each team members who wrote the code should be responsible for creating test cases for their own code, as code writer has the best understanding for their own code. (Unit Testing)
+- Each team should be responsible for their own parts to make sure work from each teammates is compliable together. (Integration Testing)
+- One member from each team will be selected to form a testing team for System Wide and any modification testing to ensure no defects found while combining and modifying module. (Acceptance and Regression Testing) 
+
+Type of testing
+
+- Manual Testing 
+
+
+
+
+
+Instruction on creating test case
+
+- Each Test case should be given a test case ID and include:
+  - Test Priority
+  - Module Name/ Function Name
+  - Test Title
+  - Description
+  - Pre-condition
+  - Expected Result/ Response
+  - Person/ Team responsible
+
+Approach for defects during Testing (iterative)
+
+- Step 1: If defects is found, record the defect, its result and test case ID which related to in defect document.
+- Step 2: Attempt to fix the error.
+- Step 3: retest with the test case ID which found the defect.
+- Step 4: If there are still defect found, repeat Step 1.
 
 ##### Release Control
 
