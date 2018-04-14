@@ -42,7 +42,7 @@
     - [Methodology](#intro-method)
 - [Quality Assurance Strategy](#qa-strategy)
 - [Documentation](#doc)
-- [Objectives](#objectives)
+- [Goals](#goals)
 - [Reviews and Audits](#review)
 - [Tools and Techniques](#tools)
 - [Testing Strategies](#test)
@@ -73,26 +73,26 @@
 ​	This document is created based on ‘International Organization for Standards’(ISO), Software Engineering Institute's(SEI) Capability Maturity Model (CMM) and the Institute for Electrical and Electronics Engineers (IEEE) standards to ensure a high-quality Software Quality Assurance Plan Document.
 
 ----------------------------------------------
-
+<a name="qa-strategy"></a>
 #### 2. Quality Assurance Strategy
 
 
 
 ----------------------------------------------
-
+<a name="doc"></a>
 #### 3. Documentation
 
 -------------------------------------
-
+<a name="goals"></a>
 #### 4. Goals
 
 ---------------------------------------------
 
 
-
+<a name="review"></a>
 #### 5. Reviews And Audits
 
---------------------------------------------------------
+
 Formal and informal reviews will be conducted on all deliverables. The general strategy for the review is given below:
 
 ##### Formal Inspections
@@ -109,9 +109,12 @@ Formal and informal reviews will be conducted on all deliverables. The general s
 ###### Code Walk-throughs
 - Code Walk-throughs will be conducted to ensure that the process is verifiable and all the items have been addressed.
 
+--------------------------------------------------------
+
+<a name="tools"></a>
 #### 6. Tools and Techniques
 
-----------------------------------------------------
+
 The following tools and techniques will be used to ensure the quality of the functional requirements for the system:
 
 ###### Traceability Matrix
@@ -126,8 +129,8 @@ The following tools and techniques will be used to ensure the quality of the fun
 ###### Regression testing
 - Regression testing will be done after all the bugs are fixed after an iteration, to ensure all bugs are fixed correctly and new bugs do not appear.
 
-
-
+----------------------------------------------------
+<a name="test"></a>
 #### 7. Testing Strategy
 
 -------------------------------------------------------
@@ -201,6 +204,7 @@ Approach for defects during Testing (iterative)
 - As the client mentioned at the beginning, the software must have a standard quality and every test cases must meet the ideal requirement given by the client, therefore in this project, the client is also able to review and make any comments on the testing strategy.
 - Any changes on the testing strategy must be recorded at the start of the testing strategy document. The changes must have an approved date and approver name attached on it for the ease of future reference.
 
+<a name="org"></a>
 #### 8. Organization
 
 --------------------------------------------------
@@ -232,11 +236,11 @@ The quality assurance processes will be evaluated based on:
 
 The defect rate should decrease over time and the fix rate should be higher each build. All of the critical and minor defects need to be gotten rid of each final build.
 
-
+<a name="glossary"></a>
 #### 9. Glossary
 
 --------------------------------------
 
 
-
+<a name="appendix"></a>
 #### 10. Appendix
