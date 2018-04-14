@@ -14,7 +14,7 @@
 
 - Ian Kabil Felix
 
-- Penquin Dee
+- Li Jei Yong
 
 - Lim Janzen
 
@@ -144,7 +144,7 @@ The following tools and techniques will be used to ensure the quality of the fun
 
 - This testing strategy should apply for the whole development period.
 
-Testing Approach & Testing Tools
+##### Testing Approach & Testing Tools
 
 - Testing Approach is divided into functional and non-functional. Functional Test case is to test if the piece of code buggy. To test if code fulfill its requirement, we use Non-Functional Test case which include usability, portability, maintainability, reliability and stability (based on ISO9000 standard)
 
@@ -185,19 +185,20 @@ Approach for defects during Testing (iterative)
 
 - Step 1: If defects is found, record the defect, its result and test case ID which related to in defect document.
 - Step 2: Attempt to fix the error.
-- Step 3: retest with the test case ID which found the defect.
+- Step 3: Retest with the test case ID which found the defect.
 - Step 4: If there are still defect found, repeat Step 1.
 
 ##### Release Control
 
-- Release management plan with appropriate version history that will make sure test execution for all modification in that release
-
-- Make sure all the testing is done before the team release the latest version of the software.
+- To deploy the software, a list of release control activities must be conducted.
+- Every version of the software that is planned to be released must have a version on it.
+- Every version of the software must be backed up properly in case of any future issues that restoration of data is required.
+- Before deploying the new version of the software, the software must ensure that all the test cases (including user acceptance testing) for all modification in the release passed without any issues.
 
 ##### Review and Approvals
 
-- All of the documents defined in the testing strategy have to be reviewed by all members from each teams and system admins before each iteration begins or when there is any improvement can be made. As the client mentioned at the beginning, the software must have a standard quality and every test cases must meet the ideal requirement given by the client, therefore in this project, the client is also able to review and make any comments on the testing strategy.
-
+- All of the documents defined in the testing strategy have to be reviewed by all members from each teams and system admins before each iteration begins or when there is any improvement can be made.
+- As the client mentioned at the beginning, the software must have a standard quality and every test cases must meet the ideal requirement given by the client, therefore in this project, the client is also able to review and make any comments on the testing strategy.
 - Any changes on the testing strategy must be recorded at the start of the testing strategy document. The changes must have an approved date and approver name attached on it for the ease of future reference.
 
 #### 8. Organization
