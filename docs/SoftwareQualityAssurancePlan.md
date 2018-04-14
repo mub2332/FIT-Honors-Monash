@@ -22,7 +22,7 @@
 
 - Zayan Ikram
 
-----------------------------------------------------------
+---------------------------------------------------------------------
 
 ## Revision List
 
@@ -32,32 +32,40 @@
 |         |          |            |             |
 |         |          |            |             |
 
--------------------------------------------
+---------------------------------------------------------------------
 
 #### Table of Contents
 
-- [Introduction](#intro)
-    - [Purpose](#intro-purpose)
-    - [Scope](#intro-scope)
-    - [Methodology](#intro-method)
-- [Quality Assurance Strategy](#qa-strategy)
-- [Documentation](#doc)
-- [Goals](#goals)
-- [Reviews and Audits](#review)
-- [Tools and Techniques](#tools)
-- [Testing Strategies](#test)
-- [Organization](#org)
-- [Glossary](#glossary)
-- [Appendix](#appendix)
+- [1 Introduction](#intro)
+    - [1.1 Purpose](#intro-purpose)
+    - [1.2 Scope](#intro-scope)
+    - [1.3 Methodology](#intro-method)
+- [2 Quality Assurance Strategy](#qa-strategy)
+- [3 Documentation](#doc)
+- [4 Goals](#goals)
+- [5 Reviews and Audits](#review)
+    - [5.1 Formal Inspections](#review-formal)
+    - [5.2 Informal Inspections](#review-informal)
+- [6 Tools and Techniques](#tools)
+- [7 Testing Strategies](#test)
+    - [7.1 Scope and Overview](#test-1)
+    - [7.2 Testing Approach and Testing Tools](#test-2)
+    - [7.3 Test Environment](#test-3)
+    - [7.4 Release Control](#test-4)
+    - [7.5 Review and Approval](#test-5)
+- [8 Organization](#org)
+- [9 Glossary](#glossary)
+- [10 Appendix](#appendix)
+
+---------------------------------------------------------------------
 
 <a name="intro"></a>
-#### 1. Introduction
+#### 1 Introduction
 
 <a name="intro-purpose"></a>
 ###### 1.1 Purpose
 
 ​	The purpose of Software Quality Assurance Plan is to define the technique, processes and methodology used for the entire software development process in order to ensure the software and other project artefacts meet its requirement and standard for project, development team, client and other stakeholders.
-
 
 <a name="intro-scope"></a>
 ###### 1.2 Scope
@@ -72,34 +80,38 @@
 
 ​	This document is created based on ‘International Organization for Standards’(ISO), Software Engineering Institute's(SEI) Capability Maturity Model (CMM) and the Institute for Electrical and Electronics Engineers (IEEE) standards to ensure a high-quality Software Quality Assurance Plan Document.
 
-----------------------------------------------
+---------------------------------------------------------------------
+
 <a name="qa-strategy"></a>
-#### 2. Quality Assurance Strategy
+#### 2 Quality Assurance Strategy
 
 
 
-----------------------------------------------
+---------------------------------------------------------------------
+
 <a name="doc"></a>
-#### 3. Documentation
+#### 3 Documentation
 
--------------------------------------
+---------------------------------------------------------------------
+
 <a name="goals"></a>
-#### 4. Goals
+#### 4 Goals
 
----------------------------------------------
-
+---------------------------------------------------------------------
 
 <a name="review"></a>
-#### 5. Reviews And Audits
-
+#### 5 Reviews And Audits
 
 Formal and informal reviews will be conducted on all deliverables. The general strategy for the review is given below:
 
-##### Formal Inspections
+<a name="review-formal"></a>
+##### 5.1 Formal Inspections
 ###### Fagan Inspections
 - There will be set times during the iteration where Fagan Inspections will be conducted. Whichever team that works on their module will get together and conduct a Fagan Review on their work during these times. They will ensure that the necessary revisions are made before they proceed.
 
-##### Informal Inspections
+
+<a name="review-informal"></a>
+##### 5.2 Informal Inspections
 ###### Instantaneous review, pair programming
 - During the coding process, there will be instances where two people look at one machine to ensure everything coded in makes sense and is up to quality.
 
@@ -109,11 +121,10 @@ Formal and informal reviews will be conducted on all deliverables. The general s
 ###### Code Walk-throughs
 - Code Walk-throughs will be conducted to ensure that the process is verifiable and all the items have been addressed.
 
---------------------------------------------------------
+---------------------------------------------------------------------
 
 <a name="tools"></a>
-#### 6. Tools and Techniques
-
+#### 6 Tools and Techniques
 
 The following tools and techniques will be used to ensure the quality of the functional requirements for the system:
 
@@ -129,13 +140,13 @@ The following tools and techniques will be used to ensure the quality of the fun
 ###### Regression testing
 - Regression testing will be done after all the bugs are fixed after an iteration, to ensure all bugs are fixed correctly and new bugs do not appear.
 
-----------------------------------------------------
+---------------------------------------------------------------------
+
 <a name="test"></a>
-#### 7. Testing Strategy
+#### 7 Testing Strategy
 
--------------------------------------------------------
-
-##### Scope and overview
+<a name="test-1"></a>
+##### 7.1 Scope and Overview
 
 - Testing Approach is designed to detect any defects in the system and inconsistency between requirements.
 
@@ -147,10 +158,10 @@ The following tools and techniques will be used to ensure the quality of the fun
 
 - This testing strategy should apply for the whole development period.
 
-##### Testing Approach & Testing Tools
+<a name="test-2"></a>
+##### 7.2 Testing Approach & Testing Tools
 
 - Testing Approach is divided into functional and non-functional. Functional Test case is to test if the piece of code buggy. To test if code fulfill its requirement, we use Non-Functional Test case which include usability, portability, maintainability, reliability and stability (based on ISO9000 standard)
-
 
 
 Process of Testing
@@ -191,23 +202,43 @@ Approach for defects during Testing (iterative)
 - Step 3: Retest with the test case ID which found the defect.
 - Step 4: If there are still defect found, repeat Step 1.
 
-##### Release Control
+<a name="test-3"></a>
+##### 7.3 Test Environment
+
+The test team will select suitable setup of software and hardware which will be used in conducting the test.
+
+The requirement and setup for each environment are based on these few points:
+- Test data
+- Database server
+- Operating system
+- Browser
+- Network
+
+The software must pass all the test cases in each specific environment before releasing. As this software has database, some of the test cases required mock-up data (test data) in order to check the correctness of the executable code.
+
+The test data must back up by the test team everytime the testing occurs. This is to prevent some test cases might alter the test data and therefore causing the database of the test data corrupted. In the case the database of test data is corrupted, the test team must restore the database using the backup test data.
+
+
+<a name="test-4"></a>
+##### 7.4 Release Control
 
 - To deploy the software, a list of release control activities must be conducted.
 - Every version of the software that is planned to be released must have a version on it.
 - Every version of the software must be backed up properly in case of any future issues that restoration of data is required.
 - Before deploying the new version of the software, the software must ensure that all the test cases (including user acceptance testing) for all modification in the release passed without any issues.
 
-##### Review and Approvals
+<a name="test-5"></a>
+##### 7.5 Review and Approvals
 
 - All of the documents defined in the testing strategy have to be reviewed by all members from each teams and system admins before each iteration begins or when there is any improvement can be made.
 - As the client mentioned at the beginning, the software must have a standard quality and every test cases must meet the ideal requirement given by the client, therefore in this project, the client is also able to review and make any comments on the testing strategy.
 - Any changes on the testing strategy must be recorded at the start of the testing strategy document. The changes must have an approved date and approver name attached on it for the ease of future reference.
 
-<a name="org"></a>
-#### 8. Organization
+---------------------------------------------------------------------
 
---------------------------------------------------
+<a name="org"></a>
+#### 8 Organization
+
 Since there is no Quality Assurance team as such, each team will be conducting their own quality assurance on their deliverables. Ideally 10% of the workload should be spend on quality assurance and the exact hours spend on it will depend on the size of each iteration
 There will be meetings held to ensure all members working on the project knows what techniques they will be using and how they'll be using it to conduct quality assurance. They will all also have access to the SQAP for reference. 
 The roles and responsibilities of the members will be decided on what they are working on and what their skillsets are to ensure they do QA on what fits them best. They will eventually know:
@@ -236,11 +267,13 @@ The quality assurance processes will be evaluated based on:
 
 The defect rate should decrease over time and the fix rate should be higher each build. All of the critical and minor defects need to be gotten rid of each final build.
 
-<a name="glossary"></a>
-#### 9. Glossary
+---------------------------------------------------------------------
 
---------------------------------------
+<a name="glossary"></a>
+#### 9 Glossary
+
+---------------------------------------------------------------------
 
 
 <a name="appendix"></a>
-#### 10. Appendix
+#### 10 Appendix
