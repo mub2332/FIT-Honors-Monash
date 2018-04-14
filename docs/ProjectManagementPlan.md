@@ -38,9 +38,9 @@ Progress is tracked using two primary measurements using a point system. It is e
 
 <a name="promil"></a>
 # Project Milestones and Objectives
-Phase | Iteration | Primary Objective | Milestone | Duration Estimate(weeks)
+Phase | Iteration | Primary Objectives | Milestone | Duration Estimate(weeks)
 --- | --- | --- | --- | ---
-Inception | M0 |  | Semester 1, Week 6 | 6
+Inception | M0 | Technical Documentation including: <ul><li>Project Management Plan</li><li>Software Requirement Specification</li><li>Software Quality Assurance Plan</li><li>Risk Management Plan</li><li>Work Breakdown Structure</li><ul> Non Technical Aspects<ul><li>Assigning Roles</li><li>Team Collaboration Logs(Trello, Gitlab and Google Drive)</li><li>Development Environment Setup</li><ul>  | Semester 1, Week 6 | 6
 Elaboration | M1 |  | Semester 1, Week 9 | 3
 Elaboration | M2 |  | Semester 1, Week 12 | 3
 Construction | M3 |  | Semester 2, Week 3 | 3
