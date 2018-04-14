@@ -92,6 +92,24 @@
 <a name="doc"></a>
 #### 3 - Documentation
 
+There are several documentations required to ensure the software meets the ideal requirements:
+
+###### Software Requirements Specification
+Software Requirements Specification is used to understand all the requirements that the software must meets. The software must be implemented based on this documentation to ensure the quality and completeness of the software.
+
+###### Project Management Plan
+Project Management Plan is used to manage project progress and project organisation. Project progress indicated all the project phases and the objectives of each phases. Project organization showed the details of each members as well as their role in the project.
+
+###### Risk Management Plan
+Risk Management Plan is a documentation that document the possible risks that will happen during the entire progression of the project. Each possible risk is documented with an estimate impact which explained how likely the risk will affect the project. Apart from that, each risk will contain at least one mitigation plan, the mitigation plan is used to minimise the chances that a risk will occur and to minimise the impact toward the project when a risk occurs.
+
+###### Work Item List
+Work Item List is a list of use cases that are going to be implemented. Each of the use case will have a priority to show the order of which use cases have to be implemented first. There is also size estimate for each use case that show how big and complicated is the use case.
+
+###### Software Design and Architecture
+Software Design and Architecture is the design of the project. It contains a conceptual class diagram which show the relations between each objects in the project, a description on each objects and some activity diagrams to show how the objects in the project are connected to each other.
+
+
 ---------------------------------------------------------------------
 
 <a name="goals"></a>
