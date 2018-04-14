@@ -132,33 +132,33 @@ The following tools and techniques will be used to ensure the quality of the fun
 
 -------------------------------------------------------
 
-#####Scope and overview
+##### Scope and overview
 
-​	Testing Approach is designed to detect any defects in the system and inconsistency between requirements.
+- Testing Approach is designed to detect any defects in the system and inconsistency between requirements.
 
-​	The primary audience for the testing strategy is the development team and the client (eSolution). The development team is responsible for performing the test using the test procedure written in this document to ensure the testing process is consistent and maintain a standard quality for the software.
+- The primary audience for the testing strategy is the development team and the client (eSolution). The development team is responsible for performing the test using the test procedure written in this document to ensure the testing process is consistent and maintain a standard quality for the software.
 
-​	Clients are able to review, approve and comment on the testing strategy and also the test case. As our main client(e-solution) have a major concern on the functionality, reliability and security feature on the software, also considering e-solution has a technical background, e-solution may want to supervise our work quality by examine testing strategy and test case. 
+- Clients are able to review, approve and comment on the testing strategy and also the test case. As our main client(e-solution) have a major concern on the functionality, reliability and security feature on the software, also considering e-solution has a technical background, e-solution may want to supervise our work quality by examine testing strategy and test case. 
 
-​	This scope of this testing strategy is applied to all the executable code, it does not apply to other artefact like requirement document.
+- This scope of this testing strategy is applied to all the executable code, it does not apply to other artefact like requirement document.
 
-​	This testing strategy should apply for the whole development period.
+- This testing strategy should apply for the whole development period.
 
 ##### Testing Approach & Testing Tools
 
- 	Testing Approach is divided into functional and non-functional. Functional Test case is to test if the piece of code buggy. To test if code fulfill its requirement, we use Non-Functional Test case which include usability, portability, maintainability, reliability and stability (based on ISO9000 standard)
+- Testing Approach is divided into functional and non-functional. Functional Test case is to test if the piece of code buggy. To test if code fulfill its requirement, we use Non-Functional Test case which include usability, portability, maintainability, reliability and stability (based on ISO9000 standard)
 
 ##### Release Control
 
-​	Release management plan with appropriate version history that will make sure test execution for all modification in that release
+- Release management plan with appropriate version history that will make sure test execution for all modification in that release
 
-​	Make sure all the testing is done before the team release the latest version of the software.
+- Make sure all the testing is done before the team release the latest version of the software.
 
 ##### Review and Approvals
 
-​	All of the documents defined in the testing strategy have to be reviewed by all members from each teams and system admins before each iteration begins or when there is any improvement can be made. As the client mentioned at the beginning, the software must have a standard quality and every test cases must meet the ideal requirement given by the client, therefore in this project, the client is also able to review and make any comments on the testing strategy.
+- All of the documents defined in the testing strategy have to be reviewed by all members from each teams and system admins before each iteration begins or when there is any improvement can be made. As the client mentioned at the beginning, the software must have a standard quality and every test cases must meet the ideal requirement given by the client, therefore in this project, the client is also able to review and make any comments on the testing strategy.
 
-​	Any changes on the testing strategy must be recorded at the start of the testing strategy document. The changes must have an approved date and approver name attached on it for the ease of future reference.
+- Any changes on the testing strategy must be recorded at the start of the testing strategy document. The changes must have an approved date and approver name attached on it for the ease of future reference.
 
 #### 8. Organization
 
