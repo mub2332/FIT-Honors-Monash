@@ -277,7 +277,7 @@ Post-conditions | None
 Actor Response | System Response
 :---: | :---:
 1) User navigates to page which displays projects |
- | 3) System sorts projects depending on what the user studies|
- | 5) System displays sorted projects
+ | 2) System sorts projects depending on what the user studies|
+ | 3) System displays sorted projects
 
 
