@@ -176,3 +176,35 @@ Actor Response | System Response
 ### Alternative Course of Events
 
 - If the student is not eligible to take up the project, the system will notify the student of that case and will not save it into the student's shortlist
+
+
+<a name="check-supervisor-profile"></a>
+## Check on supervisor's profile
+
+<a name="check-supervisor-profile-overview"></a>
+### Overview
+
+Attribute | Description
+--- | ---
+Use Case | Check on supervisor's profile for their research areas, projects offered, projects completed, etc
+Actors | User (initiator) (Can be anyone)
+Purpose | To view more details about the supervisor
+Overview | This use case begins when a user wants to know more about a supervisor
+Type | Primary
+Cross-references | None
+Pre-conditions | None
+Post-conditions | The selected supervisor's profile is shown to the user
+
+<a name="check-supervisor-profile-typical"></a>
+### Typical Course of Events
+
+Actor Response | System Response
+:---: | :---:
+1) This use case begins when the user wants to know more about a supervisor |
+2) The user clicks on the supervisor's profile that he/she wants to know |
+ | 3) The system loads the data of the supervisor from the database
+ | 4) The system brings the user to a new page that contain the details of the supervisor
+
+
+<a name="check-supervisor-profile-alternatives"></a>
+### Alternative Course of Events
