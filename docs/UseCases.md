@@ -26,6 +26,9 @@
     - [Search the gallery for projects](#search-gallery)
         - [Overview](#search-gallery-overview)
         - [Typical Course of Events](#search-gallery-typical)
+    - [Sort projects by relevancy](#sort-projects)
+        - [Overview](#sort-projects-overview)
+        - [Typical Course of Events](#sort-projects-typical)
     
 <a name="use-cases"></a>
 # Use Cases
@@ -250,4 +253,31 @@ Actor Response | System Response
  | 3) The system loads instances of projects in the gallery |
 4) The user selects link of interest|
  | 5) The system brings the user to the page with an instance of a completed project
+ 
+ <a name="sort-projects"></a>
+## Sort projects
+
+<a name="sort-projects-overview"></a>
+### Overview
+
+Attribute | Description
+--- | ---
+Use Case | Sort the projects seen by a particular user depending on the degree they're doing
+Actors | User (initiator) (Student)
+Purpose | To sort project options based on relevancy
+Overview | This use case begins when the user goes to the page that displays projects
+Type | Primary
+Cross-references | None
+Pre-conditions | The student must be logged in and viewing projects page
+Post-conditions | None 
+
+<a name="sort-projects-typical"></a>
+### Typical Course of Events
+
+Actor Response | System Response
+:---: | :---:
+1) User navigates to page which displays projects |
+ | 3) System sorts projects depending on what the user studies|
+ | 5) System displays sorted projects
+
 
