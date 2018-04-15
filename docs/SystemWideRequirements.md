@@ -1,4 +1,3 @@
-
 # Introduction
 
 The system to be built is a large enterprise application used to manage honors projects for Monash University. It will consist of modules that will interact with each other through a service protocol - in other words, a service-oriented architecture. This document is meant to outline all the system-wide requirements this application must fulfill in order to meet client expectations.
@@ -71,6 +70,13 @@ Security is essential for the system, as it will deal with sensitive information
 - Use HTTPS to communicate securely
 - Perform automated security testing using security tools such as OpenVAS
 
+#Portability
+Since our target audience for the system are students/supervisors/honours coordinators, they will be expected to be working on different devices at different times hence, our sytem should be required to be able to support itself on multiple platforms.
+
+
+- Users should be able to use our system on any Web Browser (min: Microsoft Edge, Safari, Google Chrome, Firefox)
+- Users should be able to use our system on any Operating System (min: MacOS, Windows, Linux)
+- System should be mobile friendly, allowing easy use for smartphone/tablet users
 
 # System Constraints
 
