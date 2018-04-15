@@ -93,7 +93,6 @@ At the end of each iteration/phase, a review within the team will be conducted t
 
 At the scenario where a risk occurs, the risk mitigation plan for the specific risk will be executed to minimise the impact toward the outcome. This is to assure that the quality of the software will only get effected as least as possible.
 
-
 ---------------------------------------------------------------------
 
 <a name="doc"></a>
@@ -115,7 +114,6 @@ Work Item List is a list of use cases that are going to be implemented. Each of 
 
 ###### Software Design and Architecture
 Software Design and Architecture is the design of the project. It contains a conceptual class diagram which show the relations between each objects in the project, a description on each objects and some activity diagrams to show how the objects in the project are connected to each other.
-
 
 ---------------------------------------------------------------------
 
@@ -189,27 +187,61 @@ The following tools and techniques will be used to ensure the quality of the fun
 - Testing Approach is divided into functional and non-functional. Functional Test case is to test if the piece of code buggy. To test if code fulfill its requirement, we use Non-Functional Test case which include usability, portability, maintainability, reliability and stability (based on ISO9000 standard)
 
 
-Process of Testing
+######Process of Testing
 
 - Create Test Case
 - Test with test case in a designed testing environment (Could be on a device or CI server)
 - Record defect found and action
 
-Roles and responsibility for team
+######Strategy
+
+- The following technique will be used for testing
+  - Black Box Testing
+
+    - Black Box Testing is used to test if the system meets its functionality.
+    - Usage
+      - Integration Testing
+      - Acceptance Testing
+
+
+    - Method
+      - Tester create a set of test case with input and expected output, 
+      - then observe if the input result the expected output
+
+  - White Box Testing
+
+    - White Box Testing used to ensure there is no defects in a basic element of code (a function/ piece of code) by testing every statement in the code to perform a high coverage of test.
+    - It is important to ensure every single line of the code is tested at the first stage of testing as it will affect the process of testing on higher level.
+    - Usage
+      - Unit Testing
+    - Method
+      - Create test cases using expected output and mock method which reaches 100% code coverage covers:
+        - Function Coverage
+        - Statement Coverage
+        - Decision Coverage
+        - Condition Coverage
+      - Then Observe if all test cases are passed
+
+- The following Testing method will be used for different test level
+
+  - Unit Testing
+    - Unit Testing target the basic element of code (a small piece of code/ Function). The objective is to isolate the unit and test its correctness.
+  - Integration Testing
+    - Integration Testing examine the correctness of multiple unit combination. 
+  - Acceptance Testing
+    - The objective of Acceptance Testing is to examine if the system meets the requirement specify on Requirement Document to ensure the product delivery quality.
+  - Regression Testing
+    - The objective of Regression Testing is to catch defects occurs while new modification.
+
+######Roles and responsibility for team
 
 - Each team members who wrote the code should be responsible for creating test cases for their own code, as code writer has the best understanding for their own code. (Unit Testing)
 - Each team should be responsible for their own parts to make sure work from each teammates is compliable together. (Integration Testing)
 - One member from each team will be selected to form a testing team for System Wide and any modification testing to ensure no defects found while combining and modifying module. (Acceptance and Regression Testing) 
 
-Type of testing
-
-- Manual Testing 
 
 
-
-
-
-Instruction on creating test case
+######Instruction on creating test case
 
 - Each Test case should be given a test case ID and include:
   - Test Priority
@@ -220,7 +252,7 @@ Instruction on creating test case
   - Expected Result/ Response
   - Person/ Team responsible
 
-Approach for defects during Testing (iterative)
+######Approach for defects during Testing (iterative)
 
 - Step 1: If defects is found, record the defect, its result and test case ID which related to in defect document.
 - Step 2: Attempt to fix the error.
