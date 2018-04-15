@@ -1,11 +1,14 @@
-
 # Table of Contents
 - [Use Cases](#use-cases)
     - [Student selects a project](#student-selects-project)
         - [Overview](#student-selects-project-overview)
         - [Typical Course of Events](#student-selects-project-course)
         - [Alternative Courses of Events](#student-selects-project-course-alt)
-
+    - [Search for a Project](#search-project)
+        - [Overview](#search-project-overview)
+        - [Typical Course of Events](#search-project-typical)
+        - [Alternative Courses of Events](#search-project-alternatives)
+    
 <a name="use-cases"></a>
 # Use Cases
 
@@ -45,8 +48,10 @@
 - If the student is not logged in, they are prompted to do so before being allowed to select a project
 - If the student does not meet the eligibility requirements for a project they have selected, they are informed by a message and advised to select a different project
 
+<a name="search-project"></a>
 ## Search for project
 
+<a name="search-project-overview"></a>
 ### Overview
 
 Attribute | Description
@@ -60,6 +65,7 @@ Cross-References | None
 Pre-conditions | None
 Post-conditions | The system must return  a project or a list of projects that meet the user-defined criteria
 
+<a name="search-project-typical"></a>
 ### Typical Course of Events
 
 Actor Response | System Response
@@ -69,13 +75,16 @@ Actor Response | System Response
  | 3) The system looks through the stored projects, looking for the search text in each field, including the project description
  | 4) The system returns a list of projects that meet the criteria defined by the search text
 
+<a name="search-project-alternatives"></a>
 ### Alternative Course of Events
 
 - If the user enters text that cannot be found within any project, the system responds with a message indicating that no projects can be found that match the criteria, and the user is asked to try again
 - If the user enters text that isn't valid, i.e. a string of special characters such as '#@%', the system should display a message asking the user to provide valid text only  
 
+<a name="filter-projects"></a>
 ## Filter projects by categories
 
+<a name="filter-projects-overview"></a>
 ### Overview
 
 Attribute | Description
@@ -89,6 +98,7 @@ Cross-References | None
 Pre-conditions | None
 Post-conditions | The system must return a list of projects that fit the given categories
 
+<a name="filter-projects-typical"></a>
 ### Typical Course of Events
 
 Actor Response | System Response
@@ -97,13 +107,15 @@ Actor Response | System Response
 2) The user can select categories such as the domain of the project, the supervisors, chief examiners or any other staff managing the project, etc. |
  | 3) The system will filter the projects based on the selected categories, and return a list of projects that fit the selected categories
 
+<a name="filter-projects-alternatives"></a>
 ### Alternative Course of Events
 
 - If there are no projects that fit the chosen categories, the system will display an appropriate message and ask the user to broaden the scope of the filter
 
-
+<a name="allocate-projects"></a>
 ## Co-ordinator allocates members to project
 
+<a name="allocate-projects-overview"></a>
 ### Overview
 
 Attribute | Description
@@ -117,6 +129,7 @@ Cross-references | None
 Pre-conditions | Students and Supervisors must have submitted their preferences for projects
 Post-conditions | Both students and supervisors must be allocated to the correct projects
 
+<a name="allocate-projects-typical"></a>
 ### Typical Course of Events
 
 Actor Response | System Response
@@ -127,6 +140,39 @@ Actor Response | System Response
 4) The co-ordinator selects the most appropriate students and supervisors and allocates them to the project |
  | 5) The system notifies the students and supervisors that they have been allocated to that project
 
+<a name="allocate-projects-alternatives"></a>
 ### Alternative Course of Events
 
 - If no preferences have been submitted for a project by students or supervisors, the system displays an appropriate message to the co-ordinator and informs him to try again at a later date
+
+<a name="shortlist-projects"></a>
+## Students Shortlist Projects That They Want To Take
+
+<a name="shortlist-projects-overview"></a>
+### Overview
+
+Attribute | Description
+--- | ---
+Use Case | Students shortlist projects that they are interested in to be viewed later
+Actors | Student (initiator)
+Purpose | To allow students to save the projects that they are interested in to make it easier for them to decide which one to pick later
+Overview | This use case begins when a student finds a project that they are interested in and want to consider taking up a project
+Type | Primary
+Cross-references | None
+Pre-conditions | Students must be eligible to take the project
+Post-conditions | Project is saved into that student's shortlist
+
+<a name="shortlist-projects-typical"></a>
+### Typical Course of Events
+
+Actor Response | System Response
+:---: | :---:
+1) This use case begins when the student decides to shortlist a certain project |
+2) They click the shortlist button on the project page |
+ | 3) The system saves that project into the student's shortlist and notifies the student
+
+
+<a name="shortlist-projects-alternatives"></a>
+### Alternative Course of Events
+
+- If the student is not eligible to take up the project, the system will notify the student of that case and will not save it into the student's shortlist
