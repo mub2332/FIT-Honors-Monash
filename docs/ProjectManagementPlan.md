@@ -41,10 +41,10 @@ Progress is tracked using two primary measurements using a point system. It is e
 Phase | Iteration | Primary Objectives | Milestone | Duration Estimate(weeks)
 --- | --- | --- | --- | ---
 Inception | M0 | Technical Documentation including: <ul><li>Project Management Plan</li><li>Software Requirement Specification</li><li>Software Quality Assurance Plan</li><li>Risk Management Plan</li><li>Work Breakdown Structure</li><ul> Non Technical Aspects:<ul><li>Assigning Roles</li><li>Team Collaboration Logs(Trello, Gitlab and Google Drive)</li><li>Development Environment Setup</li><ul>  | Semester 1, Week 6 | 6
-Elaboration | M1 |  | Semester 1, Week 9 | 3
-Elaboration | M2 |  | Semester 1, Week 12 | 3
-Construction | M3 |  | Semester 2, Week 3 | 3
-Construction | M4 |  | Semester 2, Week 6 | 3
-Construction | M5 |  | Semester 2, Week 9 | 3
-Transition | M6 |  | Semester 2, Week 12 | 3
+Elaboration | M1 | Decide on Language, Review requirements related to our part of the software | Semester 1, Week 9 | 3
+Elaboration | M2 | Finalize requirements related to our part of the software, Produce realistic objectives for construction phase | Semester 1, Week 12 | 3
+Construction | M3 | Project Submission | Semester 2, Week 3 | 3
+Construction | M4 | Project Search | Semester 2, Week 6 | 3
+Construction | M5 | Interaction between Supervisor and Student | Semester 2, Week 9 | 3
+Transition | M6 | Integrate with other teams | Semester 2, Week 12 | 3
 
