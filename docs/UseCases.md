@@ -8,6 +8,21 @@
         - [Overview](#search-project-overview)
         - [Typical Course of Events](#search-project-typical)
         - [Alternative Courses of Events](#search-project-alternatives)
+    - [Filter projects by categories](#filter-projects)
+        - [Overview](#filter-projects-overview)
+        - [Typical Course of Events](#filter-projects-typical)
+        - [Alternative Courses of Events](#filter-projects-alternatives)
+    - [Co-ordinator allocates members to project](#allocate-projects)
+        - [Overview](#allocate-projects-overview)
+        - [Typical Course of Events](#allocate-projects-typical)
+        - [Alternative Courses of Events](#allocate-projects-alternatives)
+    - [Students Shortlist Projects That They Want To Take](#shortlist-projects)
+        - [Overview](#shortlist-projects-overview)
+        - [Typical Course of Events](#shortlist-projects-typical)
+        - [Alternative Courses of Events](#shortlist-projects-alternatives)
+    - [Check on supervisor's profile](#check-supervisor-profile)
+        - [Overview](#check-supervisor-profile-overview)
+        - [Typical Course of Events](#check-supervisor-profile-typical)
     
 <a name="use-cases"></a>
 # Use Cases
@@ -205,6 +220,3 @@ Actor Response | System Response
  | 3) The system loads the data of the supervisor from the database
  | 4) The system brings the user to a new page that contain the details of the supervisor
 
-
-<a name="check-supervisor-profile-alternatives"></a>
-### Alternative Course of Events
