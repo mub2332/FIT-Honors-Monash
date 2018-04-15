@@ -23,6 +23,9 @@
     - [Check on supervisor's profile](#check-supervisor-profile)
         - [Overview](#check-supervisor-profile-overview)
         - [Typical Course of Events](#check-supervisor-profile-typical)
+    - [Search the gallery for projects](#search-gallery)
+        - [Overview](#search-gallery-overview)
+        - [Typical Course of Events](#search-gallery-typical)
     
 <a name="use-cases"></a>
 # Use Cases
@@ -219,4 +222,32 @@ Actor Response | System Response
 2) The user clicks on the supervisor's profile that he/she wants to know |
  | 3) The system loads the data of the supervisor from the database
  | 4) The system brings the user to a new page that contain the details of the supervisor
+ 
+<a name="search-gallery"></a>
+## Check on supervisor's profile
+
+<a name="search-gallery-overview"></a>
+### Overview
+
+Attribute | Description
+--- | ---
+Use Case | Search the gallery for previous instances of the project
+Actors | User (initiator) (Can be anyone)
+Purpose | To see previous or related completed projects for further information about what is expeced
+Overview | This use case begins when the user wants to search for a previous instance of the project
+Type | Primary
+Cross-references | None
+Pre-conditions | The student must be logged in and viewing the gallery
+Post-conditions | None 
+
+<a name="search-gallery-typical"></a>
+### Typical Course of Events
+
+Actor Response | System Response
+:---: | :---:
+1) This use case begins when the user wants to search for an instance of a completed projectr |
+2) The user types in search query|
+ | 3) The system loads instances of projects in the gallery |
+4) The user selects link of interest|
+ | 5) The system brings the user to the page with an instance of a completed project
 
