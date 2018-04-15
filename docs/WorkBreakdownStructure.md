@@ -2,7 +2,7 @@
 
 Description | Size Estimate | State | Task Breakdown | Assigned to
 --- | --- | --- | --- | ---
-Software Requirements Specification | Very Large | Done | Extended Use Cases (6 hours), Use Case Diagrams (3 hours), System-wide Requirements (6 hours) | Mubtasim Mahmud
+Software Requirements Specification | Very Large | Done | Extended Use Cases (6 hours), Use Case Diagrams (3 hours), System-wide Requirements (6 hours) | Mubtasim Mahmud <br/><br/> Assist: <br/><br/> Janzen Lim: Added New Use Cases: <br/> 1. Shortlisting Projects (30 mins) <br/> Added New SWR: Portability (15 mins)
 Risk Management Plan | Large | In-progress (85%) | Draft Risk Management Plan, Risk Identification, Risk estimation, Risk Mitigation Strategies | Janzen Lim
 Project Management Plan | Large | In-progress (80%) | Team Structure, Team Roles and Responsibilities, Release Plan (Milestone and Iteration Schedule), Objectives, Project Management Strategy, Project Practices, Deployment Strategy | Ian Kabil Felix
 Software Quality Assurance Plan | Extremely Large | In-progress | High-level QA overview, Review tools and techniques(Code reviews, Fagan inspections), Testing strategies(Blackbox, Whitebox, Acceptance, Regression, Integration), tools and techniques(Code coverage, Unit Testing Libraries, Mocking Libraries), Test completion criteria | Adrian Bin, Ali Ikram, Li Jei Yong
