@@ -296,6 +296,9 @@ The defect rate should decrease over time and the fix rate should be higher each
 
 <a name="glossary"></a>
 #### 9 - Glossary
+Review - A process where a piece of software is presented to all interested parties for comments and approval
+Inspection - Examining software visually to find errors and deviations from the specification. Done by peers specialised in inspections
+Walk-through - Where a programmer leads the team to piece of software to find a discuss possible problems
 
 ---------------------------------------------------------------------
 
