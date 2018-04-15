@@ -78,11 +78,11 @@ Mitigation Strategy | 1. Always plan carefully in detail and within means of the
 
 <a name="incompatibleSoftwareModules"></a>
 ### Incompatible Software Modules
-Overview | <blank>
+Overview | There exists incompatible software modules, affecting the relationship between modules/system as a whole
 ------------ | -------------
-Impact | Impact Value: 3 <br/> 
-Likelihood | 4
-Mitigation Strategy | 
+Impact | Impact Value: 3 <br/> Project may be slightly delayed
+Likelihood | 3
+Mitigation Strategy | 1. Ensure that a module is compatible with other modules before applying. <br/> 2. If implemented but incompatible, edit/change the software module and repeat step 1.
 
 <a name="morningAfterSyndrome"></a>
 ### Morning After Syndrome
