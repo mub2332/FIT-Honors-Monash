@@ -85,6 +85,13 @@
 <a name="qa-strategy"></a>
 #### 2 - Quality Assurance Strategy
 
+To assure the quality of the software, the development team will have reviews conducted and will use requirement traceability matrix to ensure all the requirements are addressed.
+
+At the beginning of each iteration/phase, a requirement traceability matrix will be made in order to assure the outcome of the iteration/phase met all the requirements. 
+
+At the end of each iteration/phase, a review within the team will be conducted to ensure the outcome is on the right track and to discuss if there is any improvements can be made during the iteration/phase so that the improved strategy can be used in the next iteration/phase.
+
+At the scenario where a risk occurs, the risk mitigation plan for the specific risk will be executed to minimise the impact toward the outcome. This is to assure that the quality of the software will only get effected as least as possible.
 
 
 ---------------------------------------------------------------------
