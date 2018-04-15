@@ -70,7 +70,7 @@ Security is essential for the system, as it will deal with sensitive information
 - Use HTTPS to communicate securely
 - Perform automated security testing using security tools such as OpenVAS
 
-#Portability
+## Portability
 Since our target audience for the system are students/supervisors/honours coordinators, they will be expected to be working on different devices at different times hence, our sytem should be required to be able to support itself on multiple platforms.
 
 
