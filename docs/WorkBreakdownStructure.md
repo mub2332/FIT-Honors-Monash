@@ -9,6 +9,7 @@ Software Quality Assurance Plan | Extremely Large | In-progress | High-level QA 
 ||||Plan, research and finish the draft of the Testing Strategy (3hours)| Li Jei Yong, Adrian Bin
 ||||Plan, research and finish the draft of the Reviews and Audits, Tools and Techniques, Organisation and glossary (6hours)| Ali Zayan Ikram
 ||||Writing part of the Testing Strategy (2hours), Add "Documentation" part (1hour), Add "Quality Assurance Strategy" part (1hour) | Li Jei Yong
+||||Writing part of the Testing Strategy (3hours), Add "Introduction", Goal Part(1hour), Plan SQAP layout (30 min), Compile the document(30min)|Adrian Bin
 Work Items List | Medium | Done | Determine use cases and their priorities and sizes (1 hour), Break down use cases into smaller tasks (3 hours), Create priority scale (30 min), Create size estimate scale (30 min) | Mubtasim Mahmud
 Programming Environment Setup | Small | Done (Issue with Runner to be resolved) | Create starter application in Java and Spring (30 min), Write Unit Tests (30 min), Establish CI (30 min) | Mubtasim Mahmud
 Admin Tasks | Medium | Done | Get preferences for tasks (30 min), Assign people to tasks (30 min), Create and manage Trello board for managing tasks (2 hours), Check progress of team members intermittently (1 hour), Create Work Breakdown Structure (1 hour) | Mubtasim Mahmud
