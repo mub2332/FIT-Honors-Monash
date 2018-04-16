@@ -22,17 +22,7 @@
 
 - Zayan Ikram
 
----------------------------------------------------------------------
 
-## Revision List
-
-| Version | Date     | Author     | Comments    |
-| ------- | -------- | ---------- | ----------- |
-| 0.1     | 9/4/2018 | Adrian Bin | First Draft |
-|         |          |            |             |
-|         |          |            |             |
-
----------------------------------------------------------------------
 
 #### Table of Contents
 
@@ -119,7 +109,12 @@ Software Design and Architecture is the design of the project. It contains a con
 
 <a name="goals"></a>
 #### 4 - Goals
-
+Goals for each phase
+Phase|Goals
+----------------------------------|------------------------------
+Software Requirement Specification|No more than one defect per page
+PMP|No more than one defect per page
+Testing|After Testing Phase there should be 0.5 defect per KLOC
 ---------------------------------------------------------------------
 
 <a name="review"></a>
