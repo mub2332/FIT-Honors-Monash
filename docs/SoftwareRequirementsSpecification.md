@@ -1,9 +1,7 @@
 # Table of Contents
 
 - [Introduction](#intro)
-
 - [Use Case Diagram](#usecasediagram)
-
 - [Use Cases](#use-cases)
     - [Student selects a project](#student-selects-project)
         - [Overview](#student-selects-project-overview)
@@ -34,8 +32,6 @@
     - [Sort projects by relevancy](#sort-projects)
         - [Overview](#sort-projects-overview)
         - [Typical Course of Events](#sort-projects-typical)
-
-
 - [System Wide Requirements](#syswidereqs)
     - [Introduction](#syswideintro)
     - [System-Wide Functional Requirements](#syswidefuncreqs)
@@ -56,7 +52,9 @@ The System Requirements Specification is meant to document all the stated and im
 
 <a name="usecasediagram"></a>
 # Use Case Diagram
-![alt text]("UseCaseDiagram.png")
+This is meant to be a visual representation of the team's module and how the different requirements it must fulfill fit together.
+
+![alt text](UseCaseDiagram.png)
 
 <a name="use-cases"></a>
 # Use Cases
