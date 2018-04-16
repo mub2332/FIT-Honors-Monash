@@ -235,7 +235,6 @@ The following tools and techniques will be used to ensure the quality of the fun
 - One member from each team will be selected to form a testing team for System Wide and any modification testing to ensure no defects found while combining and modifying module. (Acceptance and Regression Testing) 
 
 
-
 ######Instruction on creating test case
 
 - Each Test case should be given a test case ID and include:
