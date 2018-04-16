@@ -109,12 +109,15 @@ Software Design and Architecture is the design of the project. It contains a con
 
 <a name="goals"></a>
 #### 4 - Goals
-Goals for each phase
-Phase|Goals
-----------------------------------|------------------------------
-Software Requirement Specification|No more than one defect per page
-PMP|No more than one defect per page
-Testing|After Testing Phase there should be 0.5 defect per KLOC
+###### Goals for each phase
+
+
+Phase | Goals 
+--- | ---
+Software Requirement Specification | No more than one defect per page
+PMP | No more than one defect per page
+Testing | After Testing Phase there should be 0.5 defect per KLOC
+
 ---------------------------------------------------------------------
 
 <a name="review"></a>
@@ -181,15 +184,13 @@ The following tools and techniques will be used to ensure the quality of the fun
 
 - Testing Approach is divided into functional and non-functional. Functional Test case is to test if the piece of code buggy. To test if code fulfill its requirement, we use Non-Functional Test case which include usability, portability, maintainability, reliability and stability (based on ISO9000 standard)
 
-
-######Process of Testing
+###### Process of Testing
 
 - Create Test Case
 - Test with test case in a designed testing environment (Could be on a device or CI server)
 - Record defect found and action
 
-######Strategy
-
+###### Strategy
 - The following technique will be used for testing
   - Black Box Testing
 
@@ -228,14 +229,14 @@ The following tools and techniques will be used to ensure the quality of the fun
   - Regression Testing
     - The objective of Regression Testing is to catch defects occurs while new modification.
 
-######Roles and responsibility for team
+###### Roles and responsibility for team
 
 - Each team members who wrote the code should be responsible for creating test cases for their own code, as code writer has the best understanding for their own code. (Unit Testing)
 - Each team should be responsible for their own parts to make sure work from each teammates is compliable together. (Integration Testing)
 - One member from each team will be selected to form a testing team for System Wide and any modification testing to ensure no defects found while combining and modifying module. (Acceptance and Regression Testing) 
 
 
-######Instruction on creating test case
+###### Instruction on creating test case
 
 - Each Test case should be given a test case ID and include:
   - Test Priority
@@ -246,7 +247,7 @@ The following tools and techniques will be used to ensure the quality of the fun
   - Expected Result/ Response
   - Person/ Team responsible
 
-######Approach for defects during Testing (iterative)
+###### Approach for defects during Testing (iterative)
 
 - Step 1: If defects is found, record the defect, its result and test case ID which related to in defect document.
 - Step 2: Attempt to fix the error.
