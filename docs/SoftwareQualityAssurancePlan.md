@@ -161,6 +161,15 @@ The following tools and techniques will be used to ensure the quality of the fun
 ###### Regression testing
 - Regression testing will be done after all the bugs are fixed after an iteration, to ensure all bugs are fixed correctly and new bugs do not appear.
 
+###### Tools and Technique for assuring the quality attribute
+
+Quality Attribute | Tool/Technique Used | Rationale for using the tools/technique
+----------------- | ------------------- | ---------------------------------------
+Unit Testing      | Put all the test case into CI Server | After executing test case in CI server automatically, a report will generate for all the test run result and coverage
+Defect Tracking   | Excel sheet                          | Record which could calculate the rate of defect found during the test
+Usability         | Questionnaire for User(Monash student) | It helps to understand user (student) requirement which consider as a measurement
+
+
 ---------------------------------------------------------------------
 
 <a name="test"></a>
