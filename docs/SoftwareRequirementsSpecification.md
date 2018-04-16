@@ -2,6 +2,8 @@
 
 - [Introduction](#intro)
 
+- [Use Case Diagram](#usecasediagram)
+
 - [Use Cases](#use-cases)
     - [Student selects a project](#student-selects-project)
         - [Overview](#student-selects-project-overview)
@@ -51,6 +53,10 @@
 # Introduction
 
 The System Requirements Specification is meant to document all the stated and implied requirements of the end users of the system. It is meant to be updated as the project progresses and the team acquires a more thorough understanding of the users' needs.
+
+<a name="usecasediagram"></a>
+# Use Case Diagram
+![alt text]("UseCaseDiagram.png")
 
 <a name="use-cases"></a>
 # Use Cases
