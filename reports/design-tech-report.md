@@ -57,6 +57,12 @@ This report is meant to elaborate on the nuances involved in building an applica
 
 ## Glossary
 
+- API: Application Programming Interface. A set of clearly defined methods for communication between different software components.
+
+- JAX-WS: Java API for XML Web Services. A Java programming language API for creating web services, particularly SOAP services.
+
 - SOAP: Simple Object Access Protocol.
 
 - WSDL: An implementation of XML used as the standard for describing the interface of a web service.
+
+- WSRM: Web Service Reliable Messaging. Describes a protocol for reliably delivering SOAP messages in the instance of software component, system or network failures.
