@@ -39,6 +39,28 @@ This report is meant to elaborate on the nuances involved in building an applica
 
 ## Data Transfer using Web Services
 
+Web services commonly transfer data in one of two formats - XML or JSON. Each has its own set of advantages and drawbacks, both of which have been outlined below.
+
+#### XML
+XML is a markup language that has similar syntax to HTML and was designed to be both human and machine readable. [4]
+
+###### Advantages
+- XML stores data in a structured format that enables parse routines to function even when extra data is added or existing data is removed, unlike HTML. [4]
+
+###### Drawbacks
+- XML contains many characters devoted strictly to formatting, so it can waste considerable space, which can be a significant drawback for mobile devices in particular. [4]
+- Parsing XML can be slow as parsers would need to check tags to determine the purpose of the data contained within.
+
+#### JSON
+JSON is a text-based data interchange format derived from the Javascript programming language. [4]
+
+###### Advantages
+- JSON stores data as key-value pairs, so it takes up a lot less space than XML, as it is more focused on content than formatting. [4]
+- JSON is faster as less computation is needed to parse it since it stores data in a minimalist fashion.
+###### Drawbacks
+- JSON can be hard to read for humans.
+- It is not feasible for humans to type out JSON as they could with XML.
+
 ## Client-Service Interaction
 
 ## Stateless Services
@@ -66,6 +88,8 @@ This report is meant to elaborate on the nuances involved in building an applica
 [2] Oracle Documentation (Types of Web Services). Available: https://docs.oracle.com/javaee/6/tutorial/doc/giqsx.html
 
 [3] Oracle Documentation (What are RESTful Web Services). Available: https://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html
+
+[4] SegueTech Article (XML vs JSON Based Web Services: Which is the Best Choice?). Available: https://www.seguetech.com/xml-vs-json-based-web-services-which-is-the-best-choice/
 
 ## Glossary
 
