@@ -73,9 +73,25 @@ JSON is a text-based data interchange format derived from the Javascript program
 
 ## Microservices
 
-- ### Advantages
+Microservices (as known as microservice architecture or application architecture) is an architectural style that structures an application as a collection of low coupling services. A service is a function that is self-contained and does not have any relation to other services (low coupling).
 
-- ### Drawbacks
+Microservices do not share data. Each service has their own database that is not make public to the other services. This is to ensure the low coupling of each service.
+
+Dependencies between services is managed by sagas. A saga is a sequence/step of local transaction. Each local transaction updates the database of the current service used and sends a signal to trigger the next local transaction in other services to start. 
+
+There are two different types of sagas:
+- Choreography – each local transaction sends a signal to trigger the next local transactions in other services.
+- Orchestration – An object will tell all the related services to a given event what local transactions to execute.
+
+#### Advantages
+-	Service can be developed by a small team independently as there is no shared database. 
+-	Each team is free to implement/modify anything at anytime without interfering/affected by other teams’ progression.
+-	Enable continuous delivery/deployment of large, complex applications.
+-	Easy to test the functionality of each service.
+
+#### Drawbacks
+-	Way more difficult to combine all services into the final application since the data of each service is not shared to the other services. 
+-	Difficult to do integration testing as each service is totally isolated to another services.
 
 ## Managing dependencies between services
 
