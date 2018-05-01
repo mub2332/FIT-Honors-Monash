@@ -73,25 +73,25 @@ JSON is a text-based data interchange format derived from the Javascript program
 
 ## Microservices
 
-Microservices (as known as microservice architecture or application architecture) is an architectural style that structures an application as a collection of low coupling services. A service is a function that is self-contained and does not have any relation to other services (low coupling).
+Microservices (as known as microservice architecture or application architecture) is an architectural style that structures an application as a collection of low coupling services. [5] A service is a function that is self-contained and does not have any relation to other services (low coupling).[6]
 
 Microservices do not share data. Each service has their own database that is not make public to the other services. This is to ensure the low coupling of each service.
 
-Dependencies between services is managed by sagas. A saga is a sequence/step of local transaction. Each local transaction updates the database of the current service used and sends a signal to trigger the next local transaction in other services to start. 
+Dependencies between services is managed by sagas. A saga is a sequence/step of local transaction. Each local transaction updates the database of the current service used and sends a signal to trigger the next local transaction in other services to start.[7]
 
 There are two different types of sagas:
-- Choreography – each local transaction sends a signal to trigger the next local transactions in other services.
-- Orchestration – An object will tell all the related services to a given event what local transactions to execute.
+- Choreography – each local transaction sends a signal to trigger the next local transactions in other services.[7]
+- Orchestration – An object will tell all the related services to a given event what local transactions to execute.[7]
 
 #### Advantages
 -	Service can be developed by a small team independently as there is no shared database. 
 -	Each team is free to implement/modify anything at anytime without interfering/affected by other teams’ progression.
--	Enable continuous delivery/deployment of large, complex applications.
--	Easy to test the functionality of each service.
+-	Enable continuous delivery/deployment of large, complex applications.[5]
+-	Easy to test the functionality of each service.[8]
 
 #### Drawbacks
--	Way more difficult to combine all services into the final application since the data of each service is not shared to the other services. 
--	Difficult to do integration testing as each service is totally isolated to another services.
+-	Way more difficult to combine all services into the final application since the data of each service is not shared to the other services.[8]
+-	Difficult to do integration testing as each service is totally isolated to another services.[8]
 
 ## Managing dependencies between services
 
@@ -106,6 +106,14 @@ There are two different types of sagas:
 [3] Oracle Documentation (What are RESTful Web Services). Available: https://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html
 
 [4] SegueTech Article (XML vs JSON Based Web Services: Which is the Best Choice?). Available: https://www.seguetech.com/xml-vs-json-based-web-services-which-is-the-best-choice/
+
+[5] Microservices Architecture (What are microservices?). Available: http://microservices.io/
+
+[6] Service Architecture (Service-Oriented Architecture Definition). Available: https://www.service-architecture.com/articles/web-services/service-oriented_architecture_soa_definition.html
+
+[7] Microservices Architecture (Managing data consistency in a microservices architecture using Sagas). Available: http://microservices.io/microservices/general/2018/03/22/microxchg-sagas.html
+
+[8] Microservices Architecture (There is no such thing as a microservice!). Available: http://microservices.io/microservices/news/2018/02/20/no-such-thing-as-a-microservice.html
 
 ## Glossary
 
