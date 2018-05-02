@@ -9,6 +9,14 @@ This report is meant to elaborate on the nuances involved in building an applica
 ## Overview
 
 - ### Advantages
+- Each Service is self contained and independent, leading to certain advantages:
+    - Re-usability of Services
+        - Since each service is self contained and independent to carry out their own specific functions/tasks, they can be reused on other applications without having to make modifications the service
+            itself. Take a real life example, if a cup provides a service to hold water, it can have its designed unmodified to store other beverages as well (milk, soft drinks etc.) [10]
+    - Maintainability
+        - Upgrading, fixing and modifying services is flexible as there is no worry of affecting interactions between services, leading to lesser complications to even complex environments. [10]
+    - Easier debugging and unit testing [10]
+
 
 - ### Drawbacks
 
@@ -127,6 +135,8 @@ There are two different types of sagas:
 [8] Microservices Architecture (There is no such thing as a microservice!). Available: http://microservices.io/microservices/news/2018/02/20/no-such-thing-as-a-microservice.html
 
 [9] Article (SERVICE ORIENTED ARCHITECTURE (SOA) BASED WEB SERVICES FOR GEOGRAPHIC INFORMATION SYSTEMS). Available: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.431.9824&rep=rep1&type=pdf
+
+[10] Advantages & Disadvantages of Service Oriented Architecture. Available: https://study.com/academy/lesson/advantages-disadvantages-of-service-oriented-architecture.html
 ## Glossary
 
 - API: Application Programming Interface. A set of clearly defined methods for communication between different software components.
