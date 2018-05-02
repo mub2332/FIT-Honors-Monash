@@ -100,6 +100,14 @@ JSON is a text-based data interchange format derived from the Javascript program
 
 ## Client-Service Interaction
 
+Most of the interactions between service consumers and service providers are web service conversations. [14] To elaborate, Conversational Web Services can be interpreted as primitive, single request/response type interactions.
+
+These interactions vary from service to service and therefore it is critical to recognize each client interaction properly to ensure the client is able to acquire the service they intended. A brief description of how it works
+
+would be the client sending a request to the server to execute a task, this in itself is a form of a web service conversation. The server proceeds to execute the task by calling all necessary interactions, which are all considered
+
+as Conversational Web Services between the server and relevant parties it interacts with. After receiving the callback information, the server closes those conversations and resumes it's conversation with the client.
+
 ## Stateless Services
 
 - ### Advantages
@@ -161,6 +169,8 @@ There are two different types of sagas:
 [12]Service-Oriented Architecture – SOA Features and Benefits. Available: http://www.opengroup.org/soa/source-book/soa/p4.htm#soafabserv
 
 [13]The Disadvantages of SOA – The Art of Service, Standard Requirements Self Assessments. Available: https://theartofservice.com/the-disadvantages-of-soa.html.
+
+[14]Introducing Conversational Web Services. Available: http://www.oracle.com/technetwork/articles/davydov-soa-092581.html
 ## Glossary
 - SOA: Software Oriented Architecture
 
