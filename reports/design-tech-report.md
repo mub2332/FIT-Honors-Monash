@@ -57,6 +57,7 @@ JSON is a text-based data interchange format derived from the Javascript program
 ###### Advantages
 - JSON stores data as key-value pairs, so it takes up a lot less space than XML, as it is more focused on content than formatting. [4]
 - JSON is faster as less computation is needed to parse it since it stores data in a minimalist fashion.
+
 ###### Drawbacks
 - JSON can be hard to read for humans.
 - It is not feasible for humans to type out JSON as they could with XML.
