@@ -152,7 +152,7 @@ There are two different types of sagas:
 
 [8] Microservices Architecture (There is no such thing as a microservice!). Available: http://microservices.io/microservices/news/2018/02/20/no-such-thing-as-a-microservice.html
 
-[9] Article (SERVICE ORIENTED ARCHITECTURE (SOA) BASED WEB SERVICES FOR GEOGRAPHIC INFORMATION SYSTEMS). Available: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.431.9824&rep=rep1&type=pdf
+[9] K. Sahina, *, M. U. Gumusay, "SERVICE ORIENTED ARCHITECTURE (SOA) BASED WEB SERVICES FOR GEOGRAPHIC INFORMATION SYSTEMS"[Online]. Available: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.431.9824&rep=rep1&type=pdf
 
 [10] Advantages & Disadvantages of Service Oriented Architecture. Available: https://study.com/academy/lesson/advantages-disadvantages-of-service-oriented-architecture.html
 
