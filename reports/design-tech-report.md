@@ -25,6 +25,10 @@ This report is meant to elaborate on the nuances involved in building an applica
 
 
 - ### Drawbacks
+    - SOA requires a stable network connection with decent networking speed for it to be useful [11]
+    - Difficult to track activity within SOA
+        - The SOA process requires "illogical steps" that may lead to software module containing millions of executables. This makes it very difficult to track SOA activities as it has made it more complicated for the user and the machine to manage the interaction of services. [13]
+        - Due to this, an SOA process requires good control, quality and management [11]
 
 ## Essential Components of an SOA Architecture
 - Service module
@@ -147,7 +151,10 @@ There are two different types of sagas:
 [11]Y. Wang and J. Liao, "2009 IITA International Conference on Services Science, Management and Engineering", 2018. [Online]. Available: https://pdfs.semanticscholar.org/2f4f/29efeb4e540462ccb12f51cd00d9e40f97c3.pdf
 
 [12]Service-Oriented Architecture – SOA Features and Benefits. Available: http://www.opengroup.org/soa/source-book/soa/p4.htm#soafabserv
+
+[13]The Disadvantages of SOA – The Art of Service, Standard Requirements Self Assessments. Available: https://theartofservice.com/the-disadvantages-of-soa.html.
 ## Glossary
+- SOA: Software Oriented Architecture
 
 - API: Application Programming Interface. A set of clearly defined methods for communication between different software components.
 
