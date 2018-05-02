@@ -74,25 +74,25 @@ JSON is a text-based data interchange format derived from the Javascript program
 
 ## Microservices
 
-Microservices (as known as microservice architecture or application architecture) is an architectural style that structures an application as a collection of low coupling services. [5] A service is a function that is self-contained and does not have any relation to other services (low coupling).[6]
+Microservices architecture is an architectural style that structures an application as a collection of lowly coupled services. [5] A service is a function that is self-contained and does not have any relation to other services.[6]
 
-Microservices do not share data. Each service has their own database that is not make public to the other services. This is to ensure the low coupling of each service.
+Microservices do not share data. Each service has their own database that is not made public to the other services. This is to ensure low coupling between services.
 
-Dependencies between services is managed by sagas. A saga is a sequence/step of local transaction. Each local transaction updates the database of the current service used and sends a signal to trigger the next local transaction in other services to start.[7]
+Dependencies between services are managed by sagas. A saga is a sequence/step of local transaction. Each local transaction updates the database of the current service used and sends a signal to trigger the next local transaction in other services to start.[7]
 
 There are two different types of sagas:
-- Choreography – each local transaction sends a signal to trigger the next local transactions in other services.[7]
+- Choreography – each local transaction sends a signal to trigger the next local transaction in other services.[7]
 - Orchestration – An object will tell all the related services to a given event what local transactions to execute.[7]
 
 #### Advantages
--	Service can be developed by a small team independently as there is no shared database. 
--	Each team is free to implement/modify anything at anytime without interfering/affected by other teams’ progression.
+-	Services can be developed by different teams independently as there is no shared database. 
+-	Each team is free to implement/modify anything at anytime without interfering with or being affected by other teams’ progression.
 -	Enable continuous delivery/deployment of large, complex applications.[5]
 -	Easy to test the functionality of each service.[8]
 
 #### Drawbacks
--	Way more difficult to combine all services into the final application since the data of each service is not shared to the other services.[8]
--	Difficult to do integration testing as each service is totally isolated to another services.[8]
+-	It is much more difficult to integrate all services into the final application since the data of each service is not shared with other services.[8]
+-	Difficult to perform integration testing as each service is totally isolated from other services.[8]
 
 ## Managing dependencies between services
 
