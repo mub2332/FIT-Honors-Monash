@@ -9,6 +9,7 @@ This report is meant to elaborate on the nuances involved in building an applica
 ## Overview
 
 - ### Advantages
+
 - Each Service is self contained and independent, leading to certain advantages:
     - Re-usability of Services
         - Since each service is self contained and independent to carry out their own specific functions/tasks, they can be reused on other applications without having to make modifications the service
@@ -16,6 +17,11 @@ This report is meant to elaborate on the nuances involved in building an applica
     - Maintainability
         - Upgrading, fixing and modifying services is flexible as there is no worry of affecting interactions between services, leading to lesser complications to even complex environments. [10]
     - Easier debugging and unit testing [10]
+    - Reducing costs
+        - Since each service is reusable as mentioned above, there is no need for software module to be written if a module that provides a similar service already exists. Saving time and money, hence, increasing productivity and efficiency. [12]
+- Portability
+    - Each service is "Platform Independent", which means that servies can provide public availabilities to most systems. This also leads to a reduction in complications when integrating services regardless of their platforms.
+- SOA is considered as one of the more popular architectures, which means that there are already existing tool that are able to support the "utilisation and integration" of an entire SOA cycle. [12]
 
 
 - ### Drawbacks
@@ -137,6 +143,10 @@ There are two different types of sagas:
 [9] Article (SERVICE ORIENTED ARCHITECTURE (SOA) BASED WEB SERVICES FOR GEOGRAPHIC INFORMATION SYSTEMS). Available: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.431.9824&rep=rep1&type=pdf
 
 [10] Advantages & Disadvantages of Service Oriented Architecture. Available: https://study.com/academy/lesson/advantages-disadvantages-of-service-oriented-architecture.html
+
+[11]Y. Wang and J. Liao, "2009 IITA International Conference on Services Science, Management and Engineering", 2018. [Online]. Available: https://pdfs.semanticscholar.org/2f4f/29efeb4e540462ccb12f51cd00d9e40f97c3.pdf
+
+[12]Service-Oriented Architecture – SOA Features and Benefits. Available: http://www.opengroup.org/soa/source-book/soa/p4.htm#soafabserv
 ## Glossary
 
 - API: Application Programming Interface. A set of clearly defined methods for communication between different software components.
