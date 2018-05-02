@@ -12,7 +12,17 @@ This report is meant to elaborate on the nuances involved in building an applica
 
 - ### Drawbacks
 
-## Components of an SOA Architecture
+## Essential Components of an SOA Architecture
+- Service module
+    - Each of the service module which divided in the business process model. It performs part of the application, it must have clear subsystem boundaries, autonomous and loosely coupled design to allow reuse, add, delete module from the system.[9]
+- Adapter
+    - Added to application to enable access to service through each interface.[9]
+- Enterprise Service Bus
+    - A data line connecting between service module, middleware, database and other component in the system to enable communication and service.
+- Service Broker
+    - A monitoring system ensure each service module has no error.
+- Business Process Module
+    - A map state all the relationship of each component in the SOA architecture.[9]
 
 ## Roles of SOA components
 
@@ -116,6 +126,7 @@ There are two different types of sagas:
 
 [8] Microservices Architecture (There is no such thing as a microservice!). Available: http://microservices.io/microservices/news/2018/02/20/no-such-thing-as-a-microservice.html
 
+[9] Article (SERVICE ORIENTED ARCHITECTURE (SOA) BASED WEB SERVICES FOR GEOGRAPHIC INFORMATION SYSTEMS). Available: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.431.9824&rep=rep1&type=pdf
 ## Glossary
 
 - API: Application Programming Interface. A set of clearly defined methods for communication between different software components.
