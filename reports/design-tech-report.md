@@ -21,14 +21,22 @@ This report is meant to elaborate on the nuances involved in building an applica
         - Since each service is reusable as mentioned above, there is no need for software module to be written if a module that provides a similar service already exists. Saving time and money, hence, increasing productivity and efficiency. [12]
 - Portability
     - Each service is "Platform Independent", which means that servies can provide public availabilities to most systems. This also leads to a reduction in complications when integrating services regardless of their platforms.
-- SOA is considered as one of the more popular architectures, which means that there are already existing tool that are able to support the "utilisation and integration" of an entire SOA cycle. [12]
+- SOA is considered as one of the more popular architectures, which means that there are already existing tools that are able to support the "utilisation and integration" of an entire SOA cycle. [12]
 
 
 - ### Drawbacks
     - SOA requires a stable network connection with decent networking speed for it to be useful [11]
     - Difficult to track activity within SOA
         - The SOA process requires "illogical steps" that may lead to software module containing millions of executables. This makes it very difficult to track SOA activities as it has made it more complicated for the user and the machine to manage the interaction of services. [13]
-        - Due to this, an SOA process requires good control, quality and management [11]
+        - Due to this, the SOA process requires good control, quality and management [11]
+
+
+- ### Why would we use or not use SOA?
+- ##### Situtaions that are suitable for SOA
+    - When services are expected to be reused, to increase productivity [11]
+- ##### Situations that are not suitable for SOA
+
+    
 
 ## Essential Components of an SOA Architecture
 - Service module
