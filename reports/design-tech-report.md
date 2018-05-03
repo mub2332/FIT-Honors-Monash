@@ -142,6 +142,12 @@ There are two different types of sagas:
 
 ## Recommendations
 
+## Conclusion
+
+After thorough research, as presented above, we have decided to go with SOA because the pros outweigh the cons for our project. Looking back, we understand the advantages that only SOA can bring to the table and wish to fully utilise them. The alternatives fell
+
+short of the mark. We fully believe that using this architecture for our project will yield effective and efficient results.
+
 ## References
 
 [1] InformIT Article (Introduction to Web Service Technologies). Available: http://www.informit.com/articles/article.aspx?p=336265
