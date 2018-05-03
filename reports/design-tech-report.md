@@ -216,6 +216,8 @@ short of the mark. We fully believe that using this architecture for our project
 [15]Service Oriented Architecture For Dummies, 2nd Edition, Chapter 7. Available: https://www.safaribooksonline.com/library/view/service-oriented-architecture/9780470376843/12_376843-ch07.xhtml
 
 [16]Service-Oriented Architecture Components - dummies. Available: http://www.dummies.com/software/service-oriented-architecture-components/
+
+[17]Evolution of SOA. Available: https://www.mulesoft.com/ty/wp/soa
 ## Glossary
 - SOA: Software Oriented Architecture
 
