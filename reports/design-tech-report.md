@@ -33,9 +33,12 @@ This report is meant to elaborate on the nuances involved in building an applica
 
 - ### Why would we use or not use SOA?
 - ##### Situtaions that are suitable for SOA
+    - When services are expected to be run and maintained independently [11]
     - When services are expected to be reused, to increase productivity [11]
 - ##### Situations that are not suitable for SOA
-
+    - When the software is expected to be simple. [11]
+    - When there is no stable connection. [11]
+    
     
 
 ## Essential Components of an SOA Architecture
@@ -137,9 +140,6 @@ Some service can not be totally stateless as it capability does not satisfy. How
 Current project supports both statelessness and statefulness.
 
 
-- ### Advantages
-
-- ### Drawbacks
 
 ## Choosing the correct service protocol
 
