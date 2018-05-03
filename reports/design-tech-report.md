@@ -122,12 +122,6 @@ Microservices architecture is an architectural style that structures an applicat
 
 Microservices do not share data. Each service has their own database that is not made public to the other services. This is to ensure low coupling between services.
 
-Dependencies between services are managed by sagas. A saga is a sequence/step of local transaction. Each local transaction updates the database of the current service used and sends a signal to trigger the next local transaction in other services to start.[7]
-
-There are two different types of sagas:
-- Choreography – each local transaction sends a signal to trigger the next local transaction in other services.[7]
-- Orchestration – An object will tell all the related services to a given event what local transactions to execute.[7]
-
 #### Advantages
 -	Services can be developed by different teams independently as there is no shared database. 
 -	Each team is free to implement/modify anything at anytime without interfering with or being affected by other teams’ progression.
@@ -138,7 +132,17 @@ There are two different types of sagas:
 -	It is much more difficult to integrate all services into the final application since the data of each service is not shared with other services.[8]
 -	Difficult to perform integration testing as each service is totally isolated from other services.[8]
 
+Based on the information above and the situation where no one team is confident enough to manage a database that is shared among all team, we should use microservices in our project. Although it will be more complex on sharing data to other databases, it still has more advantages than drawbacks.
+
+Using microservices, each team can handle their own database and can implement relevant functionality for their part without being interrupted by other team's progress.
+
 ## Managing dependencies between services
+
+Dependencies between services are managed by sagas. A saga is a sequence/step of local transaction. Each local transaction updates the database of the current service used and sends a signal to trigger the next local transaction in other services to start.[7]
+
+There are two different types of sagas:
+- Choreography – each local transaction sends a signal to trigger the next local transaction in other services.[7]
+- Orchestration – An object will tell all the related services to a given event what local transactions to execute.[7]
 
 ## Recommendations
 
