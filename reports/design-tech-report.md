@@ -209,7 +209,7 @@ short of the mark. We fully believe that using this architecture for our project
 
 [14]Introducing Conversational Web Services. Available: http://www.oracle.com/technetwork/articles/davydov-soa-092581.html
 
-[15]Service Oriented Architecture For Dummies®, 2nd Edition, Chapter 7. Available: https://www.safaribooksonline.com/library/view/service-oriented-architecture/9780470376843/12_376843-ch07.xhtml
+[15]Service Oriented Architecture For Dummies, 2nd Edition, Chapter 7. Available: https://www.safaribooksonline.com/library/view/service-oriented-architecture/9780470376843/12_376843-ch07.xhtml
 
 [16]Service-Oriented Architecture Components - dummies. Available: http://www.dummies.com/software/service-oriented-architecture-components/
 ## Glossary
