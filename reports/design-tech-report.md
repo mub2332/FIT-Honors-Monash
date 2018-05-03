@@ -122,6 +122,20 @@ would be the client sending a request to the server to execute a task, this in i
 as Conversational Web Services between the server and relevant parties it interacts with. After receiving the callback information, the server closes those conversations and resumes it's conversation with the client.
 
 ## Stateless Services
+Stateless service is a communication method which user’s state will not be recorded by the service itself. In another word, it will not maintain session between requests attempt, user can directly access to any service without having access to other service.
+Some service can not be totally stateless as it capability does not satisfy. However it can reduce its statefulness by minimize the state information.
+
+
+- ### Advantages
+    - Easy to manage user request between services. When user try to request another service in the same system, service do not need to send user's session to another service.
+    - Reduce server workout. As server do not need to store/ maintain session as well as their expiration period for each user, server could free up more memory/processing time for other process.
+    - Security. Stateful service maintain user session with sessions, these session ID often appear in the URL link, this makes stateful service insecure which others could spoof by getting the current session URL. On the flip side, stateless service do not have sessions.
+
+- ### Drawbacks
+    - Increases resources and network workload. As user need to identify themselves for each request, an identification, passcode and encryption are required in the request which increase the package size also processing time for decrypting user identification.
+
+Current project supports both statelessness and statefulness.
+
 
 - ### Advantages
 
