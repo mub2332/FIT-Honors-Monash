@@ -141,7 +141,7 @@ Some service can not be totally stateless as it capability does not satisfy. How
 - ### Drawbacks
     - Increases resources and network workload. As user need to identify themselves for each request, an identification, passcode and encryption are required in the request which increase the package size also processing time for decrypting user identification.
 
-Current project supports both statelessness and statefulness.
+Current project supports both statelessness and statefulness. It especially suit for stateless service as user access control is only limited to request, view and register topic and edit gallery. The rest of the service can be access by anyone. Therefore user session will not need to maintain among service.
 
 
 
