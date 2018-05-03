@@ -147,6 +147,21 @@ Current project supports both statelessness and statefulness.
 
 ## Choosing the correct service protocol
 
+There are several different points to consider when choosing the correct service protocol while implementing Service Oriented Architecture. It generally depends on the project requirements, technical considerations and business objectives noted below. Since some of the considerations for industrial systems are irrelevant to us they will be omitted:
+#### Project requirements
+- Timeline of SOA initiative, how long it will potentially take to implement solution
+
+#### Technical considerations
+- SOA solution's ability to provide support for all technologies in the IT environment.
+- SOA solution's ability to be used with application servers and development tools.
+- SOA solution's ability to integrate on-premise and cloud applications.
+- SOA solution's ability to match requirements decided on inception (maintenance, efficiency etc.)
+
+#### Business objectives
+- Which SOA solution provides best return on investment.
+- What new business services do we plan to offer (SaaS or APIs).
+- Short-term and long term needs of the project.
+
 ## Microservices
 
 Microservices architecture is an architectural style that structures an application as a collection of lowly coupled services. [5] A service is a function that is self-contained and does not have any relation to other services.[6]
