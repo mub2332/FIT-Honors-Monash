@@ -6,6 +6,10 @@ This report is meant to elaborate on the nuances involved in building an applica
 
 ## Introduction
 
+Software Oriented Architecture emphasises on creating services, which are small discrete units of software which provides a specific functionality that can be reused in all applications. 
+In this model, developers use different services in conjunction with each other instead of building on an entire software program to create new applications. This allows them to reduce code redundancies over multiple applications.
+The alternative to SOA was to create entire applications where code had to be reused poorly as programs got increasingly more complex which lead to wasted effort and money during development. Software Oriented Architecture aimed to get rid of this.
+
 ## Overview
 
 - ### Advantages
