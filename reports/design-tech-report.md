@@ -51,7 +51,14 @@ This report is meant to elaborate on the nuances involved in building an applica
     - A map state all the relationship of each component in the SOA architecture.[9]
 
 ## Roles of SOA components
-
+- The Enterprise Service Bus is arguably the most important component in a SOA. It connects components of the system together, making sure that data is passed to and from components [15]:
+	- It connects to the applications and systems of the software. This is done possible through adapters, which allows access to their capabilities, also allowing them to communicate with each other. [16]
+	<br/>
+	- It connects to the SOA Registry, which is the "Central Reference Point" of a SOA. This means that a SOA Registry plays the role of taking record of components that are ready or available. The SOA Registry also helps programmers and analysts select components and helping them connect them with each other. It helps find the services that are needed. [15]
+	<br/>
+	- The service broker is in charge of making the connections between components and making sure that they work properly, sometimes the Enterprise Service Bus can play the role of a service broker as well, so a standalone broker is not always required [15]
+	
+	
 ## Service provision technologies
 
 - SOAP: A vendor-agnostic technology used for communication between different application components or services via HTTP using an XML-based messaging format. SOAP message formats typically use WSDL as the XML implementation for describing the interface of a web service. [1]
