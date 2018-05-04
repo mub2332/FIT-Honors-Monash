@@ -192,11 +192,9 @@ There are two different types of sagas:
 
 ## Recommendations
 
-## Conclusion
+After thorough research, as presented above, we have decided to go with SOA because the pros outweigh the cons for our project. Looking back, we understand the advantages that only SOA can bring to the table and wish to fully utilise them. The alternatives fell short of the mark. 
 
-After thorough research, as presented above, we have decided to go with SOA because the pros outweigh the cons for our project. Looking back, we understand the advantages that only SOA can bring to the table and wish to fully utilise them. The alternatives fell
-
-short of the mark. We fully believe that using this architecture for our project will yield effective and efficient results.
+Since our project has 4 different teams working on separate modules, SOA will allows us greater flexibility and cohesion between the teams. We can utilise the element of microservices to ensure that we can manage our project without the need for a backend database. We fully believe that using this architecture for our project will yield effective and efficient results.
 
 ## References
 
