@@ -122,11 +122,11 @@ JSON is a text-based data interchange format derived from the Javascript program
 
 Most of the interactions between service consumers and service providers are web service conversations. [14] To elaborate, Conversational Web Services can be interpreted as primitive, single request/response type interactions.
 
-These interactions vary from service to service and therefore it is critical to recognize each client interaction properly to ensure the client is able to acquire the service they intended. A brief description of how it works
+These interactions vary from service to service and therefore it is critical to recognize each client interaction properly to ensure the client is able to acquire the service they intended.
 
-would be the client sending a request to the server to execute a task, this in itself is a form of a web service conversation. The server proceeds to execute the task by calling all necessary interactions, which are all considered
+A brief description of how it works would be the client sending a request to the server to execute a task, this in itself is a form of a web service conversation. 
 
-as Conversational Web Services between the server and relevant parties it interacts with. After receiving the callback information, the server closes those conversations and resumes it's conversation with the client.
+The server proceeds to execute the task by calling all necessary interactions, which are all considered as Conversational Web Services between the server and relevant parties it interacts with. After receiving the callback information, the server closes those conversations and resumes it's conversation with the client.
 
 ## Stateless Services
 Stateless service is a communication method which user’s state will not be recorded by the service itself. In another word, it will not maintain session between requests attempt, user can directly access to any service without having access to other service.
@@ -194,7 +194,13 @@ There are two different types of sagas:
 
 After thorough research, as presented above, we have decided to go with SOA because the pros outweigh the cons for our project. Looking back, we understand the advantages that only SOA can bring to the table and wish to fully utilise them. The alternatives fell short of the mark. 
 
-Since our project has 4 different teams working on separate modules, SOA will allows us greater flexibility and cohesion between the teams. We can utilise the element of microservices to ensure that we can manage our project without the need for a backend database. We fully believe that using this architecture for our project will yield effective and efficient results.
+Specifically, we have decided to go with the REST service technology instead of the SOAP protocol because our project requires a fast service. The SOAP service has a lot of built-in security measures like WS security as opposed to the REST's performance advantage, but we still opted for this protocol. 
+
+Also, SOA is good for our project because it lets us maintain each project independently of the others and it lets us reuse a service in other applications. The process of debugging is a lot better because individual modules are smaller and easier to detect. Furthermore, if a module fails, the others will still run.
+
+SOA is more reusable and maintaianble as opposed to other architectures. Since our project has 4 different teams working on separate modules, SOA will allows us greater flexibility and cohesion between the teams. We can utilise the element of single use process requests to ensure that we can manage our project without the need for a backend database. 
+
+We fully believe that using this architecture for our project will yield effective and efficient results. SOA is the obvious choice for our project in this matter.
 
 ## References
 
