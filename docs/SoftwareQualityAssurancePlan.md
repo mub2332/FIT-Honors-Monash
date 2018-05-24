@@ -116,7 +116,8 @@ Phase | Goals
 --- | ---
 Software Requirement Specification | No more than one defect per page
 PMP | No more than one defect per page
-Testing | After Testing Phase there should be 0.5 defect per KLOC
+Code Testing | After Testing Phase there should be 0.5 defect per KLOC
+Code Debugging | After Debug Phase, all defect should be solved 
 
 ---------------------------------------------------------------------
 
@@ -128,19 +129,19 @@ Formal and informal reviews will be conducted on all deliverables. The general s
 <a name="review-formal"></a>
 ##### 5.1 - Formal Inspections
 ###### Fagan Inspections
-- There will be set times during the iteration where Fagan Inspections will be conducted. Whichever team that works on their module will get together and conduct a Fagan Review on their work during these times. They will ensure that the necessary revisions are made before they proceed.
+- !!!!!!! Each team goal for each member, discuss when on week lecture
 
 
 <a name="review-informal"></a>
 ##### 5.2 - Informal Inspections
-###### Instantaneous review, pair programming
-- During the coding process, there will be instances where two people look at one machine to ensure everything coded in makes sense and is up to quality.
-
-###### Peer Reviews
+###### Team member Reviews!!!!!!!
 - Peer reviews will be conducted at convenient times to ensure the quality is up to standard and all action items are addressed.
-
-###### Code Walk-throughs
+- During the coding process, there will be instances where two people look at one machine to ensure everything coded is make sense and up to quality.
 - Code Walk-throughs will be conducted to ensure that the process is verifiable and all the items have been addressed.
+
+###### Team representative Review!!!!!!
+
+- Group representative
 
 ---------------------------------------------------------------------
 
@@ -149,13 +150,15 @@ Formal and informal reviews will be conducted on all deliverables. The general s
 
 The following tools and techniques will be used to ensure the quality of the functional requirements for the system:
 
-###### Traceability Matrix
-- Once the coding process starts after the requirements are documented and reviewed, a requirements traceability matrix will be used to ensure all requirements are addressed. 
+Use of Git
 
-###### Peer review
-- All artifacts will be reviewed by other team members once submitted. Feedback can be given on each artifact and issues can be discussed during these meetings. This ensures everyone is on the same page on how the system should behave once implemented.
+- Master Branch is used for combining finalized modules. All on working modules should not be pushed on master branch until it is finished.
+- All developing modules should process in a new branch instead of master branch.
 
-###### Customer review
+###### Team review
+- !!!!
+
+###### Customer review!!!!!!(E-solution)
 - After peer review, the documentation is created and then sent to the customer to verify the customer's expectation and then sent back for final review.
 
 ###### Regression testing
@@ -168,7 +171,6 @@ Quality Attribute | Tool/Technique Used | Rationale for using the tools/techniqu
 Unit Testing      | Put all the test case into CI Server | After executing test case in CI server automatically, a report will generate for all the test run result and coverage
 Defect Tracking   | Excel sheet                          | Record which could calculate the rate of defect found during the test
 Usability         | Questionnaire for User(Monash student) | It helps to understand user (student) requirement which consider as a measurement
-
 
 ---------------------------------------------------------------------
 
@@ -193,21 +195,30 @@ Usability         | Questionnaire for User(Monash student) | It helps to underst
 
 - Testing Approach is divided into functional and non-functional. Functional Test case is to test if the piece of code buggy. To test if code fulfill its requirement, we use Non-Functional Test case which include usability, portability, maintainability, reliability and stability (based on ISO9000 standard)
 
-###### Process of Testing
+###### Stage of Testing
 
-- Create Test Case
+- Unit Testing
+  - Unit Testing target the basic element of code (a small piece of code/ Function). The objective is to isolate the unit and test its correctness.
+- Integration Testing
+  - Integration Testing examine the correctness of multiple unit combination. 
+- Acceptance Testing
+  - The objective of Acceptance Testing is to examine if the system meets the requirement specify on Requirement Document to ensure the product delivery quality.
+- Regression Testing
+  - The objective of Regression Testing is to catch defects occurs while new modification.
+
+###### Process of Testing!!!
+
+- Create Test Case based on standard for Black Box and White Box Testing
 - Test with test case in a designed testing environment (Could be on a device or CI server)
 - Record defect found and action
 
 ###### Strategy
-- The following technique will be used for testing
-  - Black Box Testing
+- Black Box Testing
 
-    - Black Box Testing is used to test if the system meets its functionality.
-    - Usage
-      - Integration Testing
-      - Acceptance Testing
-
+  - Black Box Testing is used to test if the system meets its functionality.
+  - Usage
+    - Integration Testing
+    - Acceptance Testing
 
     - Method
       - Tester create a set of test case with input and expected output, 
@@ -220,29 +231,18 @@ Usability         | Questionnaire for User(Monash student) | It helps to underst
     - Usage
       - Unit Testing
     - Method
-      - Create test cases using expected output and mock method which reaches 100% code coverage covers:
-        - Function Coverage
-        - Statement Coverage
-        - Decision Coverage
-        - Condition Coverage
+      - Use Function Coverage to create test cases using expected output and mock method 
+      - Use Cobertura (Free Java tool) to check if the code coverage exceed 95%, if not, check unreachable code and completeness of test cases.
       - Then Observe if all test cases are passed
 
-- The following Testing method will be used for different test level
+    ​
 
-  - Unit Testing
-    - Unit Testing target the basic element of code (a small piece of code/ Function). The objective is to isolate the unit and test its correctness.
-  - Integration Testing
-    - Integration Testing examine the correctness of multiple unit combination. 
-  - Acceptance Testing
-    - The objective of Acceptance Testing is to examine if the system meets the requirement specify on Requirement Document to ensure the product delivery quality.
-  - Regression Testing
-    - The objective of Regression Testing is to catch defects occurs while new modification.
 
 ###### Roles and responsibility for team
 
 - Each team members who wrote the code should be responsible for creating test cases for their own code, as code writer has the best understanding for their own code. (Unit Testing)
 - Each team should be responsible for their own parts to make sure work from each teammates is compliable together. (Integration Testing)
-- One member from each team will be selected to form a testing team for System Wide and any modification testing to ensure no defects found while combining and modifying module. (Acceptance and Regression Testing) 
+- At the ending stage, one member from each team will be selected to form a testing team for System Wide and any modification testing to ensure no defects found while combining and modifying module. Most of the defect should be discovered during Unit and Integration Testing (Acceptance and Regression Testing) 
 
 
 ###### Instruction on creating test case
@@ -284,8 +284,8 @@ The test data must back up by the test team everytime the testing occurs. This i
 ##### 7.4 - Release Control
 
 - To deploy the software, a list of release control activities must be conducted.
-- Every version of the software that is planned to be released must have a version on it.
-- Every version of the software must be backed up properly in case of any future issues that restoration of data is required.
+- Every version of the software that is planned to be released must be stated clearly on GIT as well as its artifacts.
+- Every version of the software must be backed up properly on GIT with version name in case of any future issues that restoration of data is required.
 - Before deploying the new version of the software, the software must ensure that all the test cases (including user acceptance testing) for all modification in the release passed without any issues.
 
 <a name="test-5"></a>
@@ -333,11 +333,5 @@ The defect rate should decrease over time and the fix rate should be higher each
 <a name="glossary"></a>
 #### 9 - Glossary
 Review - A process where a piece of software is presented to all interested parties for comments and approval
-Inspection - Examining software visually to find errors and deviations from the specification. Done by peers specialised in inspections
-Walk-through - Where a programmer leads the team to piece of software to find a discuss possible problems
-
----------------------------------------------------------------------
-
-
-<a name="appendix"></a>
-#### 10 - Appendix
+Inspection - Examining software visually to find errors and deviations from the specification. Done by peers specialized in inspections
+Walk-through - Where a programmer leads the team to piece of software to find a discuss possible problems.
