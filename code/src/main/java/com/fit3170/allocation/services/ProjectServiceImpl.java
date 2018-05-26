@@ -5,6 +5,7 @@ import com.fit3170.allocation.repositories.ProjectRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -36,5 +37,13 @@ public class ProjectServiceImpl implements ProjectService {
         }
 
         return projectOptional.get();
+    }
+
+    @Override
+    public List<Project> findByText(String s) {
+
+        List<Project> optionalProjects = projectRepository.findProjectsByDescriptionOrTitleContainingIgnoreCase(s);
+
+        return optionalProjects;
     }
 }
