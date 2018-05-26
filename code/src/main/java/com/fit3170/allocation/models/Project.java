@@ -1,20 +1,26 @@
 package com.fit3170.allocation.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.util.Set;
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Indexed;
+
+import javax.persistence.*;
 
 @Entity
+@Indexed
+@Table(name = "projects")
 public class Project {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Field
     private String title;
+    @Field
     private String description;
-    private Set<Supervisor> supervisors;
-    private Coordinator coordinator;
+
+    public Project(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
 }

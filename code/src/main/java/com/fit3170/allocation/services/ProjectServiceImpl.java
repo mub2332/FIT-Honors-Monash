@@ -42,7 +42,7 @@ public class ProjectServiceImpl implements ProjectService {
     @Override
     public List<Project> findByText(String s) {
 
-        List<Project> optionalProjects = projectRepository.findProjectsByDescriptionOrTitleContainingIgnoreCase(s);
+        List<Project> optionalProjects = projectRepository.findAllByDescriptionContains(s);
 
         return optionalProjects;
     }
