@@ -42,6 +42,7 @@ public class ProjectServiceImplTest {
     public void getProjectsWithMock() {
         when(projectService.getProjects()).thenReturn(projectTest);
         assertEquals(projectService.getProjects(),projectTest);
+
     }
 
     @Test (expected = RuntimeException.class)
