@@ -21,12 +21,13 @@ eventually be the actual software used by Monash to run a smoother experience fo
 # Project Organisation
 Name | Cellphone | Email | Roles
 --- | --- | --- | ---
-Ian Kabil Felix | 0435766555 | ikfel1@student.monash.edu | Project Management Plan
-Lim Janzen | 0421557770 | jlim66@student.monash.edu | Risk Management Plan
-Mubtasim Mahmud | 0468645414 | mmah65@student.monash.edu | Software Requirements Specification, Environment Setup, Work Items List
-Zayan Ikram | 0481963066 | azikr1@student.monash.edu | Software Quality Assurance Plan
-Adrian Bin | 0431529408 | njbin1@student.monash.edu | Software Quality Assurance Plan
-Li Jei Yong | 0405756763 | lyon0001@student.monash.edu | Software Quality Assurance Plan
+Ian Kabil Felix | 0435766555 | ikfel1@student.monash.edu | Project Manager, Developer
+Lim Janzen | 0421557770 | jlim66@student.monash.edu | Tester, Developer
+Mubtasim Mahmud | 0468645414 | mmah65@student.monash.edu | Analyst, Architect
+Zayan Ikram | 0481963066 | azikr1@student.monash.edu | Architect, Developer
+Adrian Bin | 0431529408 | njbin1@student.monash.edu | Analyst, Developer
+Li Jei Yong | 0405756763 | lyon0001@student.monash.edu | Tester, Developer
+David Squire | - | - | Stakeholder
 
 <a name="proprac"></a>
 # Project Practices and Measurements
