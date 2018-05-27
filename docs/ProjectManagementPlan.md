@@ -27,7 +27,7 @@ Mubtasim Mahmud | 0468645414 | mmah65@student.monash.edu | Analyst, Architect
 Zayan Ikram | 0481963066 | azikr1@student.monash.edu | Architect, Developer
 Adrian Bin | 0431529408 | njbin1@student.monash.edu | Analyst, Developer
 Li Jei Yong | 0405756763 | lyon0001@student.monash.edu | Tester, Developer
-David Squire | - | - | Stakeholder
+David Squire | - | david.squire@monash.edu | Stakeholder
 
 <a name="proprac"></a>
 # Project Practices and Measurements
