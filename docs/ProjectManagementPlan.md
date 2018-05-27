@@ -22,9 +22,9 @@ eventually be the actual software used by Monash to run a smoother experience fo
 # Project Organisation
 Name | Cellphone | Email | Roles
 --- | --- | --- | ---
-Ian Kabil Felix | 0435766555 | ikfel1@student.monash.edu | Project Manager, Developer
+Ian Kabil Felix | 0435766555 | ikfel1@student.monash.edu | Project Manager, Analyst, Developer
 Lim Janzen | 0421557770 | jlim66@student.monash.edu | Tester, Developer
-Mubtasim Mahmud | 0468645414 | mmah65@student.monash.edu | Analyst, Architect
+Mubtasim Mahmud | 0468645414 | mmah65@student.monash.edu | Analyst, Architect, Developer
 Zayan Ikram | 0481963066 | azikr1@student.monash.edu | Architect, Developer
 Adrian Bin | 0431529408 | njbin1@student.monash.edu | Analyst, Developer
 Li Jei Yong | 0405756763 | lyon0001@student.monash.edu | Tester, Developer
@@ -58,9 +58,9 @@ Phase | Iteration | Primary Objectives | Milestone | Duration Estimate(weeks)
 --- | --- | --- | --- | ---
 Inception | M0 | Technical Documentation including: <ul><li>Project Management Plan</li><li>Software Requirement Specification</li><li>Software Quality Assurance Plan</li><li>Risk Management Plan</li><li>Work Breakdown Structure</li><ul> Non Technical Aspects:<ul><li>Assigning Roles</li><li>Team Collaboration Logs(Trello, Gitlab and Google Drive)</li><li>Development Environment Setup</li><ul>  | Semester 1, Week 6 | 6
 Elaboration | M1 | Decide on Language, Review requirements related to our part of the software | Semester 1, Week 9 | 3
-Elaboration | M2 | Finalize requirements related to our part of the software, Produce realistic objectives for construction phase | Semester 1, Week 12 | 3
-Construction | M3 | Project Submission | Semester 2, Week 3 | 3
-Construction | M4 | Project Search | Semester 2, Week 6 | 3
-Construction | M5 | Interaction between Supervisor and Student | Semester 2, Week 9 | 3
-Transition | M6 | Integrate with other teams | Semester 2, Week 12 | 3
+Elaboration | M2 | Finalize SRS document, Produce realistic objectives for construction phase, Have a working Use Case | Semester 1, Week 12 | 3
+Construction | M3 | Project Allocation backend, UI developed | Semester 2, Week 3 | 3
+Construction | M4 | Implementation of individual use cases | Semester 2, Week 6 | 3
+Construction | M5 | SQAP Review to ensure quality of system produced | Semester 2, Week 9 | 3
+Transition | M6 | Comprehensive unit and system testing before deployment | Semester 2, Week 12 | 3
 
