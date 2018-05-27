@@ -32,7 +32,7 @@ David Squire | - | david.squire@monash.edu | Stakeholder
 
 <a name="roles"></a>
 # Roles
-###A brief description of each role's responsibilities relative to our project. Certain roles are subject to change over the course of the iterations.
+A brief description of each role's responsibilities relative to our project. Certain roles are subject to change over the course of the iterations.
 
 Role | Description
 --- | --- 
