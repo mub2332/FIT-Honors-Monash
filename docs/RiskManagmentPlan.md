@@ -181,3 +181,11 @@ Overview | Our product may unintentionally expose a user's private information (
 Impact | Impact Value: 5 <br/> This may cause Esolutions/David Squire to decide to not deploy our product. Our team may potentially be brough up to legal consequences if it does get deployed.
 Likelihood | 1 <br/>
 Mitigation Strategy | 1. Perform security tests as much as possible before deployment (Penetration Tests etc..) 
+
+<a name="overambitious"></a>
+### Team promises functionalities that may be impossible to complete
+Overview | This is a common thing in the Software Development Industry where a team promises clients results where they know very well they are unable to complete before the due date just to please the customer.
+------------ | -------------
+Impact | Impact Value: 5 <br/> This may cause Esolutions/David Squire to decide to not deploy our product and potentially lose their trust. Team is unable to finish their part and may delay all the other teams causing the entire project to fail.
+Likelihood | 2 <br/>
+Mitigation Strategy | 1. Always evaluate the team's own capability before accepting any tasks. If a requirement is too much to be completed within the allocated time or illogical, be honest with the client and ask for a compromise. <br/> 2. If accepted and the team has no choice, Look at [The Need For A Spike](#spikes)
