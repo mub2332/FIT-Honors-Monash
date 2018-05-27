@@ -128,20 +128,28 @@ Formal and informal reviews will be conducted on all deliverables. The general s
 
 <a name="review-formal"></a>
 ##### 5.1 - Formal Inspections
-###### Fagan Inspections
-- !!!!!!! Each team goal for each member, discuss when on week lecture
+###### Team representative Review
 
+- Each team must select a spokesperson to represent the opinion of the team.
 
-<a name="review-informal"></a>
+- A Team representative review must be held at least once an iteration to understand and monitor each other's work to ensure a clear division of teamwork, equal workload and follow up project process.
+
+  <a name="review-informal"></a>
+
 ##### 5.2 - Informal Inspections
-###### Team member Reviews!!!!!!!
-- Peer reviews will be conducted at convenient times to ensure the quality is up to standard and all action items are addressed.
-- During the coding process, there will be instances where two people look at one machine to ensure everything coded is make sense and up to quality.
-- Code Walk-throughs will be conducted to ensure that the process is verifiable and all the items have been addressed.
+###### Team member Reviews
 
-###### Team representative Review!!!!!!
+- Team member Review should be conduct every week to set up goals for the week and review the work process of previous week.
 
-- Group representative
+- Each team should discuss and set up their own goal for the week according to the iteration plan.
+
+- Team members should divided into small groups contain 2 to 3 members. Work load for each week must be equally divided to small groups.
+
+- During the developing process, members in small group should frequently supervise each other's work in order to maintain the quality of work. 
+
+- For each Team member review meeting, everyone should demonstrate and validate each other's work for the previous week.
+
+  
 
 ---------------------------------------------------------------------
 
@@ -155,11 +163,11 @@ Use of Git
 - Master Branch is used for combining finalized modules. All on working modules should not be pushed on master branch until it is finished.
 - All developing modules should process in a new branch instead of master branch.
 
-###### Team review
-- !!!!
 
-###### Customer review!!!!!!(E-solution)
-- After peer review, the documentation is created and then sent to the customer to verify the customer's expectation and then sent back for final review.
+
+###### Customer review(E-solution)
+- As Monash(E-solution) has a strict requirements its service, a Customer review should be done at the before and end of each iteration to ensure the plan and product of each iteration meets the requirement for e-solution.
+- If E-solution required to change the iteration planning, a Team representative review must be conduct to discuss and modify planning. After meeting is done, iteration should not be started before E-solution approve the new Customer review.
 
 ###### Regression testing
 - Regression testing will be done after all the bugs are fixed after an iteration, to ensure all bugs are fixed correctly and new bugs do not appear.
@@ -182,7 +190,7 @@ Usability         | Questionnaire for User(Monash student) | It helps to underst
 
 - Testing Approach is designed to detect any defects in the system and inconsistency between requirements.
 
-- The primary audience for the testing strategy is the development team and the client (eSolution). The development team is responsible for performing the test using the test procedure written in this document to ensure the testing process is consistent and maintain a standard quality for the software.
+- The primary audience for the testing strategy is the development team and the client (e-Solution). The development team is responsible for performing the test using the test procedure written in this document to ensure the testing process is consistent and maintain a standard quality for the software.
 
 - Clients are able to review, approve and comment on the testing strategy and also the test case. As our main client(e-solution) have a major concern on the functionality, reliability and security feature on the software, also considering e-solution has a technical background, e-solution may want to supervise our work quality by examine testing strategy and test case. 
 
@@ -206,7 +214,7 @@ Usability         | Questionnaire for User(Monash student) | It helps to underst
 - Regression Testing
   - The objective of Regression Testing is to catch defects occurs while new modification.
 
-###### Process of Testing!!!
+###### Process of Testing
 
 - Create Test Case based on standard for Black Box and White Box Testing
 - Test with test case in a designed testing environment (Could be on a device or CI server)
@@ -224,25 +232,29 @@ Usability         | Questionnaire for User(Monash student) | It helps to underst
       - Tester create a set of test case with input and expected output, 
       - then observe if the input result the expected output
 
-  - White Box Testing
+  
 
-    - White Box Testing used to ensure there is no defects in a basic element of code (a function/ piece of code) by testing every statement in the code to perform a high coverage of test.
-    - It is important to ensure every single line of the code is tested at the first stage of testing as it will affect the process of testing on higher level.
-    - Usage
-      - Unit Testing
-    - Method
-      - Use Function Coverage to create test cases using expected output and mock method 
-      - Use Cobertura (Free Java tool) to check if the code coverage exceed 95%, if not, check unreachable code and completeness of test cases.
-      - Then Observe if all test cases are passed
+  
 
-    ​
+  White Box Testing
+
+  - White Box Testing used to ensure there is no defects in a basic element of code (a function/ piece of code) by testing every statement in the code to perform a high coverage of test.
+  - It is important to ensure every single line of the code is tested at the first stage of testing as it will affect the process of testing on higher level.
+  - Usage
+    - Unit Testing
+  - Method
+    - Use Function Coverage to create test cases using expected output and mock method 
+    - Use Cobertura (Free Java tool) to check if the code coverage exceed 95%, if not, check unreachable code and completeness of test cases.
+    - Then Observe if all test cases are passed
+
+  ​
 
 
 ###### Roles and responsibility for team
 
 - Each team members who wrote the code should be responsible for creating test cases for their own code, as code writer has the best understanding for their own code. (Unit Testing)
 - Each team should be responsible for their own parts to make sure work from each teammates is compliable together. (Integration Testing)
-- At the ending stage, one member from each team will be selected to form a testing team for System Wide and any modification testing to ensure no defects found while combining and modifying module. Most of the defect should be discovered during Unit and Integration Testing (Acceptance and Regression Testing) 
+- After each iteration, one member from each team will be selected to form a testing team for System Wide and any modification testing to ensure no defects found while combining and modifying module. Most of the defect should be discovered during Unit and Integration Testing (Acceptance and Regression Testing).
 
 
 ###### Instruction on creating test case
@@ -300,9 +312,13 @@ The test data must back up by the test team everytime the testing occurs. This i
 <a name="org"></a>
 #### 8 - Organization
 
-Since there is no Quality Assurance team as such, each team will be conducting their own quality assurance on their deliverables. Ideally 10% of the workload should be spend on quality assurance and the exact hours spend on it will depend on the size of each iteration
+Each team will be conducting their own quality assurance on their deliverables. Ideally 10% of the workload should be spend on quality assurance and the exact hours spend on it will depend on the size of each iteration.
+
+One member from each team are taken to form a Testing team. It will be operate after each iteration to ensure the modules from each team can work together.
+
 There will be meetings held to ensure all members working on the project knows what techniques they will be using and how they'll be using it to conduct quality assurance. They will all also have access to the SQAP for reference. 
 The roles and responsibilities of the members will be decided on what they are working on and what their skillsets are to ensure they do QA on what fits them best. They will eventually know:
+
 - Their roles and responsibilities
 - Goals of each activity with which they are associated
 - Processes that are to be carried out
