@@ -7,31 +7,53 @@
         - [Overview](#student-selects-project-overview)
         - [Typical Course of Events](#student-selects-project-course)
         - [Alternative Courses of Events](#student-selects-project-course-alt)
+        - [Exception Case](#student-selects-project-exception)
     - [Search for a Project](#search-project)
         - [Overview](#search-project-overview)
         - [Typical Course of Events](#search-project-typical)
         - [Alternative Courses of Events](#search-project-alternatives)
+        - [Exception Case](#search-project-exception)
     - [Filter projects by categories](#filter-projects)
         - [Overview](#filter-projects-overview)
         - [Typical Course of Events](#filter-projects-typical)
         - [Alternative Courses of Events](#filter-projects-alternatives)
+        - [Exception Case](#filter-projects-exception)
     - [Co-ordinator allocates members to project](#allocate-projects)
         - [Overview](#allocate-projects-overview)
         - [Typical Course of Events](#allocate-projects-typical)
         - [Alternative Courses of Events](#allocate-projects-alternatives)
+        - [Exception Case](#allocate-projects-exception)
     - [Students Shortlist Projects That They Want To Take](#shortlist-projects)
         - [Overview](#shortlist-projects-overview)
         - [Typical Course of Events](#shortlist-projects-typical)
         - [Alternative Courses of Events](#shortlist-projects-alternatives)
+        - [Exception Case](#shortlist-projects-exception)
     - [Check on supervisor's profile](#check-supervisor-profile)
         - [Overview](#check-supervisor-profile-overview)
         - [Typical Course of Events](#check-supervisor-profile-typical)
+        - [Alternative Courses of Events](#shortlist-projects-alternatives)
+        - [Exception Case](#check-supervisor-exception)
     - [Search the gallery for projects](#search-gallery)
         - [Overview](#search-gallery-overview)
         - [Typical Course of Events](#search-gallery-typical)
+        - [Alternative Courses of Events](#shortlist-projects-alternatives)
+        - [Exception Case](#search-gallery-exception)
     - [Sort projects by relevancy](#sort-projects)
         - [Overview](#sort-projects-overview)
         - [Typical Course of Events](#sort-projects-typical)
+        - [Alternative Courses of Events](#shortlist-projects-alternatives)
+        - [Exception Case](#sort-project-exception)
+    - [Check number of projects a supervisor is supervising](#project-supervising)
+        - [Overview](#project-supervising-overview)
+        - [Typical Course of Events](#project-supervising-typical)
+        - [Alternative Courses of Events](#project-supervising-alternatives)
+        - [Exception Case](#project-supervising-exception)
+    - [Show chief coordinator that a student has contacted a supervisor](#chief-view-contact)
+        - [Overview](#chief-view-contact-overview)
+        - [Typical Course of Events](#chief-view-contact-typical)
+        - [Alternative Courses of Events](#chief-view-contacts-alternatives)
+        - [Exception Case](#chief-view-contact-exception)
+    
 - [System Wide Requirements](#syswidereqs)
     - [Introduction](#syswideintro)
     - [System-Wide Functional Requirements](#syswidefuncreqs)
@@ -94,6 +116,12 @@ This is meant to be a visual representation of the team's module and how the dif
 
 - If the student is not logged in, they are prompted to do so before being allowed to select a project
 - If the student does not meet the eligibility requirements for a project they have selected, they are informed by a message and advised to select a different project
+
+<a name="student-selects-project-exception"></a>
+### Exception Case
+
+
+
 
 <a name="search-project"></a>
 ## Search for project
