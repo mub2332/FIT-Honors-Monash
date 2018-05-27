@@ -8,12 +8,18 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.when;
 
+/*
+Update 27/5/2018 10:56PM:
+As the search functionality is not entirely complete yet, mock data is mostly used at the moment
+ */
 public class ProjectServiceImplTest {
     ProjectServiceImpl projectService;
     Set <Project> projectTest;
@@ -33,26 +39,35 @@ public class ProjectServiceImplTest {
     }
 
     @Test
-    public void getProjects() {
+    public void getProjectsWithMock() {
         when(projectService.getProjects()).thenReturn(projectTest);
         assertEquals(projectService.getProjects(),projectTest);
     }
 
-    @Test
-    public void findById() {
-        Long id = Long.parseLong("123456");
-        Long id2= Long.parseLong("56789");
-        Project project1 = new Project("Dummy Project 1", "For Mock Testing");
-        Project project2 = new Project("Dummy Project 1", "For Mock Testing");
-        when(projectService.findById(id)).thenReturn(project1);
-        when(projectService.findById(id2)).thenReturn(project2);
-        assertEquals(projectService.findById(id),project1);
-        assertEquals(projectService.findById(id2),project2);
+    @Test (expected = RuntimeException.class)
+    public void findByIdWithEmpty() {
+        //since there are no projects at the moment, it will raise an exception
+        String randomId = "23123213";
+        projectService.findById(Long.parseLong((randomId)));
 
     }
 
     @Test
-    public void findByText() {
+    public void findByTextWithMock() {
+        Project project1 = new Project("Dummy Project 1", "For Mock Testing");
+        Project project2 = new Project("Dummy Project 2", "For Mock Testing");
+        Project project3 = new Project("Test Project 1", "For Mock Testing");
+        Project project4 = new Project("Test Project 2", "For Mock Testing");
+        List<Project> list1 = new ArrayList<Project>();
+        list1.add(project1);
+        list1.add(project2);
+        List<Project> list2 = new ArrayList<Project>();
+        list1.add(project3);
+        list1.add(project4);
+        when(projectService.findByText("Dummy Project")).thenReturn(list1);
+        when(projectService.findByText("Test Project")).thenReturn(list2);
+        assertEquals(projectService.findByText("Dummy Project"),list1);
+        assertEquals(projectService.findByText("Test Project"),list2);
     }
 
 }
