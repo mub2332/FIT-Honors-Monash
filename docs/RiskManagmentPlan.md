@@ -21,6 +21,7 @@ If there are any questions or confusions that needs to be cleared up in this Ris
 	2. [Operational Risks](#operationalRisks)
 	    1. [Incompatible Software Modules](#incompatibleSoftwareModules)
 	    2. [Morning After Sydrome](#morningAfterSyndrome)
+	    3. [Clash Of Requirements With Other Teams](#clashTeam)
 	3. [External Risks](#externalRisks)
 	    1. [The occurence of natural disasters](#naturalDisasters)
 	    2. [Loss of a Team Member](#teamMemberLoss)
@@ -102,6 +103,13 @@ Impact | Impact Value: 3 <br/> Parts of the software will remain faulty till fix
 Likelihood | 5
 Mitigation Strategy | 1. Reduce dependencies between packages. <br/> 2. Team members should understand which packages depend on each other and ensures that their edits do not stir the relationship between systems. <br/> 3. If happened, check Git commit history and find out the person responsible. Discuss with said person and revert software to earlier version/ Edit the code to fix the problem.
 
+<a name="clashTeams"></a>
+### Clash of Requirements with Other Teams
+Overview | As all of us should know, there are four teams working on the project, however there is a very unlikely but possible risk of two or more teams working on the same requirement or functionality.
+------------ | -------------
+Impact | Impact Value: 4 <br/> Efficiency will be greatly affected as two teams waste time working on the same thing. A big delay in project deployment is expected.
+Likelihood | 2, Note that it is unlikely since the coordination team should have settled things out. However, it has happened once so far.
+Mitigation Strategy | 1. State in the FIT3170 Project Wiki clearly on the responsiblity of each team and have all teams agree to it. 2. If happened, the teams in question that have clashing functionalities should both check the wiki and determine who has made a mistake and the team who is wrong should immediately drop that function and continue working on other functions asap.
 
 <a name="externalRisks"></a>
 ## External Risks
