@@ -107,7 +107,7 @@ This is meant to be a visual representation of the team's module and how the dif
  :---: | :---:
  1) This use case begins when a student decides to select a project to work on |
  2) The user searches through a list of projects, and selects the one they want to take |
-  | 3) The system checks for eligibility, and allocates the student to the project if eligible.
+  | 3) The system checks for eligibility, and prompts the student to confirm the project if eligible.
   | 4) The system then notifies the staff associated with the project that this project has been taken
   | 5) The system marks the project as in-progress, and removes it from the list of available projects
 
@@ -115,11 +115,12 @@ This is meant to be a visual representation of the team's module and how the dif
 ### Alternative Courses of Events
 
 - If the student is not logged in, they are prompted to do so before being allowed to select a project
-- If the student does not meet the eligibility requirements for a project they have selected, they are informed by a message and advised to select a different project
+
 
 <a name="student-selects-project-exception"></a>
 ### Exception Case
-
+- student cancels if they change their mind once they are prompted to confirm
+- If the student does not meet the eligibility requirements for a project they have selected, they are informed by a message and advised to select a different project
 
 
 
@@ -152,7 +153,10 @@ Actor Response | System Response
 
 <a name="search-project-alternatives"></a>
 ### Alternative Course of Events
+- Student finds project through supervisor page
 
+<a name="search-project-exception"></a>
+### Exception Case
 - If the user enters text that cannot be found within any project, the system responds with a message indicating that no projects can be found that match the criteria, and the user is asked to try again
 - If the user enters text that isn't valid, i.e. a string of special characters such as '#@%', the system should display a message asking the user to provide valid text only  
 
@@ -184,7 +188,10 @@ Actor Response | System Response
 
 <a name="filter-projects-alternatives"></a>
 ### Alternative Course of Events
+- If the filter returns no projects with all the keywords, return whichever has most of them
 
+<a name="filter-projects-exception"></a>
+### Exception Case
 - If there are no projects that fit the chosen categories, the system will display an appropriate message and ask the user to broaden the scope of the filter
 
 <a name="allocate-projects"></a>
@@ -218,6 +225,11 @@ Actor Response | System Response
 <a name="allocate-projects-alternatives"></a>
 ### Alternative Course of Events
 
+- Allocate the student or supervisor through their respective pages to a project in their field if they do not know what to choose and want what is recommended or if they have not chosen their preferences.
+
+<a name="allocate-projects-exception"></a>
+### Exception Case
+
 - If no preferences have been submitted for a project by students or supervisors, the system displays an appropriate message to the co-ordinator and informs him to try again at a later date
 
 <a name="shortlist-projects"></a>
@@ -249,7 +261,10 @@ Actor Response | System Response
 
 <a name="shortlist-projects-alternatives"></a>
 ### Alternative Course of Events
+- Students can shortlist multiple projects after searching on the projects page.
 
+<a name="shortlist-projects-exception"></a>
+### Exception Case
 - If the student is not eligible to take up the project, the system will notify the student of that case and will not save it into the student's shortlist
 
 
@@ -279,6 +294,15 @@ Actor Response | System Response
 2) The user clicks on the supervisor's profile that he/she wants to know |
  | 3) The system loads the data of the supervisor from the database
  | 4) The system brings the user to a new page that contain the details of the supervisor
+ 
+<a name="check-supervisor-profile-alternatives"></a>
+### Alternative Course of Events
+- The student can get to the supervisor page from the project information page by clicking on the supervisor name.
+
+<a name="check-supervisor-profile-exception"></a>
+### Exception Case
+- If the supervisor cannot be found, the system will notify the student of that case and by displaying a message.
+
 
 <a name="search-gallery"></a>
 ## Check on supervisor's profile
@@ -308,7 +332,15 @@ Actor Response | System Response
 4) The user selects link of interest|
  | 5) The system brings the user to the page with an instance of a completed project
 
- <a name="sort-projects"></a>
+<a name="search-gallery-alternatives"></a>
+### Alternative Course of Events
+- The student can get to the galleries of related project from a project page they've searched for.
+
+<a name="search-gallery-exception"></a>
+### Exception Case
+- If the gallery cannot be found, the system will output a message.
+
+<a name="sort-projects"></a>
 ## Sort projects
 
 <a name="sort-projects-overview"></a>
@@ -331,8 +363,17 @@ Post-conditions | None
 Actor Response | System Response
 :---: | :---:
 1) User navigates to page which displays projects |
+2) User presses display relevant projects
  | 2) System sorts projects depending on what the user studies|
  | 3) System displays sorted projects
+
+<a name="check-supervisor-profile-alternatives"></a>
+### Alternative Course of Events
+- The student can search for a project and the next project in line will be related to the one searched for and the units the student's taking
+
+<a name="check-supervisor-profile-exception"></a>
+### Exception Case
+- If there are no relevant projects, a message will be output on the page.
 
 
 <a name="syswidereqs"></a>
