@@ -59,8 +59,8 @@ Phase | Iteration | Primary Objectives | Milestone | Duration Estimate(weeks)
 Inception | M0 | Technical Documentation including: <ul><li>Project Management Plan</li><li>Software Requirement Specification</li><li>Software Quality Assurance Plan</li><li>Risk Management Plan</li><li>Work Breakdown Structure</li><ul> Non Technical Aspects:<ul><li>Assigning Roles</li><li>Team Collaboration Logs(Trello, Gitlab and Google Drive)</li><li>Development Environment Setup</li><ul>  | Semester 1, Week 6 | 6
 Elaboration | M1 | Decide on Language, Review requirements related to our part of the software | Semester 1, Week 9 | 3
 Elaboration | M2 | Finalize SRS document, Produce realistic objectives for construction phase, Have a working Use Case | Semester 1, Week 12 | 3
-Construction | M3 | Project Allocation backend, UI developed | Semester 2, Week 3 | 3
-Construction | M4 | Implementation of individual use cases | Semester 2, Week 6 | 3
-Construction | M5 | SQAP Review to ensure quality of system produced | Semester 2, Week 9 | 3
-Transition | M6 | Comprehensive unit and system testing before deployment | Semester 2, Week 12 | 3
+Construction | M3 | Project Allocation backend environment set up, basic UI developed, Implementation of individual use cases including: <ul><li>Student selects a project</li><li>Searching for a project</li><li>Filter projects by categories</li><li>Honours Coordinator allocates members to projects</li><li>Student selecting preferences</li><ul>  | Semester 2, Week 3 | 3
+Construction | M4 | SQAP Review to ensure quality of previous iteration, Implementation of individual use cases including: <ul><li>Check on supervisors profile</li><li>Searching gallery for a project</li><li>Sort projects by relevancy</li><ul> | Semester 2, Week 6 | 3
+Construction | M5 | SQAP Review to ensure quality of previous iteration, Implementation of individual use cases including: <ul><li>Limit number of projects allocated to a supervisor</li><li>Show proof of contact between supervisor and student to Honours Coordinator</li><li> | Semester 2, Week 9 | 3
+Transition | M6 | SQAP Review to ensure quality of previous iteration, Comprehensive unit and system testing before deployment | Semester 2, Week 12 | 3
 
