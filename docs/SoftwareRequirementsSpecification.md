@@ -367,13 +367,76 @@ Actor Response | System Response
  | 2) System sorts projects depending on what the user studies|
  | 3) System displays sorted projects
 
-<a name="check-supervisor-profile-alternatives"></a>
+<a name="sort-projects-alternatives"></a>
 ### Alternative Course of Events
-- The student can search for a project and the next project in line will be related to the one searched for and the units the student's taking
+- The student can search for a project and the next project in line will be related to the one searched for and the units the student's taking.
 
-<a name="check-supervisor-profile-exception"></a>
+<a name="sort-projects-exception"></a>
 ### Exception Case
 - If there are no relevant projects, a message will be output on the page.
+
+<a name="project-supervising"></a>
+## Chief coordinator checks number of projects a supervisor is supervising
+
+<a name="project-supervising-overview"></a>
+### Overview
+
+Attribute | Description
+--- | ---
+Use Case | Check the number of projects a supervisor is currently supervising
+Actors |User (Chief Coordinator), System
+Purpose | To display number of projects a supervisor is supervising so they can be properly allocated for projects
+Overview | This use case begins when the user wants to allocate supervisors for a project
+Type | Primary
+Cross-references | None
+Pre-conditions | The chief coordinator must be logged in and viewing allocate page
+Post-conditions | None
+
+<a name="project-supervising-typical"></a>
+### Typical Course of Events
+
+Actor Response | System Response
+:---: | :---:
+1) User navigates to page which allocates projects |
+ | 2) System displays number of project each supervisor is supervising next to the name|
+
+
+<a name="project-supervising-alternatives"></a>
+### Alternative Course of Events
+- The chief coordinator can view the number of projects a supervisor is supervising on the supervisor page.
+
+
+
+
+<a name="chief-view-contact"></a>
+## Show chief coordinator that a student has contacted a supervisor
+
+<a name="chief-view-contact-overview"></a>
+### Overview
+
+Attribute | Description
+--- | ---
+Use Case | Show chief coordinator when a student contacts a supervisor
+Actors | User (initiator) (Student), Chief Coordinator, Supervisor
+Purpose | So chief coordinator can see whether students are having issues
+Overview | This use case begins when the student sends a message to a supervisor
+Type | Primary
+Cross-references | None
+Pre-conditions | The Chief Coordinator must be logged in.
+Post-conditions | None
+
+<a name="chief-view-contact-typical"></a>
+### Typical Course of Events
+
+Actor Response | System Response
+:---: | :---:
+1) Student sends message to supervisor |
+ | 2) System sends a notification to supervisor that a message has been sent|
+ | 3) Chief coordinator can view the message.
+
+<a name="chief-view-contact-alternatives"></a>
+### Alternative Course of Events
+- The chief coordinator can view all the messages sent regarding a related topic on the message page.
 
 
 <a name="syswidereqs"></a>
