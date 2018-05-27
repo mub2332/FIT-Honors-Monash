@@ -17,6 +17,7 @@ If there are any questions or confusions that needs to be cleared up in this Ris
     1. [Technical Risks](#technicalRisk)
 	    1. [Workspace Hardware Failure](#hardwareFailure)
 	    2. [Scope Screep](#scopeCreep)
+	    3. [The Need To Use Spikes](#spikes)
 	2. [Operational Risks](#operationalRisks)
 	    1. [Incompatible Software Modules](#incompatibleSoftwareModules)
 	    2. [Morning After Sydrome](#morningAfterSyndrome)
@@ -72,6 +73,15 @@ Overview | Team maybe be over ambitious and plan out more than what is the team 
 Impact | Impact Value: 4 <br/> The client may have high expectations and the team may not deliver all requirements by the deadline. A great delay will be expected and team morale will be severely affected
 Likelihood | 4
 Mitigation Strategy | 1. Always plan carefully in detail and within means of the team's resources <br/> 2. Prioritise and push less important stories to the next milestone.
+
+<a name="spikes"></a>
+### The Need To Use Spikes
+
+Overview | Members do not have the specific skills or knowledge to complete a specific requirement, or are unable to estimate it.
+------------ | -------------
+Impact | Impact Value: 3 <br/> This is a problem that can be solved, but should be addressed asap.
+Likelihood | 4 <br/> Very likely to occur as we are just Undergraduate students and may not possess all the necessary skills yet to be able to work in a full scale project.
+Mitigation Strategy | 1. Difficult to be avoided, however, when occured, the team will need to use spikes. Spikes are stories that would help the developers understand what they need to complete a certain story that requires certain technical knowledge on how to complete a story. <br /> 2. Note: For more information on spikes, please refer to Robyn's FIT2101 "L05 Inception II" Lecture slide, slide no.14.
 
 <a name="operationalRisks"></a>
 ## Operational Risks
