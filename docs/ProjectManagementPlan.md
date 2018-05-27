@@ -6,6 +6,7 @@ areas of the OpenUP model seems irrational to add in at this stage because the p
 # Table of Contents
 - [Introduction] (#intro)
 - [Project Organisation] (#proorg)
+- [Roles] (#roles)
 - [Project Practices and Measurements] (#proprac)
 - [Project Milestones and Objectives] (#promil)
 
@@ -28,6 +29,20 @@ Zayan Ikram | 0481963066 | azikr1@student.monash.edu | Architect, Developer
 Adrian Bin | 0431529408 | njbin1@student.monash.edu | Analyst, Developer
 Li Jei Yong | 0405756763 | lyon0001@student.monash.edu | Tester, Developer
 David Squire | - | david.squire@monash.edu | Stakeholder
+
+<a name="roles"></a>
+# Roles
+A brief description of each role's responsibilities relative to our project. Certain roles are subject to change over the course of the iterations.
+Role | Description
+--- | --- 
+Project Manager
+Tester | Writes test cases, test logs and test scripts and ensures the program is running with minimum bugs. Additionally in charge of the Risk Management Plan
+Analyst | Handles the creation of System Wide Requirements, the Use Cases Models, the Work Items List and Glossary
+Architect | The person in this role leads or coordinates the technical design of the system and has overall responsibility for facilitating the major technical decisions expressed as software architecture.
+Developer | Everyone in the team is expected to contribute some code, hence all teammates hold this role.
+Stakeholder | Client representative. David has provided us with enough oversight that he acts as the direct source of information on requirements.
+
+
 
 <a name="proprac"></a>
 # Project Practices and Measurements
