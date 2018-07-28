@@ -2,13 +2,13 @@
 
 Description of Use Case | Priority | Size Estimate | State
 --- | --- | --- | ---
-Implement and test selection of projects by students | 1 | 5 | Pending
-<li>Prototype UI</li> | | |
-<li>Implement and test submission of preferences for projects</li> | | |
-<li>Implement and test notification of involved parties on submission of preferences</li> | | |
-<li>Create API documentation</li> | | |
-Implement and test allocation of members to a project by the honors co-ordinator | 1 | 8 | Pending
-<li>Prototype UI</li> | | |
-<li>Implement and test retrieval of preferences</li> | | |
-<li>Implement and test allocation of students, supervisors, etc. to projects</li> | | |
-<li>Create API documentation</li> | | |
+Student selects a project | 1 | 5 | Pending
+<li>Search for a project</li> | | |
+<li>Filter projects by categories</li> | | |
+<li>Co-ordinator allocates members to a project</li> | | |
+<li>Students shortlist projects that they want to take</li> | | |
+Check on supervisor's profile | 1 | 8 | Pending
+<li>Search the gallery for projects</li> | | |
+<li>Sort projects by relevancy</li> | | |
+<li>Check number of projects a supervisor</li> | | |
+<li>Show chief coordinator that a student has contacted a supervisor</li> | | |
