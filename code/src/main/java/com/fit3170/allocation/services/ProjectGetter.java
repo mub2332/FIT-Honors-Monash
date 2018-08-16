@@ -19,7 +19,7 @@ public class ProjectGetter {
         JSONObject item = new JSONObject();
         return json;
     }
-    public void extractJSON() throws JSONException{
+    public JSONRespone extractJSON() throws JSONException{
             JSONObject obj = new JSONObject();
 
             String supervisorname = obj.getString("supervisorname");
@@ -45,6 +45,10 @@ public class ProjectGetter {
             }
             String campus = obj.getString("campus");
             String message = obj.getString("message");
+
+            JSONRespone newResponse = new JSONRespone(supervisorname, title, points, background, aim, prereq, coreq, url, categories, campus, message);
+
+            return newResponse;
 
 
         }
