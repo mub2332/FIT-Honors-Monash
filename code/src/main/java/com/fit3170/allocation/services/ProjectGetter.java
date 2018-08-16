@@ -21,31 +21,31 @@ public class ProjectGetter {
     }
     public void extractJSON() throws JSONException{
             JSONObject obj = new JSONObject();
-            JSONArray fields = obj.getJSONArray("field");
 
-            String supervisorname = fields.getString(1);
-            String title = fields.getString(2);
-            int points = fields.getInt(3);
-            String background = fields.getString(4);
-            String aim = fields.getString(5);
+            String supervisorname = obj.getString("supervisorname");
+            String title = obj.getString("title");
+            int points = obj.getInt("creditPoints");
+            String background = obj.getString("background");
+            String aim = obj.getString("aims");
             ArrayList<String> prereq = new ArrayList<>();
-            JSONArray temp = fields.getJSONArray(6);
+            JSONArray temp = obj.getJSONArray("prereq");
             for (int i = 0; i <= temp.length(); i++) {
                 prereq.add(temp.getString(i));
             }
             ArrayList<String> coreq = new ArrayList<>();
-            temp = fields.getJSONArray(7);
+            temp = obj.getJSONArray("coreq");
             for (int i = 0; i <= temp.length(); i++) {
                 coreq.add(temp.getString(i));
             }
+            String url = obj.getString("URL");
             ArrayList<String> categories = new ArrayList<>();
-            temp = fields.getJSONArray(8);
+            temp = obj.getJSONArray("category");
             for (int i = 0; i <= temp.length(); i++) {
                 categories.add(temp.getString(i));
             }
-            String url = fields.getString(9);
-            temp = fields.getJSONArray(10);
-            UniversityLocation universityLocation = new UniversityLocation(temp.getString(1), temp.getString(2), temp.getString(3), temp.getInt(4));
+            String campus = obj.getString("campus");
+            String message = obj.getString("message");
+
 
         }
 }
