@@ -1,7 +1,7 @@
 package com.fit3170.allocation.models;
 
-import org.hibernate.search.annotations.Field;
-import org.hibernate.search.annotations.Indexed;
+import org.jboss.logging.Field;
+import org.springframework.stereotype.Indexed;
 
 import javax.persistence.*;
 
@@ -14,9 +14,8 @@ public class Project {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Field
     private String title;
-    @Field
+
     private String description;
 
     public Project(String title, String description) {
