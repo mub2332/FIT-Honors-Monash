@@ -1,12 +1,10 @@
 package com.fit3170.allocation.models;
 
-import org.jboss.logging.Field;
 import org.springframework.stereotype.Indexed;
 
 import javax.persistence.*;
 
 @Entity
-@Indexed
 @Table(name = "projects")
 public class Project {
 
