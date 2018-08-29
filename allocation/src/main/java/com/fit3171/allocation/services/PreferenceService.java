@@ -17,4 +17,8 @@ public class PreferenceService {
     public Iterable<Preference> findAll() {
         return preferenceRepository.findAll();
     }
+
+    public void save(Preference preference) {
+        preferenceRepository.save(preference);
+    }
 }

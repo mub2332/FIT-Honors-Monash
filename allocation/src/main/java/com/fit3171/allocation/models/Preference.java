@@ -9,9 +9,9 @@ public class Preference {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String username;
-    @OneToMany
-    private Set<Project> projects;
+    private String studentId;
+    @OneToOne
+    private Project project;
 
     public Long getId() {
         return id;
@@ -21,27 +21,19 @@ public class Preference {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getStudentId() {
+        return studentId;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
 
-    public Set<Project> getProjects() {
-        return projects;
+    public Project getProject() {
+        return project;
     }
 
-    public void setProjects(Set<Project> projects) {
-        this.projects = projects;
-    }
-
-    public void addProject(Project project) {
-        this.projects.add(project);
-    }
-
-    public void removeProject(Project project) {
-        this.projects.remove(project);
+    public void setProject(Project project) {
+        this.project = project;
     }
 }
