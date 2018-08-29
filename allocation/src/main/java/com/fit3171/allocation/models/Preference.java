@@ -1,9 +1,6 @@
 package com.fit3171.allocation.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Set;
 
 @Entity
@@ -13,6 +10,7 @@ public class Preference {
     private Long id;
 
     private String username;
+    @OneToMany
     private Set<Project> projects;
 
     public Long getId() {
