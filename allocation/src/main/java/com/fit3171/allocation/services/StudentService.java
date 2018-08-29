@@ -5,6 +5,8 @@ import com.fit3171.allocation.repositories.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class StudentService {
     private StudentRepository studentRepository;
@@ -16,5 +18,13 @@ public class StudentService {
 
     public Iterable<Student> findAll() {
         return studentRepository.findAll();
+    }
+
+    public Optional<Student> findByUsername(String username) {
+        return studentRepository.findByUsername(username);
+    }
+
+    public void save(Student student) {
+        studentRepository.save(student);
     }
 }

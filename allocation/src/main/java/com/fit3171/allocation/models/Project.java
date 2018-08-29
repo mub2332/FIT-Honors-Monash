@@ -1,11 +1,12 @@
 package com.fit3171.allocation.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
-@Entity
+@Entity(name = "Project")
+@Table(name = "project")
 public class Project {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,6 +14,10 @@ public class Project {
 
     private String title;
     private String description;
+
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinTable(name = "student_project", joinColumns = @JoinColumn(name = "student_id"), inverseJoinColumns = @JoinColumn(name = "project_id"))
+    private Set<Student> preferredByStudents = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -36,5 +41,19 @@ public class Project {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Set<Student> getPreferredByStudents() {
+        return preferredByStudents;
+    }
+
+    public void addStudent(Student student) {
+        this.preferredByStudents.add(student);
+        student.getPreferences().add(this);
+    }
+
+    public void removeStudent(Student student) {
+        this.preferredByStudents.remove(student);
+        student.getPreferences().remove(this);
     }
 }

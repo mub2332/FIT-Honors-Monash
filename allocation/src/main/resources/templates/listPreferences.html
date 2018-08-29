@@ -12,13 +12,17 @@
         <thead class="table-primary">
             <tr>
                 <td>Student ID</td>
-                <td>Project Title</td>
+                <td>Preferences</td>
             </tr>
         </thead>
 
-        <tr th:each="preference: ${preferences}">
-            <td th:text="${preference.studentId}"></td>
-            <td th:text="${preference.project.title}"></td>
+        <tr th:each="student: ${students}">
+            <td th:text="${student.username}"></td>
+            <td>
+                <ul th:each="preference: ${student.preferences}" th:text="${preference.title}">
+
+                </ul>
+            </td>
         </tr>
     </table>
 
