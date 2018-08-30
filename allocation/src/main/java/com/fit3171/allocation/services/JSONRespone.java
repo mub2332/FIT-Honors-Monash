@@ -15,7 +15,17 @@ public class JSONRespone {
     private String campus;
     private String message;
 
-    public JSONRespone(String supervisorname, String title, int creditPoints, String background, String aims, ArrayList<String> prereq, ArrayList<String> coreq, String url, ArrayList<String> category, String campus, String message) {
+    public String getMessage() {
+        return message;
+    }
+
+    public String getFieldOfStudy() {
+        return fieldOfStudy;
+    }
+
+    private String fieldOfStudy;
+
+    public JSONRespone(String supervisorname, String title, int creditPoints, String background, String aims, ArrayList<String> prereq, ArrayList<String> coreq, String url, ArrayList<String> category, String campus, String message, String fieldOfStudy) {
         this.supervisorname = supervisorname;
         this.title = title;
         this.creditPoints = creditPoints;
@@ -27,6 +37,7 @@ public class JSONRespone {
         this.category = category;
         this.campus = campus;
         this.message = message;
+        this.fieldOfStudy = fieldOfStudy;
     }
 
     public String getSupervisorname() {
@@ -69,7 +80,10 @@ public class JSONRespone {
         return campus;
     }
 
-    public String getMessage() {
-        return message;
+
+
+    @Override
+    public String toString() {
+        return supervisorname + title + creditPoints + background + aims + prereq + coreq + url + category + campus + message;
     }
 }
