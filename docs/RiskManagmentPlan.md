@@ -29,6 +29,7 @@ If there are any questions or confusions that needs to be cleared up in this Ris
 	    2. [Loss of a Team Member](#teamMemberLoss)
 	    3. [eSolution Pulls Out of The Project](#eSolutions)
 	    4. [Occurence of Team Disputes](#teamDisputes)
+	    5. [Sickness and Diseases](#sickness)
 	4. [Risks That Concern the IEEE Software Engineering Code of Ethics](#ethics)
 	    1. [Software breaches the User's Privacy](#privacy)
 	    2. [Team promises functionalities that may be impossible to complete](#overambitious)
@@ -171,6 +172,14 @@ Overview | Team members may have arguments/disagreements between each other.
 Impact | Impact Value: 3 <br/> Team morale will be affected, project may be delayed and there will be a drop in quality of the delivered product.
 Likelihood | 2
 Mitigation Strategy | 1. Each member has the responsbility to consider and respect the opinions/wellbeing of all the members in the group. 2. When a dispute between 2 or more teammates occurs: <br/>1. Have a face to face meeting to resolve the issue when both sides have calmed down and are able to think rationally.<br/>2. Other teammates should try their best to make peace between the two sides.<br/>
+
+<a name="sickness"></a>
+### Sickness and Diseases
+Overview | One or more team members are sick and are physically unable to fulfill their duties.
+------------ | -------------
+Impact | Impact Value: 3 <br/> Team morale will be affected, project may be delayed and there will be a drop in quality of the delivered product.
+Likelihood | 4
+Mitigation Strategy | 1. Members who are sick should contact the team and Robyn immediately if they are unable to attend meetings or classes. 2. If the due date is to be prolonged, each sick member should prepare a medical certificate. 3. Members who are present should update the absent ones on the latest progress.
 
 <a name="ethics"></a>
 ## Risks That Concern the IEEE Software Engineering Code of Ethics
