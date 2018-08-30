@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Allocation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope ="col">Name</th>
+            <th scope = "col" id = "studentName">Placeholder</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td scope = "row">Student ID</td>
+            <td id = "studentId">Placeholder</td>
+        </tr>
+        <tr>
+            <td scope= "row">Weight Average Mark (WAM)</td>
+            <td id = "studentMark">N/A</td>
+        </tr>
+        <tr>
+            <td scope="row">Eligiblilty</td>
+            <td id = "studentEligbility">
+                <button>Yes</button>
+                <button>No</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="allocateStudent" data-toggle="dropdown">
+            Allocate to Project
+        </button>
+        <div class="dropdown-menu" aria-labelledby="allocateStudent">
+        </div>
+    </div>
+</body>
+</html>
