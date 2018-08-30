@@ -77,8 +77,6 @@
 
 To assure the quality of the software, the development team will have reviews conducted and will use requirement traceability matrix to ensure all the requirements are addressed.
 
-At the beginning of each iteration/phase, a requirement traceability matrix will be made in order to assure the outcome of the iteration/phase met all the requirements. 
-
 At the end of each iteration/phase, a review within the team will be conducted to ensure the outcome is on the right track and to discuss if there is any improvements can be made during the iteration/phase so that the improved strategy can be used in the next iteration/phase.
 
 At the scenario where a risk occurs, the risk mitigation plan for the specific risk will be executed to minimise the impact toward the outcome. This is to assure that the quality of the software will only get effected as least as possible.
@@ -166,8 +164,9 @@ Use of Git
 
 
 ###### Customer review(E-solution)
-- As Monash(E-solution) has a strict requirements its service, a Customer review should be done at the before and end of each iteration to ensure the plan and product of each iteration meets the requirement for e-solution.
-- If E-solution required to change the iteration planning, a Team representative review must be conduct to discuss and modify planning. After meeting is done, iteration should not be started before E-solution approve the new Customer review.
+- As Monash(E-solution) has a strict requirements its service, a Customer review should be done at the before and end of each milestone to ensure the plan and product of each milestone meets the requirement for e-solution.
+- If E-solution required to change a requirement, a team representative review must be conduct to discuss and modify planning. After meeting is done, iteration should not be started before E-solution approve the new Customer review.
+
 
 ###### Regression testing
 - Regression testing will be done after all the bugs are fixed after an iteration, to ensure all bugs are fixed correctly and new bugs do not appear.
@@ -194,7 +193,7 @@ Usability         | Questionnaire for User(Monash student) | It helps to underst
 
 - Clients are able to review, approve and comment on the testing strategy and also the test case. As our main client(e-solution) have a major concern on the functionality, reliability and security feature on the software, also considering e-solution has a technical background, e-solution may want to supervise our work quality by examine testing strategy and test case. 
 
-- This scope of this testing strategy is applied to all the executable code, it does not apply to other artefact like requirement document.
+- The scope of this testing strategy is applied to all the executable code, it does not apply to other artefact like requirement document.
 
 - This testing strategy should apply for the whole development period.
 
@@ -254,8 +253,6 @@ Usability         | Questionnaire for User(Monash student) | It helps to underst
 
 - Each team members who wrote the code should be responsible for creating test cases for their own code, as code writer has the best understanding for their own code. (Unit Testing)
 - Each team should be responsible for their own parts to make sure work from each teammates is compliable together. (Integration Testing)
-- After each iteration, one member from each team will be selected to form a testing team for System Wide and any modification testing to ensure no defects found while combining and modifying module. Most of the defect should be discovered during Unit and Integration Testing (Acceptance and Regression Testing).
-
 
 ###### Instruction on creating test case
 
@@ -264,6 +261,7 @@ Usability         | Questionnaire for User(Monash student) | It helps to underst
   - Module Name/ Function Name
   - Test Title
   - Description
+  - Test Date
   - Pre-condition
   - Expected Result/ Response
   - Person/ Team responsible
