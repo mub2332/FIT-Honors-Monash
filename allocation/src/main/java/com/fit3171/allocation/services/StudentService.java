@@ -24,6 +24,8 @@ public class StudentService {
         return studentRepository.findByUsername(username);
     }
 
+    public Optional<Student> findByID(Long ID){ return studentRepository.findByID(ID); }
+
     public void save(Student student) {
         studentRepository.save(student);
     }
