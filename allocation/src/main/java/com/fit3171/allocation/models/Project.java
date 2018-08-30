@@ -74,6 +74,5 @@ public class Project {
 
     public void allocateStudent(){
         allocated = true;
-
     }
 }
