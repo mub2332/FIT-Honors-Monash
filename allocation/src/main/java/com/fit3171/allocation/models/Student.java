@@ -14,10 +14,11 @@ public class Student {
 
     private String username;
 
-    private Long projectallocated = null;
-
     @ManyToMany(mappedBy = "preferredByStudents")
     private Set<Project> preferences = new HashSet<>();
+
+    @OneToOne(mappedBy = "allocatedStudent")
+    private Project allocatedProject = null;
 
     public Long getId() {
         return id;
@@ -49,9 +50,11 @@ public class Student {
         project.getPreferredByStudents().remove(project);
     }
 
-    public void allocateProject(Long projectID){
-        this.projectallocated = projectID;
+    public Project getAllocatedProject() {
+        return allocatedProject;
     }
 
-
+    public void setAllocatedProject(Project allocatedProject) {
+        this.allocatedProject = allocatedProject;
+    }
 }

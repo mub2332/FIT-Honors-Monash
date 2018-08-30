@@ -15,20 +15,13 @@ public class Project {
     private String title;
     private String description;
 
-
-    public Student getAllocatedStudent() {
-        return allocatedStudent;
-    }
-
-    public void setAllocatedStudent(Student allocatedStudent) {
-        this.allocatedStudent = allocatedStudent;
-    }
-    @OneToOne
-    private Student allocatedStudent = null;
-
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-    @JoinTable(name = "student_project", joinColumns = @JoinColumn(name = "student_id"), inverseJoinColumns = @JoinColumn(name = "project_id"))
+    @JoinTable(name = "preferences", joinColumns = @JoinColumn(name = "student_id"), inverseJoinColumns = @JoinColumn(name = "project_id"))
     private Set<Student> preferredByStudents = new HashSet<>();
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinTable(name = "allocations", joinColumns = @JoinColumn(name = "student_id"), inverseJoinColumns = @JoinColumn(name = "project_id"))
+    private Student allocatedStudent = null;
 
     public Long getId() {
         return id;
@@ -58,30 +51,16 @@ public class Project {
         return preferredByStudents;
     }
 
-    /**
-     * Add student to Preference
-     * If Project has already been allocated
-     * Return False
-     * @param student
-     */
-    public boolean addStudent(Student student) {
-        if(allocatedStudent == null){
-            this.preferredByStudents.add(student);
-            student.getPreferences().add(this);
-            return true;
-        }
-        else{
-            return false;
-        }
-
-    }
-
     public void removeStudent(Student student) {
         this.preferredByStudents.remove(student);
         student.getPreferences().remove(this);
     }
 
-    public void allocateStudent(Student student){
-        this.allocatedStudent = student;
+    public Student getAllocatedStudent() {
+        return allocatedStudent;
+    }
+
+    public void setAllocatedStudent(Student allocatedStudent) {
+        this.allocatedStudent = allocatedStudent;
     }
 }

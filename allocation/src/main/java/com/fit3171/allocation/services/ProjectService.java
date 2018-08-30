@@ -23,4 +23,12 @@ public class ProjectService {
     public Optional<Project> findById(Long id) {
         return projectRepository.findById(id);
     }
+
+    public Optional<Project> findByTitle(String title) {
+        return projectRepository.findByTitle(title);
+    }
+
+    public void save(Project project) {
+        projectRepository.save(project);
+    }
 }

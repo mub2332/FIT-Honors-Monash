@@ -21,7 +21,7 @@
             <div class="form-group">
                 <label>Student</label>
                 <select class="form-control" name="username">
-                    <option th:each="student: ${studnts}" th:value="${student.username}" th:text="${student.username}"></option>
+                    <option th:each="student: ${students}" th:value="${student.username}" th:text="${student.username}"></option>
                 </select>
             </div>
             <button class="btn btn-primary" type="submit" name="submit">Submit</button>

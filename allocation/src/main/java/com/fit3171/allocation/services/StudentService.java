@@ -26,6 +26,10 @@ public class StudentService {
 
     public Optional<Student> findById(Long ID){ return studentRepository.findById(ID); }
 
+    public Iterable<Student> findAllocatedStudents() {
+        return studentRepository.findAllByAllocatedProjectNotNull();
+    }
+
     public void save(Student student) {
         studentRepository.save(student);
     }

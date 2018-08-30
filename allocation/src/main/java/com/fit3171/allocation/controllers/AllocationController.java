@@ -29,27 +29,29 @@ public class AllocationController {
     }
 
     @GetMapping("/students/{username}")
-    public String getProjectById(@PathVariable String username, Model model) {
+    public String studentDetails(@PathVariable String username, Model model) {
         Optional<Student> student = studentService.findByUsername(username);
         model.addAttribute("student", student.get());
         return "allocateStudent";
     }
 
-    @GetMapping("/allocateProject/{id}/{username}")
-    public String setStudentAllocation(@PathVariable long id, @PathVariable String username ,Model model){
+    @PostMapping("/students/{username}")
+    public String allocateStudent(@PathVariable String username, HttpServletRequest request) {
         Optional<Student> student = studentService.findByUsername(username);
-        Optional<Project> project = projectService.findById(id);
-        student.get().allocateProject(id);
-        project.get().allocateStudent(student.get());
+        Optional<Project> project = projectService.findByTitle(request.getParameter("allocate"));
+
+        student.get().setAllocatedProject(project.get());
+        project.get().setAllocatedStudent(student.get());
+
         studentService.save(student.get());
-        Iterable<Student> allStudents = studentService.findAll();
-        Iterable<Project> allProjects = projectService.findAll();
-        model.addAttribute("studentService", studentService);
-        model.addAttribute("projects", allProjects);
-        return "projectsPage";
+        projectService.save(project.get());
+        return "redirect:/listAllocations";
     }
 
-
-
+    @GetMapping("/listAllocations")
+    public String getAllocations(Model model) {
+        model.addAttribute("students", studentService.findAllocatedStudents());
+        return "listAllocations";
+    }
 
 }
