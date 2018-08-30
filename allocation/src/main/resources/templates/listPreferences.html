@@ -14,6 +14,7 @@
             <tr>
                 <td>Student ID</td>
                 <td>Preferences</td>
+                <td>Allocate Student</td>
             </tr>
             </thead>
 
@@ -23,6 +24,9 @@
                     <ul class="list-group" th:each="preference: ${student.preferences}">
                         <li class="list-group-item" th:text="${preference.title}"></li>
                     </ul>
+                </td>
+                <td>
+                    <a th:href="@{'/students/'+${student.username}}">Allocate</a>
                 </td>
             </tr>
         </table>
