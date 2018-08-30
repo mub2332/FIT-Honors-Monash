@@ -44,8 +44,9 @@
     - [7.4 - Release Control](#test-4)
     - [7.5 - Review and Approval](#test-5)
 - [8 - Organization](#org)
-- [9 - Glossary](#glossary)
-- [10 - Appendix](#appendix)
+- [9 - Process Assurance](#process-assurance)
+- [10 - Glossary](#glossary)
+- [11 - Appendix](#appendix)
 
 ---------------------------------------------------------------------
 
@@ -343,9 +344,28 @@ The quality assurance processes will be evaluated based on:
 The defect rate should decrease over time and the fix rate should be higher each build. All of the critical and minor defects need to be gotten rid of each final build.
 
 ---------------------------------------------------------------------
+<a name="process-assurance"></a>
+#### 9 - Process Assurance
+These are the process assurance techniques we came up with after our work on the technical report on Process Assurance:
+- Responding to work delay
+    - We realized delaying individual work slows down the overall whole team progress and we currently do not have any trackable responsibility for handing in work on time. Therefore, next time if a member is unable to complete work before the deadline, a brief reasoning and explanation should be given to the group through Messenger to increase the groups awareness to their responsibility.
+- Ask for help immediately
+    - We observe that many difficulties faced by individual work were raised at the last moment causing even more problems therefore teammates should ask for help as soon as possible to decrease the possible stacking of problems.
+- Meetings held after overall individual parts have been completed
+    - We decided to hold reviews for artefacts to ensure that each piece delivered is up to a sufficient standard of quality also understand way to integrate together.
+- Voice chat meetings
+    - It is hard for everyone to catch up through text messages and it is important for everyone to be part of the discussions when making decisions and understand the reasonings behind them. Therefore important discussions should be held on voice chat meetings to make sure everyone is involved.
+- Standup meetings
+    - A stand-up meeting should be done twice a week in order to make sure that everyone are on the track of their individual parts, request help for difficulties and provide peer pressure.
+- Adapt test-driven development
+    - Ensure that functions adhere to the input and output that we intend.
+    - Creating test case improves the vision for developer.
 
+
+
+---------------------------------------------------------------------
 <a name="glossary"></a>
-#### 9 - Glossary
+#### 10 - Glossary
 Review - A process where a piece of software is presented to all interested parties for comments and approval
 Inspection - Examining software visually to find errors and deviations from the specification. Done by peers specialized in inspections
 Walk-through - Where a programmer leads the team to piece of software to find a discuss possible problems.
