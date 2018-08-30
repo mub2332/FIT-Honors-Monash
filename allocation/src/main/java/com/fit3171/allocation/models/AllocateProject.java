@@ -11,16 +11,18 @@ public class AllocateProject {
 
 
 
-
-    /*@RequestMapping(value = "/allocate", method = RequestMethod.POST)
+    /*
+    @RequestMapping(value = "/allocate", method = RequestMethod.POST)
     public String allocateProject(@RequestParam("studentID") Long studentID, @RequestParam("ProjectID") Long ID) {
         StudentService studentservice = new StudentService();
         Student student = studentservice.findByID(studentID).get();
 
+
         ProjectService projectService = new ProjectService();
         Project project = projectService.findById(ID).get();
+        student.allocateProject(project.getId());
         return null;
 
-    }
-    */
+    }*/
+
 }
