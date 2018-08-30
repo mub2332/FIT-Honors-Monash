@@ -2,6 +2,7 @@ package com.fit3171.allocation.models;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 @Entity(name = "Student")
@@ -12,6 +13,8 @@ public class Student {
     private Long id;
 
     private String username;
+
+    private Long projectallocated = null;
 
     @ManyToMany(mappedBy = "preferredByStudents")
     private Set<Project> preferences = new HashSet<>();
@@ -45,5 +48,10 @@ public class Student {
         this.preferences.remove(project);
         project.getPreferredByStudents().remove(project);
     }
+
+    public void allocateProject(Long projectID){
+        this.projectallocated = projectID;
+    }
+
 
 }
