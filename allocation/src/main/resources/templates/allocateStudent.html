@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Allocation</title>
@@ -14,8 +14,8 @@
             <th scope = "col" id = "studentName">Placeholder</th>
         </tr>
     </thead>
-    <tbody>
-        <tr>
+    <tbody th:each="student: ${students}">
+        <tr >
             <td scope = "row">Student ID</td>
             <td id = "studentId">Placeholder</td>
         </tr>
