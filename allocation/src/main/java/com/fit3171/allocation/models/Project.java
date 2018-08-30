@@ -15,6 +15,8 @@ public class Project {
     private String title;
     private String description;
 
+    private boolean allocated = false;
+
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(name = "student_project", joinColumns = @JoinColumn(name = "student_id"), inverseJoinColumns = @JoinColumn(name = "project_id"))
     private Set<Student> preferredByStudents = new HashSet<>();
@@ -47,13 +49,31 @@ public class Project {
         return preferredByStudents;
     }
 
-    public void addStudent(Student student) {
-        this.preferredByStudents.add(student);
-        student.getPreferences().add(this);
+    /**
+     * Add student to Preference
+     * If Project has already been allocated
+     * Return False
+     * @param student
+     */
+    public boolean addStudent(Student student) {
+        if(allocated == false){
+            this.preferredByStudents.add(student);
+            student.getPreferences().add(this);
+            return true;
+        }
+        else{
+            return false;
+        }
+
     }
 
     public void removeStudent(Student student) {
         this.preferredByStudents.remove(student);
         student.getPreferences().remove(this);
+    }
+
+    public void allocateStudent(){
+        allocated = true;
+
     }
 }
