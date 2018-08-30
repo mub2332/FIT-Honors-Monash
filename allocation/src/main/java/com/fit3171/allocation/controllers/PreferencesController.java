@@ -59,4 +59,5 @@ public class PreferencesController {
         model.addAttribute("students", studentService.findAll());
         return "listPreferences";
     }
+
 }
