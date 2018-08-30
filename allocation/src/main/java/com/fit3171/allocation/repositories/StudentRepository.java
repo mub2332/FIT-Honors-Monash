@@ -9,5 +9,5 @@ public interface StudentRepository extends CrudRepository<Student, Long> {
 
     Optional<Student> findByUsername(String username);
 
-    Optional<Student> findById(Long ID);
+    //Optional<Student> findById(Long ID);
 }

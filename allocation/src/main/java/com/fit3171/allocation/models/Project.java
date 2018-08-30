@@ -15,7 +15,7 @@ public class Project {
     private String title;
     private String description;
 
-    private boolean allocated = false;
+    private String allocatedStudent = null;
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(name = "student_project", joinColumns = @JoinColumn(name = "student_id"), inverseJoinColumns = @JoinColumn(name = "project_id"))
@@ -56,7 +56,7 @@ public class Project {
      * @param student
      */
     public boolean addStudent(Student student) {
-        if(allocated == false){
+        if(allocatedStudent == null){
             this.preferredByStudents.add(student);
             student.getPreferences().add(this);
             return true;
@@ -72,7 +72,7 @@ public class Project {
         student.getPreferences().remove(this);
     }
 
-    public void allocateStudent(){
-        allocated = true;
+    public void allocateStudent(String username){
+        this.allocatedStudent = username;
     }
 }

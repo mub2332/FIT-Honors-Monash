@@ -33,14 +33,10 @@
     </tbody>
 
 </table>
-
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="allocateStudent" data-toggle="dropdown">
-            Allocate to Project
-        </button>
-        <div class="dropdown-menu" aria-labelledby="allocateStudent">
-        </div>
-    </div>
+<h4>Allocate Project</h4>
+<ul th:each="preference: ${student.preferences}">
+    <a th:href="@{'/allocateProject/'+ ${preference.getId()} + '/'+ ${student.username}}" th:text="${preference.getTitle()}"></a>
+</ul>
 </body>
 
 

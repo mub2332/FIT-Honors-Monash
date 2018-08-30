@@ -35,5 +35,15 @@ public class AllocationController {
         return "allocateStudent";
     }
 
+    @GetMapping("/allocateProject/{id}/{username}")
+    public String setStudentAllocation(@PathVariable long id, @PathVariable String username ,Model model){
+        Optional<Student> student = studentService.findByUsername(username);
+        Optional<Project> project = projectService.findById(id);
+        student.get().allocateProject(id);
+        project.get().allocateStudent(username);
+        studentService.save(student.get());
+        return "projectsPage";
+    }
+
 
 }
