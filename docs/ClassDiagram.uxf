@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>603</x>
-      <y>126</y>
+      <x>639</x>
+      <y>135</y>
       <w>90</w>
       <h>27</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>603</x>
-      <y>270</y>
+      <x>855</x>
+      <y>135</y>
       <w>90</w>
       <h>27</h>
     </coordinates>
@@ -27,15 +27,17 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>639</x>
-      <y>144</y>
-      <w>90</w>
-      <h>144</h>
+      <x>675</x>
+      <y>90</y>
+      <w>297</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
+m2=1
+m1=1
 r2=allocated to 
 r1=allocated by</panel_attributes>
-    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+    <additional_attributes>240.0;50.0;240.0;20.0;10.0;20.0;10.0;50.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
@@ -43,7 +45,7 @@ r1=allocated by</panel_attributes>
       <x>567</x>
       <y>54</y>
       <w>450</w>
-      <h>342</h>
+      <h>270</h>
     </coordinates>
     <panel_attributes>models
 --</panel_attributes>
@@ -156,8 +158,8 @@ ProjectService</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>324</x>
-      <y>495</y>
+      <x>576</x>
+      <y>369</y>
       <w>432</w>
       <h>108</h>
     </coordinates>
@@ -167,8 +169,8 @@ ProjectService</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>378</x>
-      <y>540</y>
+      <x>639</x>
+      <y>414</y>
       <w>117</w>
       <h>27</h>
     </coordinates>
@@ -178,8 +180,8 @@ ProjectService</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>567</x>
-      <y>540</y>
+      <x>810</x>
+      <y>414</y>
       <w>117</w>
       <h>27</h>
     </coordinates>
@@ -200,19 +202,19 @@ ProjectService</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>441</y>
-      <w>441</w>
-      <h>90</h>
+      <x>288</x>
+      <y>414</y>
+      <w>306</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>470.0;80.0;470.0;30.0;10.0;30.0;10.0;10.0</additional_attributes>
+    <additional_attributes>320.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>765</x>
-      <y>270</y>
+      <x>846</x>
+      <y>243</y>
       <w>99</w>
       <h>27</h>
     </coordinates>
@@ -256,12 +258,26 @@ ProjectService</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>684</x>
-      <y>279</y>
-      <w>99</w>
-      <h>27</h>
+      <x>936</x>
+      <y>135</y>
+      <w>63</w>
+      <h>135</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0;50.0;130.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>675</x>
+      <y>153</y>
+      <w>252</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..*
+m2=1
+put preferences on &gt;</panel_attributes>
+    <additional_attributes>240.0;10.0;240.0;70.0;10.0;70.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
