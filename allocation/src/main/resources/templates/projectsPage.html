@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Student Allocation</title>
@@ -17,14 +17,14 @@
 
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th scope = "row">Project Name</th>
-                        <td>Description</td>
-                        <td>
+                <tbody th:each = "project: ${projects}">
+                    <tr >
+                        <th scope = "row" th:text="${project.getTitle()}">Project Name</th>
+                        <td th:text="${project.getDescription()}">Description</td>
+                        <td th:text="${project.getAllocatedStudent().username}">
                             Student Name
                         </td>
-                        <td>
+                        <td th:text="${project.getAllocatedStudent().id}">
                             Student Number
                         </td>
 

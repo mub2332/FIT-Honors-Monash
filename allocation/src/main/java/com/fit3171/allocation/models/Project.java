@@ -15,7 +15,16 @@ public class Project {
     private String title;
     private String description;
 
-    private String allocatedStudent = null;
+
+    public Student getAllocatedStudent() {
+        return allocatedStudent;
+    }
+
+    public void setAllocatedStudent(Student allocatedStudent) {
+        this.allocatedStudent = allocatedStudent;
+    }
+    @OneToOne
+    private Student allocatedStudent = null;
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(name = "student_project", joinColumns = @JoinColumn(name = "student_id"), inverseJoinColumns = @JoinColumn(name = "project_id"))
@@ -72,7 +81,7 @@ public class Project {
         student.getPreferences().remove(this);
     }
 
-    public void allocateStudent(String username){
-        this.allocatedStudent = username;
+    public void allocateStudent(Student student){
+        this.allocatedStudent = student;
     }
 }

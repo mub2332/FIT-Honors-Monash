@@ -40,10 +40,16 @@ public class AllocationController {
         Optional<Student> student = studentService.findByUsername(username);
         Optional<Project> project = projectService.findById(id);
         student.get().allocateProject(id);
-        project.get().allocateStudent(username);
+        project.get().allocateStudent(student.get());
         studentService.save(student.get());
+        Iterable<Student> allStudents = studentService.findAll();
+        Iterable<Project> allProjects = projectService.findAll();
+        model.addAttribute("studentService", studentService);
+        model.addAttribute("projects", allProjects);
         return "projectsPage";
     }
+
+
 
 
 }
