@@ -1,10 +1,13 @@
-stages:
-    - build
+image: docker:latest
+services:
+  - docker:dind
 
-release:
-  stage: build
-  only:
-    - release
-  script:
-    - ./gradlew assembleRelease
-    # Here I need to use the value of versionName in my gradle file.
+stages:
+  - build
+  - package
+  - deploy
+  
+gradle-build:
+    image: gradle:4-jdk-8
+    stage: build
+    script: "./gradlew clean test --info"
