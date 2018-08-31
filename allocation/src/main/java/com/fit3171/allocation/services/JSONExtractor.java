@@ -15,6 +15,18 @@
 //        extractor.extractJSON(extractor.mockJSON());
 //    }
 //
+//    public JSONObject getJSON() throws Exception{
+//    {
+//        try {
+//			URL url = new URL("http://ampersandacademy.com/demo/json/jsonreponse.php");
+//			BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
+//			String str = "";
+//			while (null != (str = br.readLine())) {
+//				System.out.println(str);
+//			}
+//		} catch (Exception ex) {
+//			ex.printStackTrace();
+//		}
 //    public JSONArray mockJSON() throws Exception {
 //        JSONArray jsonArray = new JSONArray();
 //
