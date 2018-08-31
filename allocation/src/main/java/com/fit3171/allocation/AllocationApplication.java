@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class AllocationApplication {
 
-    public static void main(String[] args) { //Running the main program
+    public static void main(String[] args) {
         SpringApplication.run(AllocationApplication.class, args);
     }
 }
