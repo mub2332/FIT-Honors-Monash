@@ -9,9 +9,9 @@ image: java:8
 build:
   stage: build
   script:
-     - gradle build
+     - ./gradlew clean build
 
 test:
   stage: test
   script:
-     - gradle check
+     - ./gradlew test
