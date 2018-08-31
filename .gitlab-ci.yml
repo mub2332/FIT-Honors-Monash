@@ -9,4 +9,5 @@ stages:
   
 gradle-build:
     stage: build
-    script: "./gradlew clean test --info"
+    script: 
+    - ./gradlew clean test --info
