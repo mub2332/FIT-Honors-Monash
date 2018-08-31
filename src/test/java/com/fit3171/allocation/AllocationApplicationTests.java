@@ -1,4 +1,4 @@
-package com.fit3171.allocation;
+package java.com.fit3171.allocation;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
