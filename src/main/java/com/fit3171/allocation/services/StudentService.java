@@ -24,7 +24,7 @@ public class StudentService {
         return studentRepository.findByUsername(username);
     }
 
-    public Optional<Student> findById(Long ID){ return studentRepository.findById(ID); }
+    public Optional<Student> findById(String id){ return studentRepository.findById(id); }
 
     public Iterable<Student> findAllocatedStudents() {
         return studentRepository.findAllByAllocatedProjectNotNull();

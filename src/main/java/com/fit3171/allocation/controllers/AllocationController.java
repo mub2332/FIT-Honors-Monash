@@ -40,11 +40,13 @@ public class AllocationController {
         Optional<Student> student = studentService.findByUsername(username);
         Optional<Project> project = projectService.findByTitle(request.getParameter("allocate"));
 
-        student.get().setAllocatedProject(project.get());
-        project.get().setAllocatedStudent(student.get());
+        if (student.get().getAllocatedProject() == null && project.get().getAllocatedStudent() == null) {
+            student.get().setAllocatedProject(project.get());
+            project.get().setAllocatedStudent(student.get());
+            studentService.save(student.get());
+            projectService.save(project.get());
+        }
 
-        studentService.save(student.get());
-        projectService.save(project.get());
         return "redirect:/listAllocations";
     }
 

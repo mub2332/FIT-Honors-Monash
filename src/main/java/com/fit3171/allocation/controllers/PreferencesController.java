@@ -36,7 +36,7 @@ public class PreferencesController {
     }
 
     @GetMapping("/projects/{id}")
-    public String getProjectById(@PathVariable Long id, Model model) {
+    public String getProjectById(@PathVariable String id, Model model) {
         Optional<Project> project = projectService.findById(id);
         Iterable<Student> students = studentService.findAll();
         model.addAttribute("project", project.get());
@@ -45,7 +45,7 @@ public class PreferencesController {
     }
 
     @PostMapping("/projects/{id}")
-    public String savePreference(@PathVariable Long id, HttpServletRequest request) {
+    public String savePreference(@PathVariable String id, HttpServletRequest request) {
         Optional<Project> project = projectService.findById(id);
         Optional<Student> student = studentService.findByUsername(request.getParameter("username"));
 

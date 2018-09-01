@@ -1,16 +1,17 @@
 package com.fit3171.allocation.repositories;
 
-import com.fit3171.allocation.models.Project;
 import com.fit3171.allocation.models.Student;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-public interface StudentRepository extends CrudRepository<Student, Long> {
+@Repository
+public interface StudentRepository extends MongoRepository<Student, Long> {
 
     Optional<Student> findByUsername(String username);
 
     Iterable<Student> findAllByAllocatedProjectNotNull();
 
-    //Optional<Student> findById(Long ID);
+    Optional<Student> findById(String ID);
 }

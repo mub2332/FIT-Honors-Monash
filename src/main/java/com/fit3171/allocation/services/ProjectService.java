@@ -20,7 +20,7 @@ public class ProjectService {
         return projectRepository.findAll();
     }
 
-    public Optional<Project> findById(Long id) {
+    public Optional<Project> findById(String id) {
         return projectRepository.findById(id);
     }
 
