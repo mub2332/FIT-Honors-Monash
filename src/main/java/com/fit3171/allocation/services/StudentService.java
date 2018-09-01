@@ -7,6 +7,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+/**
+ * A service that implements the repository interface
+ * and supplies Student data to the controllers
+ */
 @Service
 public class StudentService {
     private StudentRepository studentRepository;

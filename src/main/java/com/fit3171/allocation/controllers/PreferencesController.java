@@ -14,6 +14,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Optional;
 
+/**
+ * This class controls the flow of data between the models and views
+ * responsible for performing the 'Submit Preferences' use case
+ */
 @Controller
 public class PreferencesController {
     public ProjectService projectService;
@@ -29,12 +33,16 @@ public class PreferencesController {
         this.studentService = studentService;
     }
 
+    // Get a list of all available projects
     @GetMapping("/")
     public String listProjects(Model model) {
         model.addAttribute("projects", projectService.findAll());
         return "projects";
     }
 
+    // Get a particular project that the user will select from the
+    // front-end, and take them to page where they can choose to
+    // submit a preference for that project
     @GetMapping("/projects/{id}")
     public String getProjectById(@PathVariable String id, Model model) {
         Optional<Project> project = projectService.findById(id);
@@ -44,6 +52,9 @@ public class PreferencesController {
         return "submitPreferences";
     }
 
+    // Save the submitted preference to the database, and redirect the user
+    // to a page where they can see the list of preferences that have already
+    // been submitted
     @PostMapping("/projects/{id}")
     public String savePreference(@PathVariable String id, HttpServletRequest request) {
         Optional<Project> project = projectService.findById(id);
@@ -54,6 +65,7 @@ public class PreferencesController {
         return "redirect:/listPreferences";
     }
 
+    // Get list of submitted preferences
     @GetMapping("/listPreferences")
     public String getPreferences(Model model) {
         model.addAttribute("students", studentService.findAll());

@@ -10,6 +10,9 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Models a 'Project' in the domain of operation
+ */
 @Getter
 @Setter
 @Document(collection = "projects")

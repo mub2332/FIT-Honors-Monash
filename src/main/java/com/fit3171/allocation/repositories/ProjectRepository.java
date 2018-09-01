@@ -6,6 +6,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
+/**
+ * A repository that defines query methods for the Project model
+ */
 @Repository
 public interface ProjectRepository extends MongoRepository<Project, Long> {
 

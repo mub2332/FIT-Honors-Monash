@@ -13,6 +13,11 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * This class loads seed data into the database when the Spring
+ * application loads up.
+ **/
+
 @Slf4j
 @Component
 public class DataLoader implements ApplicationListener<ContextRefreshedEvent> {
@@ -25,6 +30,7 @@ public class DataLoader implements ApplicationListener<ContextRefreshedEvent> {
         this.studentRepository = studentRepository;
     }
 
+    // Load data when the Spring app boots up
     @Override
     @Transactional
     public void onApplicationEvent(ContextRefreshedEvent event) {
@@ -33,6 +39,7 @@ public class DataLoader implements ApplicationListener<ContextRefreshedEvent> {
         log.debug("Loading data");
     }
 
+    // Load list of students
     private void loadStudents() {
         Student student = new Student();
         student.setId("27738965");
@@ -65,6 +72,7 @@ public class DataLoader implements ApplicationListener<ContextRefreshedEvent> {
         studentRepository.save(student6);
     }
 
+    // Load list of projects using data from FIT Honors project site
     private void loadProjects() {
         Project project = new Project();
         project.setId("P435");
