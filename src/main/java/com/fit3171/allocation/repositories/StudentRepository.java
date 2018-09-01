@@ -16,5 +16,7 @@ public interface StudentRepository extends MongoRepository<Student, Long> {
 
     Iterable<Student> findAllByAllocatedProjectNotNull();
 
+    Iterable<Student> findAllByAllocatedProjectNull();
+
     Optional<Student> findById(String ID);
 }
