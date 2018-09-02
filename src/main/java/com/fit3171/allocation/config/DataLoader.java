@@ -76,8 +76,8 @@ public class DataLoader implements ApplicationListener<ContextRefreshedEvent> {
 
     // Load list of projects using data from FIT Honors project site
     private void loadProjects() {
-        Project project = new Project();
-        project.setId("P435");
+        Project project00001 = new Project();
+        project.setId("P00001");
         project.setTitle("Digital repositories for Art Archives");
         project.setDescription("How can a living archive be created that not only documents the Monash University Prato Centre (MUPC) Visual Residency Program but also engages artists-in-residence in a direct and active way as part of their residency experience in Prato? In collaboration with Monash University Museum of Art and Monash University Prato Centre, this project aims to help realise the creative possibilities inherent in cross-fertilizing artistic processes with archival theory. It will establish a prototype archival platform that complements contemporary art practices and supports the ability to record, relate and re-vision ephemera and events associated with transformative, creative experience as artefacts themselves.");
         project.setCreditPoints(new ArrayList<Integer>(Arrays.asList(18, 24)));
@@ -86,7 +86,18 @@ public class DataLoader implements ApplicationListener<ContextRefreshedEvent> {
         project.setSupervisors(new ArrayList<String>(Arrays.asList("Tom Denison", "Gillian Oliver")));
         project.setUrlsAndReferences(null);
         project.setFieldsOfStudy(new ArrayList<String>(Arrays.asList("Art", "Archival theory", "Digital repositories", "Open source")));
+        projectRepository.save(project00001);
 
-        projectRepository.save(project);
+        Project project00058 = new Project();
+        project.setId("P00058");
+        project.setTitle("Online Handwritten Signature Verification");
+        project.setDescription("This project is in an area of my earlier research. A number of research papers were published.")
+        project.setCreditPoints(new ArrayList<Integer>(Arrays.asList(24)));
+        project.setAimsAndOutline("There is considerable interest in authentication based on handwritten signature verification (HSV) because HSV is superior to many other biometric authentication techniques , for example, fingerprints or retinal pattern which are more reliable but much more intrusive.\n A number of HSV techniques have been explored over the last 30-40 years. I myself have looked into using dynamic parameters when a signature is signed online. Another approach was based on simulating the hand movements of the person signing online. Both these techniques work well and the results have been published. This project involves finding even more reliable techniques perhaps by exploring yet another approach to online HSV based on identifying curves and straight lines as the signature is signed. You will need to study curves and lines identification techniques in pattern recognition and then use those techniques and perhaps develop new techniques for use in online HSV. The project requires some mathematical knowledge and programming experience.")
+        project.setPreAndCorequisiteKnowledge("The student must have some mathematical background and experience in programming")
+        project.setSupervisors(new ArrayList<String>(Arrays.asList("Gopal Gupta")));
+        project.setUrlsAndReferences(new ArrayList<String>(Arrays.asList("(with R. C. Joyce) Using Position Extrema Points to Capture Shape in On-line Handwritten\nSignature Verification, Pattern Recognition, Vol. 40 pp 2811-2817, 2007", "The State of the Art in On-line Handwritten Signature Verification, approx 38pp,\nFaculty of Information Technology, Technical Report, 2006")));
+        project.setFieldsOfStudy(new ArrayList<String>(Arrays.asList("Art", "Archival theory", "Digital repositories", "Open source")));
+        projectRepository.save(project00058);
     }
 }
