@@ -13,5 +13,12 @@ import java.util.Optional;
 public interface ProjectRepository extends MongoRepository<Project, Long> {
 
     Optional<Project> findByTitle(String title);
+
     Optional<Project> findById(String id);
+
+    Iterable<Project> findAllByDescriptionContainsIgnoreCase(String search);
+
+    Iterable<Project> findAllByTitleContainsIgnoreCase(String search);
+
+    Iterable<Project> findAllByFieldsOfStudyIgnoreCase(String search);
 }

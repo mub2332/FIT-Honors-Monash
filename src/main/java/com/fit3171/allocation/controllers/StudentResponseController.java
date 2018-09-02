@@ -19,7 +19,7 @@ public class StudentResponseController {
     private StudentRepository studentRepository;
 
     @GetMapping
-    public List<Student> getAllStudents() {
+    public Iterable<Student> getAllStudents() {
         return studentRepository.findAll();
     }
 

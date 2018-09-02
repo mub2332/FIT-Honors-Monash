@@ -25,6 +25,8 @@ public class DataLoader implements ApplicationListener<ContextRefreshedEvent> {
     private final ProjectRepository projectRepository;
     private final StudentRepository studentRepository;
 
+
+
     public DataLoader(ProjectRepository projectRepository, StudentRepository studentRepository) {
         this.projectRepository = projectRepository;
         this.studentRepository = studentRepository;
