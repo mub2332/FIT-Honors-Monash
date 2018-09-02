@@ -33,6 +33,10 @@ If there are any questions or confusions that needs to be cleared up in this Ris
 	4. [Risks That Concern the IEEE Software Engineering Code of Ethics](#ethics)
 	    1. [Software breaches the User's Privacy](#privacy)
 	    2. [Team promises functionalities that may be impossible to complete](#overambitious)
+    5. [Integration Risks](#integrationRisks)
+	    1. [Incompatible Libraries](#libraries)
+	    2. [Dispute Between Team Members](#dispute)
+
 
 <a name="impactScale"></a>
 # Impact Value Scale
@@ -199,3 +203,22 @@ Overview | This is a common thing in the Software Development Industry where a t
 Impact | Impact Value: 5 <br/> This may cause Esolutions/David Squire to decide to not deploy our product and potentially lose their trust. Team is unable to finish their part and may delay all the other teams causing the entire project to fail.
 Likelihood | 2 <br/>
 Mitigation Strategy | 1. Always evaluate the team's own capability before accepting any tasks. If a requirement is too much to be completed within the allocated time or illogical, be honest with the client and ask for a compromise. <br/> 2. If accepted and the team has no choice, Look at [The Need For A Spike](#spikes)
+
+<a name="integrationRisks"></a>
+## Integration Risks
+
+<a name="libraries"></a>
+### Incompatible Libraries Between Teams
+Overview | Teams use libraries that are incompatible with each other that may affect integration
+------------ | -------------
+Impact | This risk is special as it has two impact values. If found at early stage of integration- Impact: 2, teams can immediately look into the problem and sort it out. If found at a late stage of integration- Impact: 5, teams may not have time to solve problems.
+Likelihood | 2 <br/>
+Mitigation Strategy | 1. Coordination members should thoroughly discuss what libraries that they are using. 2. If occurred, look for solution or change libraries.
+
+<a name="disputes"></a>
+### Dispute Between Teams
+Overview | Members of one team have a conflict of interest with another, affecting work chemistry.
+------------ | -------------
+Impact | Impact 3: It may slow down integration process as communication may be significantly reduced.
+Likelihood | 2 <br/>
+Mitigation Strategy | 1. Leaders/other members should communicate with affected parties to obtain a win win situation 2. Members put aside their differences to understand that it is a team project.
