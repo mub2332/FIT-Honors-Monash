@@ -72,7 +72,6 @@ public class StudentTest {
         Student student = mock(Student.class);
 
         when(student.getId()).thenReturn("StudentID");
-        verify(student.getId());
         assertEquals(student.getId(), "StudentID");
 
         when(student.getUsername()).thenReturn("Username");
@@ -90,17 +89,5 @@ public class StudentTest {
         assertEquals(student.getPreferences(), setProject);
 
     }
-    @Test
-    public void testInternalChange(){
-        Student student = mock(Student.class);
-        Project project = new Project();
-        Set<Project> setProject = new HashSet<>();
-        setProject.add(project);
 
-        student.addPreference(project);
-
-        assertEquals(student.getPreferences(), setProject);
-
-
-    }
 }
