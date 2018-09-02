@@ -2,6 +2,7 @@ package com.fit3171.allocation.services;
 
 import com.fit3171.allocation.models.Project;
 import com.fit3171.allocation.repositories.ProjectRepository;
+import com.google.common.collect.Iterables;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,5 +35,13 @@ public class ProjectService {
 
     public void save(Project project) {
         projectRepository.save(project);
+    }
+
+    public Iterable<Project> findByText(String search) {
+        Iterable<Project> byTitle = projectRepository.findAllByTitleContainsIgnoreCase(search);
+        Iterable<Project> byDescription = projectRepository.findAllByDescriptionContainsIgnoreCase(search);
+
+        Iterable<Project> combinedResults = Iterables.concat(byDescription, byTitle);
+        return combinedResults;
     }
 }

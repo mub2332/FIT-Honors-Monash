@@ -40,6 +40,13 @@ public class PreferencesController {
         return "projects";
     }
 
+    @PostMapping("/projects/search")
+    public String searchProjectsByText(Model model, HttpServletRequest request) {
+        String search = request.getParameter("searchText");
+        model.addAttribute("projects", projectService.findByText(search));
+        return "projects";
+    }
+
     // Get a particular project that the user will select from the
     // front-end, and take them to page where they can choose to
     // submit a preference for that project
