@@ -24,11 +24,7 @@ public class ProjectResponseController {
 
     @GetMapping("/searchByText/{search}")
     public Iterable<Project> getProjectByText(@PathVariable String search) {
-        Iterable<Project> byDescription = projectRepository.findAllByDescriptionContainsIgnoreCase(search);
-        Iterable<Project> byTitle = projectRepository.findAllByTitleContainsIgnoreCase(search);
-
-        Iterable<Project> combinedResults = Lists.newArrayList(Iterables.concat(byDescription, byTitle));
-        return combinedResults;
+        return projectRepository.findByText(search);
     }
 
     @GetMapping("/searchByFOS/{search}")

@@ -38,10 +38,6 @@ public class ProjectService {
     }
 
     public Iterable<Project> findByText(String search) {
-        Iterable<Project> byTitle = projectRepository.findAllByTitleContainsIgnoreCase(search);
-        Iterable<Project> byDescription = projectRepository.findAllByDescriptionContainsIgnoreCase(search);
-
-        Iterable<Project> combinedResults = Iterables.concat(byDescription, byTitle);
-        return combinedResults;
+        return projectRepository.findByText(search);
     }
 }
