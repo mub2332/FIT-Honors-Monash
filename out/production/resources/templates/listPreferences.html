@@ -21,9 +21,15 @@
             <tr th:each="student: ${students}">
                 <td th:text="${student.username}"></td>
                 <td>
+                    <!--NEW-->
+                    <ul class="list-group" th:each="preference: ${student.preferences}">
+                        <li class="list-group-item" th:text="${student.getRankingByProject(preference)}+${preference.title}"></li>
+                    </ul>
+                    <!--
                     <ul class="list-group" th:each="preference: ${student.preferences}">
                         <li class="list-group-item" th:text="${preference.title}"></li>
                     </ul>
+                    -->
                 </td>
                 <td>
                     <a th:href="@{'/students/'+${student.username}}">Allocate</a>
