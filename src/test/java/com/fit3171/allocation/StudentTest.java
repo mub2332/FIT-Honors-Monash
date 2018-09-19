@@ -7,9 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
@@ -44,8 +42,8 @@ public class StudentTest {
         when(project.getAllocatedStudent()).thenReturn(student);
         assertEquals(project.getAllocatedStudent(), student);
 
-        Set<Student> setStudent = new HashSet<>();
-        setStudent.add(student);
+        Map<Student,Integer> setStudent = new HashMap<>();
+        setStudent.put(student, 1);
         when(project.getPreferredByStudents()).thenReturn(setStudent);
         assertEquals(project.getPreferredByStudents(), setStudent);
 
@@ -83,7 +81,7 @@ public class StudentTest {
         when(student.getAllocatedProject()).thenReturn(project);
         assertEquals(student.getAllocatedProject(), project);
 
-        Set<Project> setProject = new HashSet<>();
+        ArrayList<Project> setProject = new ArrayList<>();
         setProject.add(project);
         when(student.getPreferences()).thenReturn(setProject);
         assertEquals(student.getPreferences(), setProject);
