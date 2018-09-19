@@ -27,10 +27,7 @@ public class Project {
     private ArrayList<String> fieldsOfStudy;
 
     @DBRef
-    private Set<Student> preferredByStudents = new HashSet<>();
-    //NEW
-    @DBRef
-    Map<Student,Integer> testPrefByStudents = new HashMap<Student,Integer>();
+    Map<Student,Integer> preferredByStudents = new HashMap<>();
 
     @DBRef
     private Student allocatedStudent = null;
@@ -39,8 +36,8 @@ public class Project {
         this.preferredByStudents.remove(student);
     }
 
-    public void addPreference(Student student) {
-        this.preferredByStudents.add(student);
-        //NEW
+    public void addPreference(Student student, Integer studentPreference) {
+        this.preferredByStudents.put(student, studentPreference);
+
     }
 }

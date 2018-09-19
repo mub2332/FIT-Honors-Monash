@@ -19,10 +19,6 @@ public class Student {
     private String id;
     private String username;
 
-//    @DBRef
-//    private Set<Project> preferences = new HashSet<>();
-
-    //NEW
     @DBRef
     private ArrayList<Project> preferences = new ArrayList<>();
 
@@ -30,15 +26,10 @@ public class Student {
     private Project allocatedProject = null;
 
     public void addPreference(Project project) {
-        this.preferences.add(project);
-        project.addPreference(this);
-        //NEW
-//        System.out.println(testPref2);
-//        System.out.println("Before add");
-//        this.testPref2.add(project);
-//        System.out.println("After add");
-//        System.out.println(this.testPref2.get(0));
-//        System.out.println("Add finish");
+        if (!this.preferences.contains(project)) {
+            this.preferences.add(project);
+            project.addPreference(this, this.preferences.size());
+        }
     }
 
     public void removePreference(Project project) {
