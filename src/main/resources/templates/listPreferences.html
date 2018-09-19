@@ -22,8 +22,8 @@
                 <td th:text="${student.username}"></td>
                 <td>
                     <!--NEW-->
-                    <ul class="list-group" th:each="preference: ${student.preferences}">
-                        <li class="list-group-item" th:text="${student.getRankingByProject(preference)}+${preference.title}"></li>
+                    <ul class="list-group" th:each="preference: ${student.getPreferences()}">
+                        <li class="list-group-item" th:text="${student.getPreferences().indexOf(preference)+1}+': '+${preference.title}"></li>
                     </ul>
                     <!--
                     <ul class="list-group" th:each="preference: ${student.preferences}">

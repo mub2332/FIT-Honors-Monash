@@ -42,7 +42,5 @@ public class Project {
     public void addPreference(Student student) {
         this.preferredByStudents.add(student);
         //NEW
-        this.testPrefByStudents.put(student, student.getRank());
-
     }
 }
