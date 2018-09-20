@@ -26,10 +26,8 @@ public class Student {
     private Project allocatedProject = null;
 
     public void addPreference(Project project) {
-        if (!this.preferences.contains(project)) {
-            this.preferences.add(project);
-            project.addPreference(this, this.preferences.size());
-        }
+        this.preferences.add(project);
+        project.addPreference(this, this.preferences.size());
     }
 
     public void removePreference(Project project) {
