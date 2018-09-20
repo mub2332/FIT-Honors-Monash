@@ -6,9 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Models a 'Project' in the domain of operation
@@ -29,7 +27,8 @@ public class Project {
     private ArrayList<String> fieldsOfStudy;
 
     @DBRef
-    private Set<Student> preferredByStudents = new HashSet<>();
+    Map<Student,Integer> preferredByStudents = new HashMap<>();
+
     @DBRef
     private Student allocatedStudent = null;
 
@@ -37,7 +36,8 @@ public class Project {
         this.preferredByStudents.remove(student);
     }
 
-    public void addPreference(Student student) {
-        this.preferredByStudents.add(student);
+    public void addPreference(Student student, Integer studentPreference) {
+        this.preferredByStudents.put(student, studentPreference);
+
     }
 }

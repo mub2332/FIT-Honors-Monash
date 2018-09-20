@@ -6,8 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Models a 'Student' in the domain of operation
@@ -21,13 +20,14 @@ public class Student {
     private String username;
 
     @DBRef
-    private Set<Project> preferences = new HashSet<>();
+    private ArrayList<Project> preferences = new ArrayList<>();
+
     @DBRef
     private Project allocatedProject = null;
 
     public void addPreference(Project project) {
         this.preferences.add(project);
-        project.addPreference(this);
+        project.addPreference(this, this.preferences.size());
     }
 
     public void removePreference(Project project) {
