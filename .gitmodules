@@ -1,3 +1,3 @@
-[submodule "frontend-allocation"]
-    path = frontend-allocation
+[submodule "inception/frontend-allocation"]
+    path = inception/frontend-allocation
     url = https://git.infotech.monash.edu/FIT3170-2018/ShotgunSurgery/inception.git/frontend-allocation
