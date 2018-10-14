@@ -1,0 +1,53 @@
+
+<h1>Allocations</h1>
+
+<mat-tab-group>
+  <mat-tab label="Unallocated students">
+
+    <mat-card>
+      <mat-card-content>
+        <mat-accordion [multi]="true">
+          <mat-expansion-panel *ngFor="let student of unallocatedStudents; let unallocatedIndex = index;">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h3>{{student.username}}</h3>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <mat-list>
+              <mat-list-item *ngFor="let project of student.preferences">
+                <h4>{{project.title}}</h4>
+                <button mat-raised-button (click)="allocate(student, project, unallocatedIndex)">Allocate</button>
+              </mat-list-item>
+            </mat-list>
+
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-card-content>
+    </mat-card>
+
+  </mat-tab>
+  <mat-tab label="Allocated students">
+    <mat-card>
+      <mat-card-content>
+        <mat-accordion [multi]="true">
+          <mat-expansion-panel *ngFor="let student of allocatedStudents; let allocatedIndex = index">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h3>{{student.username}}</h3>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <mat-list>
+              <mat-list-item>
+                <h4>{{student.allocatedProject.title}}</h4>
+                <button mat-raised-button color="warn" (click)="remove(student, allocatedIndex)">Remove</button>
+              </mat-list-item>
+            </mat-list>
+
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-card-content>
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>

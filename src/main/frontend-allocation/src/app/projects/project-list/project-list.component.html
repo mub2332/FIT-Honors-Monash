@@ -1,0 +1,88 @@
+
+<mat-card class="search-card">
+  <mat-card-header>
+    <div class="container">
+      <mat-card-title>
+        <h1>Search and Filter</h1>
+      </mat-card-title>
+    </div>
+  </mat-card-header>
+  <mat-form-field>
+    <input matInput placeholder="Search by project title, any text in the body, supervisor name or field of study" [(ngModel)]="term">
+  </mat-form-field>
+  <mat-action-row>
+    <button class="search-btn" mat-raised-button (click)="search()">Search</button>
+    <button mat-raised-button color="primary" (click)="getAll()">List All</button>
+  </mat-action-row>
+</mat-card>
+
+<mat-card class="projects-card">
+
+    <mat-card-header>
+      <div class="container">
+        <mat-card-title>
+          <h1>List of Projects</h1>
+        </mat-card-title>
+        <mat-card-subtitle>
+          <mat-form-field>
+            <mat-select placeholder="Items per page" [(ngModel)]="items">
+              <mat-option value="1">1</mat-option>
+              <mat-option value="5">5</mat-option>
+              <mat-option value="10">10</mat-option>
+              <mat-option value="20">20</mat-option>
+              <mat-option value="50">50</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-card-subtitle>
+      </div>
+    </mat-card-header>
+  <mat-card-content>
+    <mat-accordion [multi]="true">
+      <mat-expansion-panel *ngFor="let project of projects | paginate: {itemsPerPage: items, currentPage: pageNumber}; let i = index">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h3>{{ project.title }}</h3>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <h4>Credit Points</h4>
+
+        <span *ngFor="let point of project.creditPoints; let i = index;">
+          <span *ngIf="!(i == project.creditPoints.length - 1)">{{ point }}, </span>
+          <span *ngIf="i == project.creditPoints.length - 1">{{ point }}</span>
+        </span>
+
+        <h4>Description</h4>
+        <p>{{ project.description }}</p>
+
+        <h4>Aim and Outline</h4>
+        <p>{{ project.aimsAndOutlines }}</p>
+
+        <div *ngIf="project.urlsAndReferences.length > 0">
+          <h4>URLs and References</h4>
+          <p *ngFor="let url of project.urlsAndReferences">
+            {{ url }}
+          </p>
+        </div>
+
+        <h4>Pre- and Co-requisite Knowledge</h4>
+        <p>{{ project.preAndCoReqKnowledge }}</p>
+
+        <h4>Supervisors</h4>
+        <span *ngFor="let supervisor of project.supervisors; let i = index;">
+          <span *ngIf="!(i == project.supervisors.length - 1)">{{ supervisor.name }}, </span>
+          <span *ngIf="i == project.supervisors.length - 1">{{ supervisor.name }}</span>
+        </span>
+
+        <mat-action-row>
+          <button *ngIf="project.inShortlist" mat-raised-button color="warn" (click)="remove(project)">Remove from shortlist</button>
+          <button *ngIf="!project.inShortlist" mat-raised-button color="accent" (click)="select(project)">Add to shortlist</button>
+        </mat-action-row>
+
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card-content>
+
+  <pagination-controls (pageChange)="pageNumber = $event" [autoHide]="true" previousLabel="" nextLabel=""></pagination-controls>
+</mat-card>
+

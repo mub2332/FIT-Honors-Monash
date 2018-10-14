@@ -1,0 +1,19 @@
+
+<h1 *ngIf="shortlist.length === 0">No items in shortlist yet</h1>
+
+<mat-card *ngIf="shortlist.length > 0">
+  <mat-card-header>
+    <mat-card-title><h2>Edit Ranking of Preferences (Drag and Drop)</h2></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list role="list" [sortablejs]="shortlist">
+      <div *ngFor="let item of shortlist; let i = index;">
+        <span class="badge">{{ i+1 }}</span>
+        <mat-list-item role="listitem" >
+          <span class="list-item-text">{{ item.title }}</span>
+          <button mat-raised-button color="warn" (click)="remove(item)">Remove</button>
+        </mat-list-item>
+      </div>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
