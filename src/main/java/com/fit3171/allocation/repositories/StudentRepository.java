@@ -10,7 +10,7 @@ import java.util.Optional;
  * A repository that defines query methods for the Student model
  */
 @Repository
-public interface StudentRepository extends MongoRepository<Student, Long> {
+public interface StudentRepository extends MongoRepository<Student, String> {
 
     Optional<Student> findByUsername(String username);
 

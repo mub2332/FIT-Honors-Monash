@@ -11,11 +11,9 @@ import java.util.Optional;
  * A repository that defines query methods for the Project model
  */
 @Repository
-public interface ProjectRepository extends MongoRepository<Project, Long> {
+public interface ProjectRepository extends MongoRepository<Project, String> {
 
     Optional<Project> findByTitle(String title);
-
-    Optional<Project> findById(String id);
 
     @Query("{ $or:" +
             " [{'title' : {$regex: ?0}}," +

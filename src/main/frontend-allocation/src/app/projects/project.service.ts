@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Project} from './project.model';
 import {Observable, of} from 'rxjs';
-
-import {projects} from './shared/mockdata';
+import {projects} from "./shared/mockdata";
 
 @Injectable({
   providedIn: 'root'
@@ -10,11 +9,12 @@ import {projects} from './shared/mockdata';
 export class ProjectService {
 
   shortlist: Project[] = [];
+  projects: Project[] = projects;
 
   constructor() { }
 
   getProjects(): Observable<Project[]> {
-    return of(projects);
+    return of(this.projects);
   }
 
   addToShortlist(project: Project) {

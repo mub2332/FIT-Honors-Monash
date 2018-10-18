@@ -1,9 +1,9 @@
 
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <a class="brand" routerLink="/">Home</a>
-    <span class="spacer"></span>
-    <a mat-button routerLink="/shortlist" routerLinkActive="mat-accent">Shortlist</a>
-    <a mat-button routerLink="/allocation" routerLinkActive="mat-accent">Allocate students</a>
+    <a *ngIf="this.authService.userDetails.email.endsWith('student.monash.edu')" mat-button routerLink="/projects" routerLinkActive="mat-accent">Projects</a>
+    <a *ngIf="this.authService.userDetails.email.endsWith('student.monash.edu')" mat-button routerLink="/shortlist" routerLinkActive="mat-accent">Shortlist</a>
+    <a *ngIf="this.authService.userDetails.email.endsWith('monash.edu') && !this.authService.userDetails.email.includes('student')" mat-button routerLink="/allocation" routerLinkActive="mat-accent">Allocate students</a>
+    <a *ngIf="this.authService.isLoggedIn()" mat-button (click)="this.authService.logout()">Logout</a>
   </mat-toolbar-row>
 </mat-toolbar>

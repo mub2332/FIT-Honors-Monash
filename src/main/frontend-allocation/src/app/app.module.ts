@@ -7,6 +7,11 @@ import { HeaderComponent } from './header/header.component';
 
 import {NgxPaginationModule} from 'ngx-pagination';
 
+import { environment } from "../environments/environment";
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
 import {
   MatToolbarModule,
   MatExpansionModule,
@@ -24,6 +29,8 @@ import {AppRoutingModule} from './app-routing.module';
 import {SortablejsModule} from 'angular-sortablejs';
 import { AllocationComponent } from './projects/allocation/allocation.component';
 import {FormsModule} from '@angular/forms';
+import {AuthService} from "./auth.service";
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +38,8 @@ import {FormsModule} from '@angular/forms';
     HeaderComponent,
     ProjectListComponent,
     ShortListComponent,
-    AllocationComponent
+    AllocationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -48,9 +56,12 @@ import {FormsModule} from '@angular/forms';
     MatSelectModule,
     SortablejsModule.forRoot({animation: 150}),
     NgxPaginationModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'angular-auth-firebase'),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

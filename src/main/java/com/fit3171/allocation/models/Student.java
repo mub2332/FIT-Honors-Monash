@@ -25,13 +25,4 @@ public class Student {
     @DBRef
     private Project allocatedProject = null;
 
-    public void addPreference(Project project) {
-        this.preferences.add(project);
-        project.addPreference(this, this.preferences.size());
-    }
-
-    public void removePreference(Project project) {
-        this.preferences.remove(project);
-        project.removePreference(this);
-    }
 }

@@ -21,23 +21,18 @@ public class Project {
     private String description;
     private String aimsAndOutline;
     private String preAndCorequisiteKnowledge;
-    private ArrayList<Integer> creditPoints;
-    private ArrayList<String> supervisors;
-    private ArrayList<String> urlsAndReferences;
-    private ArrayList<String> fieldsOfStudy;
+
+    private ArrayList<Integer> creditPoints = new ArrayList<>();
+    private ArrayList<String> urlsAndReferences = new ArrayList<>();
+    private ArrayList<String> fieldsOfStudy = new ArrayList<>();
 
     @DBRef
-    Map<Student,Integer> preferredByStudents = new HashMap<>();
+    private ArrayList<Supervisor> supervisors = new ArrayList<>();
+
+    @DBRef
+    private ArrayList<Student> preferredByStudents = new ArrayList<>();
 
     @DBRef
     private Student allocatedStudent = null;
 
-    public void removePreference(Student student) {
-        this.preferredByStudents.remove(student);
-    }
-
-    public void addPreference(Student student, Integer studentPreference) {
-        this.preferredByStudents.put(student, studentPreference);
-
-    }
 }

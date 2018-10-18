@@ -36,7 +36,4 @@ public class ProjectService {
         projectRepository.save(project);
     }
 
-    public Iterable<Project> findByText(String search) {
-        return projectRepository.findByText(search);
-    }
 }

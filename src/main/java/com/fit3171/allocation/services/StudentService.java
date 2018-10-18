@@ -34,6 +34,10 @@ public class StudentService {
         return studentRepository.findAllByAllocatedProjectNotNull();
     }
 
+    public Iterable<Student> findUnallocatedStudents() {
+        return studentRepository.findAllByAllocatedProjectNull();
+    }
+
     public void save(Student student) {
         studentRepository.save(student);
     }
