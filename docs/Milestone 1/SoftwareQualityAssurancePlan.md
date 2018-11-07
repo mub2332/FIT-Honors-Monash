@@ -35,6 +35,8 @@
 - [4 - Goals](#goals)
 - [5 - Reviews and Audits](#review)
     - [5.1 - Formal Inspections](#review-formal)
+    - [5.1.1 - Retrospective meeting](#retrospective-meeting)
+    
     - [5.2 - Informal Inspections](#review-informal)
 - [6 - Tools and Techniques](#tools)
 - [7 - Testing Strategies](#test)
@@ -133,11 +135,16 @@ Formal and informal reviews will be conducted on all deliverables. The general s
 
 - A Team representative review must be held at least once an iteration to understand and monitor each other's work to ensure a clear division of teamwork, equal workload and follow up project process.
 
-  <a name="review-informal"></a>
+<a name="retrospective-meeting"></a>d
+###### 5.1.1 Retrospective meeting
+
+- At the end of each iteration a meeting is held to discuss how the iteration went and what could be done better. This meeting is generally conducted on Friday when the team gathers.
+
+<a name="review-informal"></a>
 
 ##### 5.2 - Informal Inspections
 
-These are the meetings conducted on Discord, the Nott, and in class every friday.
+These are the meetings conducted on Discord and at the Nott.
 
 ###### Team member Reviews
 
