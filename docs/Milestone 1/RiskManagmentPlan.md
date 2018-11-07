@@ -235,3 +235,11 @@ Overview | Teams provide eSolutions the wrong documentation, causing them to hav
 Impact | 3, Esolutions would have spend more time in trying to understand our systems and fixing any problems that might occur
 Likelihood | 1 <br/>
 Mitigation Strategy | 1. All members should properly validate all the information provided in the handover package and review it before submitting.
+
+<a name="wronginfo"></a>
+### Occurrence of undocumented/unknown bugs
+Overview | There may be some unknown or forgotten bugs that were not documented
+------------ | -------------
+Impact | 2, The team that is taking over would have to fix the bugs without any prior knowledge to them
+Likelihood | 5, very likely that this will happen <br/>
+Mitigation Strategy | If any bugs are found, document them immediately, or put them in the log to be documented later, as this will help smoothen the takeover process.
