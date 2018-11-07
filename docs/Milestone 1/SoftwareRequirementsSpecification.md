@@ -33,11 +33,6 @@
         - [Typical Course of Events](#check-supervisor-profile-typical)
         - [Alternative Courses of Events](#shortlist-projects-alternatives)
         - [Exception Case](#check-supervisor-exception)
-    - [Search the gallery for projects](#search-gallery)
-        - [Overview](#search-gallery-overview)
-        - [Typical Course of Events](#search-gallery-typical)
-        - [Alternative Courses of Events](#shortlist-projects-alternatives)
-        - [Exception Case](#search-gallery-exception)
     - [Sort projects by relevancy](#sort-projects)
         - [Overview](#sort-projects-overview)
         - [Typical Course of Events](#sort-projects-typical)
@@ -303,42 +298,6 @@ Actor Response | System Response
 ### Exception Case
 - If the supervisor cannot be found, the system will notify the student of that case and by displaying a message.
 
-
-<a name="search-gallery"></a>
-## Check on supervisor's profile
-
-<a name="search-gallery-overview"></a>
-### Overview
-
-Attribute | Description
---- | ---
-Use Case | Search the gallery for previous instances of the project
-Actors | User (initiator) (Can be anyone)
-Purpose | To see previous or related completed projects for further information about what is expeced
-Overview | This use case begins when the user wants to search for a previous instance of the project
-Type | Primary
-Cross-references | None
-Pre-conditions | The student must be logged in and viewing the gallery
-Post-conditions | None
-
-<a name="search-gallery-typical"></a>
-### Typical Course of Events
-
-Actor Response | System Response
-:---: | :---:
-1) This use case begins when the user wants to search for an instance of a completed projectr |
-2) The user types in search query|
- | 3) The system loads instances of projects in the gallery |
-4) The user selects link of interest|
- | 5) The system brings the user to the page with an instance of a completed project
-
-<a name="search-gallery-alternatives"></a>
-### Alternative Course of Events
-- The student can get to the galleries of related project from a project page they've searched for.
-
-<a name="search-gallery-exception"></a>
-### Exception Case
-- If the gallery cannot be found, the system will output a message.
 
 <a name="sort-projects"></a>
 ## Sort projects
