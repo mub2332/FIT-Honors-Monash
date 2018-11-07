@@ -136,6 +136,9 @@ Formal and informal reviews will be conducted on all deliverables. The general s
   <a name="review-informal"></a>
 
 ##### 5.2 - Informal Inspections
+
+These are the meetings conducted on Discord, the Nott, and in class every friday.
+
 ###### Team member Reviews
 
 - Team member Review should be conduct every week to set up goals for the week and review the work process of previous week.
