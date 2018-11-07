@@ -38,6 +38,7 @@ If there are any questions or confusions that needs to be cleared up in this Ris
 	    2. [Dispute Between Team Members](#dispute)
     6. [Handover Package Risks](#handoverRisks)
     	1. [Providing wrong information](#wronginfo)
+    	2. [Undocumented/Forgotten Bugs](#unexpectedbugs)
 
 
 <a name="impactScale"></a>
@@ -236,7 +237,7 @@ Impact | 3, Esolutions would have spend more time in trying to understand our sy
 Likelihood | 1 <br/>
 Mitigation Strategy | 1. All members should properly validate all the information provided in the handover package and review it before submitting.
 
-<a name="wronginfo"></a>
+<a name="unexpectedbugs"></a>
 ### Occurrence of undocumented/unknown bugs
 Overview | There may be some unknown or forgotten bugs that were not documented
 ------------ | -------------
