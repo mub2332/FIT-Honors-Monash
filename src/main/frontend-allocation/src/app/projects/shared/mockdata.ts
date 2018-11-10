@@ -1,7 +1,9 @@
 import {Supervisor} from '../../supervisors/supervisor.model';
 import {Student} from '../../students/student.model';
 import {Project} from '../project.model';
-
+/*
+Mock data
+ */
 export const supervisors: Supervisor[] = [
   new Supervisor('td2345', 'Tom Denison'),
   new Supervisor('go1234', 'Gillian Oliver'),

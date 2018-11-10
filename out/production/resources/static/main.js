@@ -326,7 +326,7 @@ module.exports = "\na {\n  color: white;\n  text-decoration: none;\n}\n\n.spacer
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<mat-toolbar color=\"primary\">\n  <mat-toolbar-row>\n    <a *ngIf=\"this.authService.userDetails.email.endsWith('student.monash.edu')\"  routerLink=\"/projects\">Projects</a>\n    <a *ngIf=\"this.authService.userDetails.email.endsWith('student.monash.edu')\" mat-button routerLink=\"/shortlist\" routerLinkActive=\"mat-accent\">Shortlist</a>\n    <a *ngIf=\"this.authService.userDetails.email.endsWith('monash.edu') && !this.authService.userDetails.email.includes('student')\" mat-button routerLink=\"/allocation\" routerLinkActive=\"mat-accent\">Allocate students</a>\n    <a *ngIf=\"this.authService.isLoggedIn()\" mat-button (click)=\"this.authService.logout()\">Logout</a>\n  </mat-toolbar-row>\n</mat-toolbar>\n"
+module.exports = "\n<mat-toolbar color=\"primary\">\n  <mat-toolbar-row>\n    <a *ngIf=\"this.authService.userDetails.email.endsWith('student.monash.edu')\" mat-button routerLink=\"/projects\" routerLinkActive=\"mat-accent\">Projects</a>\n    <a *ngIf=\"this.authService.userDetails.email.endsWith('student.monash.edu')\" mat-button routerLink=\"/shortlist\" routerLinkActive=\"mat-accent\">Shortlist</a>\n    <a *ngIf=\"this.authService.userDetails.email.endsWith('monash.edu') && !this.authService.userDetails.email.includes('student')\" mat-button routerLink=\"/allocation\" routerLinkActive=\"mat-accent\">Allocate students</a>\n    <a *ngIf=\"this.authService.isLoggedIn()\" mat-button (click)=\"this.authService.logout()\">Logout</a>\n  </mat-toolbar-row>\n</mat-toolbar>\n"
 
 /***/ }),
 

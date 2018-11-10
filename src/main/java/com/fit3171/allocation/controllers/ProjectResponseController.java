@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/*
+Rest controller for Project entity
+ */
 @RestController
 @RequestMapping("/api/projects")
 public class ProjectResponseController {
@@ -15,6 +18,7 @@ public class ProjectResponseController {
     @Autowired
     private ProjectRepository projectRepository;
 
+    // Return all projects in the database
     @GetMapping
     public Iterable<Project> getAllProjects() {
         return projectRepository.findAll();
