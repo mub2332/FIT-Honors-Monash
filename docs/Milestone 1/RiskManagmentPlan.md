@@ -36,6 +36,9 @@ If there are any questions or confusions that needs to be cleared up in this Ris
     5. [Integration Risks](#integrationRisks)
 	    1. [Incompatible Libraries](#libraries)
 	    2. [Dispute Between Team Members](#dispute)
+    6. [Handover Package Risks](#handoverRisks)
+    	1. [Providing wrong information](#wronginfo)
+    	2. [Undocumented/Forgotten Bugs](#unexpectedbugs)
 
 
 <a name="impactScale"></a>
@@ -222,3 +225,22 @@ Overview | Members of one team have a conflict of interest with another, affecti
 Impact | Impact 3: It may slow down integration process as communication may be significantly reduced.
 Likelihood | 2 <br/>
 Mitigation Strategy | 1. Leaders/other members should communicate with affected parties to obtain a win win situation 2. Members put aside their differences to understand that it is a team project.
+
+<a name="handoverRisks"></a>
+## Hand Over Risks
+
+<a name="wronginfo"></a>
+### Providing Wrong Information In Documentation
+Overview | Teams provide eSolutions the wrong documentation, causing them to have trouble transitioning to use our software
+------------ | -------------
+Impact | 3, Esolutions would have spend more time in trying to understand our systems and fixing any problems that might occur
+Likelihood | 1 <br/>
+Mitigation Strategy | 1. All members should properly validate all the information provided in the handover package and review it before submitting.
+
+<a name="unexpectedbugs"></a>
+### Occurrence of undocumented/unknown bugs
+Overview | There may be some unknown or forgotten bugs that were not documented
+------------ | -------------
+Impact | 2, The team that is taking over would have to fix the bugs without any prior knowledge to them
+Likelihood | 5, very likely that this will happen <br/>
+Mitigation Strategy | If any bugs are found, document them immediately, or put them in the log to be documented later, as this will help smoothen the takeover process.
